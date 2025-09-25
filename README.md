@@ -8,19 +8,19 @@ Email: f.aplin@unsw.edu.au
    
 This excel document contains the full results for behavioural experiments, which were used for graph generation and statistical analysis. Descriptions of headings can be found in r scripts.
  
-3. behaviour_analysis
+2. behaviour_analysis
    
 This .RMD file contains the r scripts used for statistical analysis of the main results for behaviours, primarily through the use of linear mixed-effects regression.
 
-5. MRI.csv
+3. MRI.csv
    
 This excel document contains the full results for MRI experiments, which were used for graph generation and statistical analysis. Descriptions of headings can be found in r scripts.
 
-7. MRI_analysis
+4. MRI_analysis
    
 This .RMD file contains the r scripts used for statistical analysis of the main results for MRI, primarily through the use of One-way ANOVA.
 
-9. immunohistochemistry.csv
+5. immunohistochemistry.csv
     
 This excel document contains the full results for immunohistochemical data, which were used for graph generation and statistical analysis. Descriptions of headings can be found in r scripts.
 
