@@ -1,0 +1,927 @@
+---
+title: "immunohistochemistry_compound interaction effect"
+author: "Catherine Guo"
+date: "2025-02-11"
+output: html_document
+---
+# Immunohistochemical analysis of the safety of a nerve cuff in rats with neuropathic and inflammatory pain
+
+The purpose of this analysis is to examine the safety of an implanted nerve cuff around the sciatic nerve of rats by examining the differences of various markers including TCR, Iba1, CGRP, IB4, GFAP and MBP in three tissues: sciatic nerves, DRG and spinal cord among different cohorts. The six different cohorts we have are the CFA-treated group, the CFA-treated with cuff implantation group, the SNI-treated group, the SNI-treated with cuff implantation cohort, the acutely implanted control cohort and the chronically implanted control group.The tissues were always collected at day 4 for CFA groups, at day 8 for SNI and acute control cohorts, and at day 29 for chronic control cohorts.
+
+# Data structure
+
+This data is taken from the .csv file that one column corresponds to one independent and dependent variable and one row corresponds to one data point.
+
+### Data Headings
+
+    ref_animal = unique animal identifier
+    ref_cohort = the cohort which contains the information of treatment group, time and implantation that the rat is in (CFA, CICFA, SNI, CISNI, CIC, CCIC)
+    ref_marker: the specific staining/marker/antibody that's used
+    ref_tissue = the tissue that the staining was performed on
+    ref_section = the number of sections that comes from the same unique animal
+    ref_side = the side which the quantification is computed from (ipsilateral,contralateral)
+    ref_side_binary = assigned a binary value to the two sides, ipsilateral = 1, contralateral = 0
+    ref_quantification = the percentage of positive staining out of the whole region or the average intensity across certain defined area
+    
+      ## Initial Setup 
+
+Run the following block to clear the workspace and import the relevant packages. Add more as necessary. You may not need many of these packages for this script but doesn't hurt to include them.
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+
+
+# library(mvabund)
+# library(reshape2)
+# library(glmmTMB)
+# library(dplyr)
+# library(ggpubr) # for ggarange
+# library(relaimpo) # for calc.relimp
+# library(car) # needed fro qqp
+# library(sjPlot) # needed for plot_model
+# library(rsample) # required for spitting data into training and testing
+# library(plotly)
+# library(see)
+# library(patchwork)
+# library(Hmisc)
+# library(lmerTest)
+# library(ordinal)
+# library(ggeffects)
+# library(sjmisc)
+# library(rstatix) # for effect size: anova_test(), values ges or pes
+# library(simr)
+# library(data.table)
+# library(BSDA)
+library(lme4)
+library(emmeans)
+library(ggplot2)
+
+```
+
+## Data import
+
+The following section imports and refines the dataset.
+
+
+```{r}
+
+immuno <- read.csv("immunohistochemistry.csv") # this makes a dataframe (df). You call the columns as follows: df$column_name.
+
+```
+
+
+Subsetting the dataset in terms of different tissues and different antibodies
+
+```{r}
+
+immuno_TCR_SN <- subset(immuno, immuno$ref_tissue == "SN" & immuno$ref_marker == "TCR")
+
+ggplot(immuno_TCR_SN, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+
+
+
+immuno_Iba1_SN <- subset(immuno, immuno$ref_tissue == "SN" & immuno$ref_marker == "Iba1")
+
+ggplot(immuno_Iba1_SN, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+
+
+
+immuno_MBP_SN <- subset(immuno, immuno$ref_tissue == "SN" & immuno$ref_marker == "MBP")
+
+ggplot(immuno_MBP_SN, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+
+
+
+immuno_bTubulin_SN <- subset(immuno, immuno$ref_tissue == "SN" & immuno$ref_marker == "bTubulin")
+
+ggplot(immuno_bTubulin_SN, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+
+
+
+immuno_aSMA_thickness_SN <- subset(immuno, immuno$ref_tissue == "SN" & immuno$ref_marker == "aSMA_thickness")
+
+ggplot(immuno_aSMA_thickness_SN, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+
+
+
+immuno_aSMA_intensity_SN <- subset(immuno, immuno$ref_tissue == "SN" & immuno$ref_marker == "aSMA_intensity")
+
+ggplot(immuno_aSMA_thickness_SN, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+
+
+immuno_TCR_DRG <- subset(immuno, immuno$ref_tissue == "DRG" & immuno$ref_marker == "TCR")
+
+ggplot(immuno_TCR_DRG, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+
+
+
+immuno_Iba1_DRG <- subset(immuno, immuno$ref_tissue == "DRG" & immuno$ref_marker == "Iba1")
+
+ggplot(immuno_MBP_SN, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+
+
+
+immuno_GFAP_DRG <- subset(immuno, immuno$ref_tissue == "DRG" & immuno$ref_marker == "GFAP")
+
+ggplot(immuno_GFAP_DRG, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+
+
+
+immuno_CGRP_SC <- subset(immuno, immuno$ref_tissue == "SC" & immuno$ref_marker == "CGRP")
+
+ggplot(immuno_CGRP_SC, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+
+
+
+immuno_IB4_SC <- subset(immuno, immuno$ref_tissue == "SC" & immuno$ref_marker == "IB4")
+
+ggplot(immuno_IB4_SC, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+
+
+
+immuno_GFAP_SC <- subset(immuno, immuno$ref_tissue == "SC" & immuno$ref_marker == "GFAP")
+
+ggplot(immuno_GFAP_SC, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+
+
+
+
+immuno_Iba1_SC <- subset(immuno, immuno$ref_tissue == "SC" & immuno$ref_marker == "Iba1")
+
+ggplot(immuno_Iba1_SC, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+
+
+```
+
+
+
+1. We perform analysis of TCR at sciatic nerve first.
+
+Fit the model and check assumtions
+
+```{r}
+mod0 <- lmer(ref_quantification ~ ref_treatment*ref_implantation + (1|ref_animal),  data = immuno_TCR_SN)
+
+
+plot(residuals(mod0) ~ predict(mod0, re.form = NA))
+```
+This residual plot indicates the data does not meet the assumtions of a linear model. 
+
+We need to log transform the response because it is highly skewed. log of 0 doesn't exists, so we need to add a little to all the outcome values, the usual recommendation is to add half the minimum non-zero value
+
+```{r}
+#half the minimum non 0 value
+d = min((immuno_TCR_SN$ref_quantification[immuno_TCR_SN$ref_quantification!=0]))/2
+
+ggplot(immuno_TCR_SN, aes(log(ref_quantification+d), 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+```
+This looks a fair bit more symmetric
+
+
+```{r}
+#log transform if it's not linear
+mod1 <- lmer(log(ref_quantification+d) ~ ref_treatment*ref_implantation + (1|ref_animal),  data = immuno_TCR_SN)
+
+# no log transform version: 
+# mod1 <- lmer(ref_quantification ~ ref_treatment*ref_implantation + (1|ref_animal),  data = immuno_within_TCR_SN)
+
+# log transform if it's the spinal cord which we want to add section number as a nested random effect
+# mod1 <- lmer(log(ref_quantification+d) ~ ref_treatment*ref_implantation + (1|ref_animal/ref_section_number),  data = immuno_TCR_SN)
+#summary(mod1)
+
+plot(residuals(mod1) ~ predict(mod1, re.form = NA))
+```
+
+The residual plot now looks quite good. 
+
+When we log transform the outcome and then model it as linear, we are actually modelling ratios on the original scale, so if we want answers on the original scale of the outcome, they will be ratios. We can get emmeans to back transform to the original scale and give us all the pairwise ratios. 
+
+At this point i do not want to adjust for multiple testing, because it would have too many tests, so i set adjust = NULL.
+
+```{r}
+# this transforms the predictions to the outcome scale
+logemm1 <- regrid(emmeans(mod1, ~ ref_treatment*ref_implantation), transform = "log")
+
+summary(logemm1)
+
+# if not log transformed 
+# logemm <- emmeans(mod1, ~ ref_treatment*ref_implantation)
+
+
+all_pairs <- pairs(logemm1, type = "response", adjust = NULL)
+all_pairs
+```
+
+
+## difference of difference
+
+```{r}
+emmip(mod1, ~ ref_implantation*ref_treatment, type =  "response", CI = T)
+```
+
+Comparing the combined effect of CFA and acute to the product of the individual effect of CFA and acute.
+
+Just make sure this makes sense to you and can be communicated to your audience.
+
+```{r}
+
+CFA_effect1 =   c(0,0,0,0,0,0,1,-1,0) #0.301 - the CFA effect is a reduction!
+ACUTE_effect1 = c(0,1,0,0,0,0,0,-1,0) #2.171
+COMBCFA_effect1 =  c(1,0,0,0,0,0,0,-1,0) #1.989  
+
+SNI_effect1 =   c(0,0,0,0,0,0,0,1,-1) 
+COMBSNI_effect1 = c(0,0,1,0,0,0,0,-1,0)
+
+
+
+did1 <- contrast(logemm1, method = list("didCFA1" = COMBCFA_effect1 - (ACUTE_effect1+CFA_effect1), "didSNI1" = COMBSNI_effect1 - (ACUTE_effect1+SNI_effect1)), type = "response", adjust = NULL)
+
+
+#did1 <- contrast(logemm0, method = list("didSNI0" = COMBSNI_effect0 - (ACUTE_effect0+SNI_effect0)), type = "response", adjust = NULL)
+# here i name the contrast to make it easier to read off the table later
+# you can add more contrasts to the list after a comma
+
+# checking
+1.989 /(0.301*2.171)
+# correct with some rounding error
+
+summary(did1)
+confint(did1)
+
+
+```
+
+
+2. We perform analysis of Iba1 at sciatic nerve.
+
+Fit the model, check assumptions and plot ggplot
+
+```{r}
+mod2 <- lmer(ref_quantification ~ ref_treatment*ref_implantation + (1|ref_animal),  data = immuno_Iba1_SN)
+
+
+plot(residuals(mod2) ~ predict(mod2, re.form = NA))
+
+ggplot(immuno_Iba1_SN, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+```
+This residual plot indicates the data meets the assumptions of a linear model so we don't need to log transform it. 
+
+```{r}
+
+logemm2 <- emmeans(mod2, ~ ref_treatment*ref_implantation)
+
+
+all_pairs2 <- pairs(logemm2, type = "response", adjust = NULL)
+all_pairs2
+
+```
+
+## difference of difference
+
+```{r}
+emmip(mod2, ~ ref_implantation*ref_treatment, type =  "response", CI = T)
+
+```
+
+
+Comparing the combined effect of CFA and acute to the product of the individual effect of CFA and acute.
+
+
+```{r}
+
+CFA_effect2 =   c(0,0,0,0,0,0,1,-1,0) 
+ACUTE_effect2 = c(0,1,0,0,0,0,0,-1,0) 
+COMBCFA_effect2 =  c(1,0,0,0,0,0,0,-1,0)  
+
+
+
+SNI_effect2 =   c(0,0,0,0,0,0,0,1,-1) 
+COMBSNI_effect2 = c(0,0,1,0,0,0,0,-1,0)
+
+
+
+did2 <- contrast(logemm2, method = list("didCFA2" = COMBCFA_effect2 - (ACUTE_effect2+CFA_effect2), "didSNI2" = COMBSNI_effect2 - (ACUTE_effect2+SNI_effect2)), type = "response", adjust = NULL)
+
+
+
+summary(did2)
+confint(did2)
+
+
+```
+
+
+
+
+3. We perform analysis of MBP at sciatic nerve.
+
+Fit the model, check assumptions and generate ggplot
+
+```{r}
+mod3 <- lmer(ref_quantification ~ ref_treatment*ref_implantation + (1|ref_animal),  data = immuno_MBP_SN)
+
+
+plot(residuals(mod3) ~ predict(mod3, re.form = NA))
+
+ggplot(immuno_MBP_SN, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+```
+This residual plot indicates the data meets the assumtions of a linear model so we don't need to log transform it. 
+
+```{r}
+
+logemm3 <- emmeans(mod3, ~ ref_treatment*ref_implantation)
+
+
+all_pairs3 <- pairs(logemm3, type = "response", adjust = NULL)
+all_pairs3
+
+```
+
+
+## difference of difference
+```{r}
+emmip(mod3, ~ ref_implantation*ref_treatment, type =  "response", CI = T)
+```
+ 
+ 
+```{r}
+CFA_effect3 =   c(0,0,0,0,0,0,1,-1,0) 
+ACUTE_effect3 = c(0,1,0,0,0,0,0,-1,0) 
+COMBCFA_effect3 =  c(1,0,0,0,0,0,0,-1,0)  
+
+SNI_effect3 =   c(0,0,0,0,0,0,0,1,-1) 
+COMBSNI_effect3 = c(0,0,1,0,0,0,0,-1,0)
+
+did3 <- contrast(logemm3, method = list("didCFA3" = COMBCFA_effect3 - (ACUTE_effect3+CFA_effect3), "didSNI3" = COMBSNI_effect3 - (ACUTE_effect3+SNI_effect3)), type = "response", adjust = NULL)
+
+summary(did3)
+confint(did3)
+
+```
+
+
+
+4. We then perform analysis of bTubulin at sciatic nerve.
+
+Fit the model, check assumtions and generate ggplot
+
+```{r}
+mod4 <- lmer(ref_quantification ~ ref_treatment*ref_implantation + (1|ref_animal),  data = immuno_bTubulin_SN)
+
+
+plot(residuals(mod4) ~ predict(mod4, re.form = NA))
+
+ggplot(immuno_bTubulin_SN, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+```
+
+This residual plot indicates the data meets the assumtions of a linear model so we don't need to log transform it. 
+
+```{r}
+
+logemm4 <- emmeans(mod4, ~ ref_treatment*ref_implantation)
+
+
+all_pairs4 <- pairs(logemm4, type = "response", adjust = NULL)
+all_pairs4
+
+```
+
+## difference of difference
+```{r}
+emmip(mod4, ~ ref_implantation*ref_treatment, type =  "response", CI = T)
+
+```
+ 
+ 
+```{r}
+CFA_effect4 =   c(0,0,0,0,0,0,1,-1,0) 
+ACUTE_effect4 = c(0,1,0,0,0,0,0,-1,0) 
+COMBCFA_effect4 =  c(1,0,0,0,0,0,0,-1,0)  
+
+SNI_effect4 =   c(0,0,0,0,0,0,0,1,-1) 
+COMBSNI_effect4 = c(0,0,1,0,0,0,0,-1,0)
+
+did4 <- contrast(logemm4, method = list("didCFA4" = COMBCFA_effect4 - (ACUTE_effect4+CFA_effect4), "didSNI4" = COMBSNI_effect4 - (ACUTE_effect4+SNI_effect4)), type = "response", adjust = NULL)
+
+summary(did4)
+confint(did4)
+
+```
+
+
+
+5.1. We then perform analysis of aSMA_intensity at sciatic nerve
+```{r}
+mod5 <- lmer(ref_quantification ~ ref_treatment*ref_implantation + (1|ref_animal),  data = immuno_aSMA_intensity_SN)
+
+
+plot(residuals(mod5) ~ predict(mod5, re.form = NA))
+
+ggplot(immuno_aSMA_intensity_SN, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+```
+
+```{r}
+
+logemm5 <- emmeans(mod5, ~ ref_treatment*ref_implantation)
+
+
+all_pairs5 <- pairs(logemm5, type = "response", adjust = NULL)
+all_pairs5
+
+```
+
+```{r}
+emmip(mod5, ~ ref_implantation*ref_treatment, type =  "response", CI = T)
+ 
+```
+
+```{r}
+ 
+CFA_effect5 =   c(0,0,0,0,0,0,1,-1,0) 
+ACUTE_effect5 = c(0,1,0,0,0,0,0,-1,0) 
+COMBCFA_effect5 =  c(1,0,0,0,0,0,0,-1,0)  
+ 
+ 
+SNI_effect5 =   c(0,0,0,0,0,0,0,1,-1) 
+COMBSNI_effect5 = c(0,0,1,0,0,0,0,-1,0)
+ 
+ 
+did5 <- contrast(logemm5, method = list("didCFA5" = COMBCFA_effect5 - (ACUTE_effect5+CFA_effect5), "didSNI5" = COMBSNI_effect5 - (ACUTE_effect5+SNI_effect5)), type = "response", adjust = NULL)
+ 
+ 
+summary(did5)
+confint(did5)
+ 
+ 
+```
+
+
+
+5.2. We then perform analysis of aSMA_thickness at sciatic nerve
+
+Fit the model, check assumtions and generate ggplot
+
+```{r}
+mod6 <- lmer(ref_quantification ~ ref_treatment*ref_implantation + (1|ref_animal),  data = immuno_aSMA_thickness_SN)
+
+
+plot(residuals(mod6) ~ predict(mod6, re.form = NA))
+
+ggplot(immuno_aSMA_thickness_SN, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+```
+
+This residual plot indicates the data meets the assumtions of a linear model so we don't need to log transform it. 
+
+```{r}
+
+logemm6 <- emmeans(mod6, ~ ref_treatment*ref_implantation)
+
+
+all_pairs6 <- pairs(logemm6, type = "response", adjust = NULL)
+all_pairs6
+
+```
+
+We can then choose just the pairs we want using `subset` and the row numbers we want.
+We adjust for multiple testing at this point using the multivariate t (we can't use Tukeys because that only works for all pairs)
+
+## difference of difference
+ 
+```{r}
+emmip(mod6, ~ ref_implantation*ref_treatment, type =  "response", CI = T)
+ 
+```
+
+```{r}
+ 
+CFA_effect6 =   c(0,0,0,0,0,0,1,-1,0) 
+ACUTE_effect6 = c(0,1,0,0,0,0,0,-1,0) 
+COMBCFA_effect6 =  c(1,0,0,0,0,0,0,-1,0)  
+ 
+ 
+SNI_effect6 =   c(0,0,0,0,0,0,0,1,-1) 
+COMBSNI_effect6 = c(0,0,1,0,0,0,0,-1,0)
+ 
+ 
+did6 <- contrast(logemm6, method = list("didCFA6" = COMBCFA_effect6 - (ACUTE_effect6+CFA_effect6), "didSNI6" = COMBSNI_effect6 - (ACUTE_effect6+SNI_effect6)), type = "response", adjust = NULL)
+ 
+ 
+summary(did6)
+confint(did6)
+ 
+ 
+```
+ 
+
+
+
+7. We then perform analysis of TCR at DRG.
+
+Fit the model, check assumtions and generate ggplot
+
+```{r}
+mod7 <- lmer(ref_quantification ~ ref_treatment*ref_implantation + (1|ref_animal),  data = immuno_TCR_DRG)
+
+
+plot(residuals(mod7) ~ predict(mod7, re.form = NA))
+
+ggplot(immuno_TCR_DRG, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+```
+
+This residual plot indicates the data meets the assumtions of a linear model so we don't need to log transform it. 
+
+```{r}
+
+logemm7 <- emmeans(mod7, ~ ref_treatment*ref_implantation)
+
+
+all_pairs7 <- pairs(logemm7, type = "response", adjust = NULL)
+all_pairs7
+
+```
+
+We can then choose just the pairs we want using `subset` and the row numbers we want.
+We adjust for multiple testing at this point using the multivariate t (we can't use Tukeys because that only works for all pairs)
+
+## difference of difference
+ 
+```{r}
+emmip(mod7, ~ ref_implantation*ref_treatment, type =  "response", CI = T)
+ 
+```
+
+
+```{r}
+ 
+CFA_effect7 =   c(0,0,0,0,0,0,1,-1,0) 
+ACUTE_effect7 = c(0,1,0,0,0,0,0,-1,0) 
+COMBCFA_effect7 =  c(1,0,0,0,0,0,0,-1,0)  
+ 
+ 
+SNI_effect7 =   c(0,0,0,0,0,0,0,1,-1) 
+COMBSNI_effect7 = c(0,0,1,0,0,0,0,-1,0)
+ 
+ 
+did7 <- contrast(logemm7, method = list("didCFA7" = COMBCFA_effect7 - (ACUTE_effect7+CFA_effect7), "didSNI7" = COMBSNI_effect7 - (ACUTE_effect7+SNI_effect7)), type = "response", adjust = NULL)
+ 
+ 
+summary(did7)
+confint(did7)
+ 
+ 
+```
+
+
+
+
+8. We then perform analysis of Iba1 at DRG.
+
+Fit the model, check assumtions and generate ggplot
+
+```{r}
+mod8 <- lmer(ref_quantification ~ ref_treatment*ref_implantation + (1|ref_animal),  data = immuno_Iba1_DRG)
+
+
+plot(residuals(mod8) ~ predict(mod8, re.form = NA))
+
+ggplot(immuno_TCR_DRG, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+```
+
+This residual plot indicates the data meets the assumtions of a linear model. 
+
+We need to log transform the response because it is highly skewed. 
+
+###```{r}
+
+mod8 <- lmer(log(ref_quantification) ~ ref_treatment*ref_implantation + (1|ref_animal),  data = immuno_Iba1_DRG)
+
+plot(residuals(mod8) ~ predict(mod8, re.form = NA))
+
+
+ggplot(immuno_Iba1_DRG, aes(log(ref_quantification), 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+
+
+
+```{r}
+# this transforms the predictions to the outcome scale
+logemm8 <- emmeans(mod8, ~ ref_treatment*ref_implantation)
+
+all_pairs8 <- pairs(logemm8, type = "response", adjust = NULL)
+all_pairs8
+
+
+
+```
+We can then choose just the pairs we want using `subset` and the row numbers we want.
+We adjust for multiple testing at this point using the multivariate t (we can't use Tukeys because that only works for all pairs)
+
+## difference of difference
+ 
+```{r}
+emmip(mod8, ~ ref_implantation*ref_treatment, type =  "response", CI = T)
+ 
+```
+
+```{r}
+ 
+CFA_effect8 =   c(0,0,0,0,0,0,1,-1,0) 
+ACUTE_effect8 = c(0,1,0,0,0,0,0,-1,0) 
+COMBCFA_effect8 =  c(1,0,0,0,0,0,0,-1,0)  
+ 
+ 
+SNI_effect8 =   c(0,0,0,0,0,0,0,1,-1) 
+COMBSNI_effect8 = c(0,0,1,0,0,0,0,-1,0)
+ 
+ 
+did8 <- contrast(logemm8, method = list("didCFA8" = COMBCFA_effect8 - (ACUTE_effect8+CFA_effect8), "didSNI8" = COMBSNI_effect8 - (ACUTE_effect8+SNI_effect8)), type = "response", adjust = NULL)
+ 
+ 
+summary(did8)
+confint(did8)
+ 
+ 
+```
+ 
+
+
+
+9. We then perform analysis of GFAP at DRG.
+
+Fit the model, check assumtions and generate ggplot
+
+```{r}
+mod9 <- lmer(ref_quantification ~ ref_treatment*ref_implantation + (1|ref_animal),  data = immuno_GFAP_DRG)
+
+
+plot(residuals(mod9) ~ predict(mod9, re.form = NA))
+
+ggplot(immuno_GFAP_DRG, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+```
+
+This residual plot indicates the data meets the assumtions of a linear model so we don't need to log transform it. 
+
+```{r}
+
+logemm9 <- emmeans(mod9, ~ ref_treatment*ref_implantation)
+
+
+all_pairs9 <- pairs(logemm9, type = "response", adjust = NULL)
+all_pairs9
+
+```
+
+We can then choose just the pairs we want using `subset` and the row numbers we want.
+We adjust for multiple testing at this point using the multivariate t (we can't use Tukeys because that only works for all pairs)
+
+
+## difference of difference
+ 
+```{r}
+emmip(mod9, ~ ref_implantation*ref_treatment, type =  "response", CI = T)
+ 
+```
+
+```{r}
+ 
+CFA_effect9 =   c(0,0,0,0,0,0,1,-1,0) 
+ACUTE_effect9 = c(0,1,0,0,0,0,0,-1,0) 
+COMBCFA_effect9 =  c(1,0,0,0,0,0,0,-1,0)  
+ 
+ 
+SNI_effect9 =   c(0,0,0,0,0,0,0,1,-1) 
+COMBSNI_effect9 = c(0,0,1,0,0,0,0,-1,0)
+ 
+ 
+did9 <- contrast(logemm9, method = list("didCFA9" = COMBCFA_effect9 - (ACUTE_effect9+CFA_effect9), "didSNI9" = COMBSNI_effect9 - (ACUTE_effect9+SNI_effect9)), type = "response", adjust = NULL)
+ 
+ 
+summary(did9)
+confint(did9)
+ 
+ 
+```
+
+
+
+9. We then perform analysis of IB4 at spinal cord
+
+Fit the model, check assumtions and generate ggplot
+
+```{r}
+mod10 <- lmer(ref_quantification ~ ref_treatment*ref_implantation + (1|ref_animal/ref_section_number),  data = immuno_IB4_SC)
+
+
+plot(residuals(mod10) ~ predict(mod10, re.form = NA))
+
+ggplot(immuno_IB4_SC, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+```
+
+This residual plot indicates the data meets the assumtions of a linear model so we don't need to log transform it. 
+
+```{r}
+
+logemm10 <- emmeans(mod10, ~ ref_treatment*ref_implantation)
+
+
+all_pairs10 <- pairs(logemm10, type = "response", adjust = NULL)
+all_pairs10
+
+```
+
+## difference of difference
+ 
+```{r}
+emmip(mod10, ~ ref_implantation*ref_treatment, type =  "response", CI = T)
+ 
+```
+
+```{r}
+ 
+CFA_effect10 =   c(0,0,0,0,0,0,1,-1,0) 
+ACUTE_effect10 = c(0,1,0,0,0,0,0,-1,0) 
+COMBCFA_effect10 =  c(1,0,0,0,0,0,0,-1,0)  
+ 
+ 
+SNI_effect10 =   c(0,0,0,0,0,0,0,1,-1) 
+COMBSNI_effect10 = c(0,0,1,0,0,0,0,-1,0)
+ 
+ 
+did810 <- contrast(logemm10, method = list("didCFA10" = COMBCFA_effect10 - (ACUTE_effect10+CFA_effect10), "didSNI10" = COMBSNI_effect10 - (ACUTE_effect10+SNI_effect10)), type = "response", adjust = NULL)
+ 
+ 
+summary(did10)
+confint(did10)
+ 
+ 
+```
+ 
+ 
+10. As no significant diferences were found across any groups for CGRP staining, we did not perform compound interaction analysis for CGRP.
+
+
+
+
+11. We then perform analysis of GFAP at spinal cord
+
+Fit the model, check assumtions and generate ggplot
+
+```{r}
+mod12 <- lmer(ref_quantification ~ ref_treatment*ref_implantation + (1|ref_animal/ref_section_number),  data = immuno_GFAP_SC)
+
+
+plot(residuals(mod12) ~ predict(mod12, re.form = NA))
+
+ggplot(immuno_GFAP_SC, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+```
+
+This residual plot indicates the data meets the assumtions of a linear model so we don't need to log transform it. 
+
+```{r}
+
+logemm12 <- emmeans(mod12, ~ ref_treatment*ref_implantation)
+
+
+all_pairs12 <- pairs(logemm12, type = "response", adjust = NULL)
+all_pairs12
+
+```
+
+We can then choose just the pairs we want using `subset` and the row numbers we want.
+We adjust for multiple testing at this point using the multivariate t (we can't use Tukeys because that only works for all pairs)
+
+## difference of difference
+ 
+```{r}
+emmip(mod12, ~ ref_implantation*ref_treatment, type =  "response", CI = T)
+ 
+```
+
+```{r}
+ 
+CFA_effect12 =   c(0,0,0,0,0,0,1,-1,0) 
+ACUTE_effect12 = c(0,1,0,0,0,0,0,-1,0) 
+COMBCFA_effect12 =  c(1,0,0,0,0,0,0,-1,0)  
+ 
+ 
+SNI_effect12 =   c(0,0,0,0,0,0,0,1,-1) 
+COMBSNI_effect12 = c(0,0,1,0,0,0,0,-1,0)
+ 
+ 
+did12 <- contrast(logemm12, method = list("didCFA12" = COMBCFA_effect12 - (ACUTE_effect12+CFA_effect12), "didSNI12" = COMBSNI_effect12 - (ACUTE_effect12+SNI_effect12)), type = "response", adjust = NULL)
+ 
+ 
+summary(did12)
+confint(did12)
+ 
+ 
+```
+ 
+
+
+
+
+
+12. We then perform analysis of Iba1 at spinal cord
+
+Fit the model, check assumtions and generate ggplot
+
+```{r}
+mod13 <- lmer(ref_quantification ~ ref_treatment*ref_implantation + (1|ref_animal/ref_section_number),  data = immuno_Iba1_SC)
+
+
+plot(residuals(mod13) ~ predict(mod13, re.form = NA))
+
+ggplot(immuno_Iba1_SC, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+```
+
+This residual plot indicates the data meets the assumtions of a linear model so we don't need to log transform it. 
+
+```{r}
+
+logemm13 <- emmeans(mod13, ~ ref_treatment*ref_implantation)
+
+
+all_pairs13 <- pairs(logemm13, type = "response", adjust = NULL)
+all_pairs13
+
+```
+
+We can then choose just the pairs we want using `subset` and the row numbers we want.
+We adjust for multiple testing at this point using the multivariate t (we can't use Tukeys because that only works for all pairs)
+
+## difference of difference
+ 
+```{r}
+emmip(mod13, ~ ref_implantation*ref_treatment, type =  "response", CI = T)
+ 
+```
+
+```{r}
+ 
+CFA_effect13 =   c(0,0,0,0,0,0,1,-1,0) 
+ACUTE_effect13 = c(0,1,0,0,0,0,0,-1,0) 
+COMBCFA_effect13 =  c(1,0,0,0,0,0,0,-1,0)  
+ 
+ 
+SNI_effect13 =   c(0,0,0,0,0,0,0,1,-1) 
+COMBSNI_effect13 = c(0,0,1,0,0,0,0,-1,0)
+ 
+ 
+did13 <- contrast(logemm13, method = list("didCFA13" = COMBCFA_effect13 - (ACUTE_effect13+CFA_effect13), "didSNI13" = COMBSNI_effect13 - (ACUTE_effect13+SNI_effect13)), type = "response", adjust = NULL)
+ 
+ 
+summary(did13)
+confint(did13)
+ 
+```

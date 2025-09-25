@@ -1,0 +1,25 @@
+ref_image_ID,ref_animal_ID,ref_week_number,ref_segment,ref_volume
+MRIm01,CCIC04,week 1,within,4.84375
+MRIm01,CCIC04,week 1,encapsulation,48.8184
+MRIm05,CCIC04,week 2,within,3.78906
+MRIm05,CCIC04,week 2,encapsulation,12.0215
+MRIm07,CCIC04,week 3,within,3.44727
+MRIm07,CCIC04,week 3,encapsulation,9.83398
+MRIm06,CCIC04,week 4,within,1.67969
+MRIm06,CCIC04,week 4,encapsulation,10.4785
+MRIm04,CCIC05,week 1,within,2.43164
+MRIm04,CCIC05,week 1,encapsulation,43.0859
+MRIm02,CCIC05,week 2,within,2.76367
+MRIm02,CCIC05,week 2,encapsulation,19.1406
+MRI10,CCIC05,week 3,within,1.42578
+MRI10,CCIC05,week 3,encapsulation,9.29688
+MRIm12,CCIC05,week 4,within,0.673828
+MRIm12,CCIC05,week 4,encapsulation,10.3125
+MRIm03,CCIC06,week 1,within,1.60156
+MRIm03,CCIC06,week 1,encapsulation,43.1543
+MRIm08,CCIC06,week 2,within,3.82813
+MRIm08,CCIC06,week 2,encapsulation,35.5273
+MRIm09,CCIC06,week 3,within,3.71094
+MRIm09,CCIC06,week 3,encapsulation,18.8551
+MRIm11,CCIC06,week 4,within,3.96484
+MRIm11,CCIC06,week 4,encapsulation,13.1641

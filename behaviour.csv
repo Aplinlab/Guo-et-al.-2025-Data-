@@ -1,0 +1,1902 @@
+ref_animal_ID,ref_treatment,ref_implantation,ref_behaviour_test,ref_age,ref_sex,ref_hindpaw,ref_day_number,ref_experiment_length,ref_trial_number,ref_response,rep_average
+CIC03,control,yes,von Frey,17,F,contra,pre,acute,1,33.4,50.46666667
+CIC03,control,yes,von Frey,17,F,contra,pre,acute,2,50.9,
+CIC03,control,yes,von Frey,17,F,contra,pre,acute,3,67.1,
+CIC03,control,yes,von Frey,17,F,contra,day3,acute,1,70.4,50.2
+CIC03,control,yes,von Frey,17,F,contra,day3,acute,2,24.1,
+CIC03,control,yes,von Frey,17,F,contra,day3,acute,3,56.1,
+CIC03,control,yes,von Frey,17,F,contra,day7,acute,1,67.5,55.2
+CIC03,control,yes,von Frey,17,F,contra,day7,acute,2,30.2,
+CIC03,control,yes,von Frey,17,F,contra,day7,acute,3,67.9,
+CIC03,control,yes,von Frey,17,F,ipisi,pre,acute,1,32.5,37.83333333
+CIC03,control,yes,von Frey,17,F,ipisi,pre,acute,2,35.6,
+CIC03,control,yes,von Frey,17,F,ipisi,pre,acute,3,45.4,
+CIC03,control,yes,von Frey,17,F,ipisi,day3,acute,1,34.2,37.4
+CIC03,control,yes,von Frey,17,F,ipisi,day3,acute,2,45,
+CIC03,control,yes,von Frey,17,F,ipisi,day3,acute,3,33,
+CIC03,control,yes,von Frey,17,F,ipisi,day7,acute,1,37.5,45.2
+CIC03,control,yes,von Frey,17,F,ipisi,day7,acute,2,30.2,
+CIC03,control,yes,von Frey,17,F,ipisi,day7,acute,3,67.9,
+CIC03,control,yes,Hargreaves,17,F,contra,pre,acute,1,11.6,9.633333333
+CIC03,control,yes,Hargreaves,17,F,contra,pre,acute,2,8.1,
+CIC03,control,yes,Hargreaves,17,F,contra,pre,acute,3,9.2,
+CIC03,control,yes,Hargreaves,17,F,contra,day3,acute,1,12.6,10.93333333
+CIC03,control,yes,Hargreaves,17,F,contra,day3,acute,2,10.5,
+CIC03,control,yes,Hargreaves,17,F,contra,day3,acute,3,9.7,
+CIC03,control,yes,Hargreaves,17,F,contra,day7,acute,1,9.3,9.433333333
+CIC03,control,yes,Hargreaves,17,F,contra,day7,acute,2,8.2,
+CIC03,control,yes,Hargreaves,17,F,contra,day7,acute,3,10.8,
+CIC03,control,yes,Hargreaves,17,F,ipisi,pre,acute,1,12.4,10.66666667
+CIC03,control,yes,Hargreaves,17,F,ipisi,pre,acute,2,10.3,
+CIC03,control,yes,Hargreaves,17,F,ipisi,pre,acute,3,9.3,
+CIC03,control,yes,Hargreaves,17,F,ipisi,day3,acute,1,14.1,11.33333333
+CIC03,control,yes,Hargreaves,17,F,ipisi,day3,acute,2,8.7,
+CIC03,control,yes,Hargreaves,17,F,ipisi,day3,acute,3,11.2,
+CIC03,control,yes,Hargreaves,17,F,ipisi,day7,acute,1,8.7,9.033333333
+CIC03,control,yes,Hargreaves,17,F,ipisi,day7,acute,2,11,
+CIC03,control,yes,Hargreaves,17,F,ipisi,day7,acute,3,7.4,
+CIC04,control,yes,von Frey,17,F,contra,pre,acute,1,10.8,13.1
+CIC04,control,yes,von Frey,17,F,contra,pre,acute,2,13.3,
+CIC04,control,yes,von Frey,17,F,contra,pre,acute,3,15.2,
+CIC04,control,yes,von Frey,17,F,contra,day3,acute,1,29.8,49
+CIC04,control,yes,von Frey,17,F,contra,day3,acute,2,51.7,
+CIC04,control,yes,von Frey,17,F,contra,day3,acute,3,65.5,
+CIC04,control,yes,von Frey,17,F,contra,day7,acute,1,69.4,60.005
+CIC04,control,yes,von Frey,17,F,contra,day7,acute,2,50.61,
+CIC04,control,yes,von Frey,17,F,ipisi,pre,acute,1,17.6,21.23333333
+CIC04,control,yes,von Frey,17,F,ipisi,pre,acute,2,27,
+CIC04,control,yes,von Frey,17,F,ipisi,pre,acute,3,19.1,
+CIC04,control,yes,von Frey,17,F,ipisi,day3,acute,1,19,22.03333333
+CIC04,control,yes,von Frey,17,F,ipisi,day3,acute,2,20.9,
+CIC04,control,yes,von Frey,17,F,ipisi,day3,acute,3,26.2,
+CIC04,control,yes,von Frey,17,F,ipisi,day7,acute,1,43.1,47.6
+CIC04,control,yes,von Frey,17,F,ipisi,day7,acute,2,32.6,
+CIC04,control,yes,von Frey,17,F,ipisi,day7,acute,3,67.1,
+CIC04,control,yes,Hargreaves,17,F,contra,pre,acute,1,11.7,9.6
+CIC04,control,yes,Hargreaves,17,F,contra,pre,acute,2,7.9,
+CIC04,control,yes,Hargreaves,17,F,contra,pre,acute,3,9.2,
+CIC04,control,yes,Hargreaves,17,F,contra,day3,acute,1,8.3,9.2
+CIC04,control,yes,Hargreaves,17,F,contra,day3,acute,2,9.6,
+CIC04,control,yes,Hargreaves,17,F,contra,day3,acute,3,9.7,
+CIC04,control,yes,Hargreaves,17,F,contra,day7,acute,1,12.1,9.966666667
+CIC04,control,yes,Hargreaves,17,F,contra,day7,acute,2,10.3,
+CIC04,control,yes,Hargreaves,17,F,contra,day7,acute,3,7.5,
+CIC04,control,yes,Hargreaves,17,F,ipisi,pre,acute,1,11,9.933333333
+CIC04,control,yes,Hargreaves,17,F,ipisi,pre,acute,2,9.3,
+CIC04,control,yes,Hargreaves,17,F,ipisi,pre,acute,3,9.5,
+CIC04,control,yes,Hargreaves,17,F,ipisi,day3,acute,1,8.1,9.033333333
+CIC04,control,yes,Hargreaves,17,F,ipisi,day3,acute,2,10.8,
+CIC04,control,yes,Hargreaves,17,F,ipisi,day3,acute,3,8.2,
+CIC04,control,yes,Hargreaves,17,F,ipisi,day7,acute,1,7.4,7.233333333
+CIC04,control,yes,Hargreaves,17,F,ipisi,day7,acute,2,7.3,
+CIC04,control,yes,Hargreaves,17,F,ipisi,day7,acute,3,7,
+CIC05,control,yes,von Frey,17,F,contra,pre,acute,1,35.5,41.83333333
+CIC05,control,yes,von Frey,17,F,contra,pre,acute,2,67.3,
+CIC05,control,yes,von Frey,17,F,contra,pre,acute,3,22.7,
+CIC05,control,yes,von Frey,17,F,contra,day3,acute,1,29.1,44.06666667
+CIC05,control,yes,von Frey,17,F,contra,day3,acute,2,51.5,
+CIC05,control,yes,von Frey,17,F,contra,day3,acute,3,51.6,
+CIC05,control,yes,von Frey,17,F,contra,day7,acute,1,27.8,47.7
+CIC05,control,yes,von Frey,17,F,contra,day7,acute,2,75,
+CIC05,control,yes,von Frey,17,F,contra,day7,acute,3,40.3,
+CIC05,control,yes,von Frey,17,F,ipisi,pre,acute,1,20.1,30.63333333
+CIC05,control,yes,von Frey,17,F,ipisi,pre,acute,2,35.8,
+CIC05,control,yes,von Frey,17,F,ipisi,pre,acute,3,36,
+CIC05,control,yes,von Frey,17,F,ipisi,day3,acute,1,15.7,41.43333333
+CIC05,control,yes,von Frey,17,F,ipisi,day3,acute,2,72.6,
+CIC05,control,yes,von Frey,17,F,ipisi,day3,acute,3,36,
+CIC05,control,yes,von Frey,17,F,ipisi,day7,acute,1,63.6,54.7
+CIC05,control,yes,von Frey,17,F,ipisi,day7,acute,2,61.6,
+CIC05,control,yes,von Frey,17,F,ipisi,day7,acute,3,38.9,
+CIC05,control,yes,Hargreaves,17,F,contra,pre,acute,1,9.1,8.366666667
+CIC05,control,yes,Hargreaves,17,F,contra,pre,acute,2,7.6,
+CIC05,control,yes,Hargreaves,17,F,contra,pre,acute,3,8.4,
+CIC05,control,yes,Hargreaves,17,F,contra,day3,acute,1,10.2,9.466666667
+CIC05,control,yes,Hargreaves,17,F,contra,day3,acute,2,9.5,
+CIC05,control,yes,Hargreaves,17,F,contra,day3,acute,3,8.7,
+CIC05,control,yes,Hargreaves,17,F,contra,day7,acute,1,11.3,9.2
+CIC05,control,yes,Hargreaves,17,F,contra,day7,acute,2,7,
+CIC05,control,yes,Hargreaves,17,F,contra,day7,acute,3,9.3,
+CIC05,control,yes,Hargreaves,17,F,ipisi,pre,acute,1,6.7,8.6
+CIC05,control,yes,Hargreaves,17,F,ipisi,pre,acute,2,9.3,
+CIC05,control,yes,Hargreaves,17,F,ipisi,pre,acute,3,9.8,
+CIC05,control,yes,Hargreaves,17,F,ipisi,day3,acute,1,9.1,11.7
+CIC05,control,yes,Hargreaves,17,F,ipisi,day3,acute,2,13,
+CIC05,control,yes,Hargreaves,17,F,ipisi,day3,acute,3,13,
+CIC05,control,yes,Hargreaves,17,F,ipisi,day7,acute,1,11.1,8.866666667
+CIC05,control,yes,Hargreaves,17,F,ipisi,day7,acute,2,6.5,
+CIC05,control,yes,Hargreaves,17,F,ipisi,day7,acute,3,9,
+CIC06,control,yes,von Frey,17,F,contra,pre,acute,1,10.9,23.8
+CIC06,control,yes,von Frey,17,F,contra,pre,acute,2,21.9,
+CIC06,control,yes,von Frey,17,F,contra,pre,acute,3,38.6,
+CIC06,control,yes,von Frey,17,F,contra,day3,acute,1,15.3,29.03333333
+CIC06,control,yes,von Frey,17,F,contra,day3,acute,2,40.5,
+CIC06,control,yes,von Frey,17,F,contra,day3,acute,3,31.3,
+CIC06,control,yes,von Frey,17,F,contra,day7,acute,1,31.7,23.26666667
+CIC06,control,yes,von Frey,17,F,contra,day7,acute,2,17.8,
+CIC06,control,yes,von Frey,17,F,contra,day7,acute,3,20.3,
+CIC06,control,yes,von Frey,17,F,ipisi,pre,acute,1,21.1,49.86666667
+CIC06,control,yes,von Frey,17,F,ipisi,pre,acute,2,69.9,
+CIC06,control,yes,von Frey,17,F,ipisi,pre,acute,3,58.6,
+CIC06,control,yes,von Frey,17,F,ipisi,day3,acute,1,38.1,50.36666667
+CIC06,control,yes,von Frey,17,F,ipisi,day3,acute,2,67.9,
+CIC06,control,yes,von Frey,17,F,ipisi,day3,acute,3,45.1,
+CIC06,control,yes,von Frey,17,F,ipisi,day7,acute,1,33.8,39.4
+CIC06,control,yes,von Frey,17,F,ipisi,day7,acute,2,34.4,
+CIC06,control,yes,von Frey,17,F,ipisi,day7,acute,3,50,
+CIC06,control,yes,Hargreaves,17,F,contra,pre,acute,1,10.1,9.266666667
+CIC06,control,yes,Hargreaves,17,F,contra,pre,acute,2,7.3,
+CIC06,control,yes,Hargreaves,17,F,contra,pre,acute,3,10.4,
+CIC06,control,yes,Hargreaves,17,F,contra,day3,acute,1,8.7,7.866666667
+CIC06,control,yes,Hargreaves,17,F,contra,day3,acute,2,7.2,
+CIC06,control,yes,Hargreaves,17,F,contra,day3,acute,3,7.7,
+CIC06,control,yes,Hargreaves,17,F,contra,day7,acute,1,9.3,9.333333333
+CIC06,control,yes,Hargreaves,17,F,contra,day7,acute,2,8.1,
+CIC06,control,yes,Hargreaves,17,F,contra,day7,acute,3,10.6,
+CIC06,control,yes,Hargreaves,17,F,ipisi,pre,acute,1,10,9.353333333
+CIC06,control,yes,Hargreaves,17,F,ipisi,pre,acute,2,7.5,
+CIC06,control,yes,Hargreaves,17,F,ipisi,pre,acute,3,10.56,
+CIC06,control,yes,Hargreaves,17,F,ipisi,day3,acute,1,15.3,11.43333333
+CIC06,control,yes,Hargreaves,17,F,ipisi,day3,acute,2,7.6,
+CIC06,control,yes,Hargreaves,17,F,ipisi,day3,acute,3,11.4,
+CIC06,control,yes,Hargreaves,17,F,ipisi,day7,acute,1,7.8,8.566666667
+CIC06,control,yes,Hargreaves,17,F,ipisi,day7,acute,2,7.7,
+CIC06,control,yes,Hargreaves,17,F,ipisi,day7,acute,3,10.2,
+CIC07,control,yes,von Frey,17,M,contra,pre,acute,1,67,51.56666667
+CIC07,control,yes,von Frey,12,M,contra,pre,acute,2,19.7,
+CIC07,control,yes,von Frey,12,M,contra,pre,acute,3,68,
+CIC07,control,yes,von Frey,12,M,contra,day3,acute,1,34.5,36.26666667
+CIC07,control,yes,von Frey,12,M,contra,day3,acute,2,27.1,
+CIC07,control,yes,von Frey,12,M,contra,day3,acute,3,47.2,
+CIC07,control,yes,von Frey,12,M,contra,day7,acute,1,31.6,33
+CIC07,control,yes,von Frey,12,M,contra,day7,acute,2,35.1,
+CIC07,control,yes,von Frey,12,M,contra,day7,acute,3,32.3,
+CIC07,control,yes,von Frey,12,M,ipisi,pre,acute,1,14.7,44.33333333
+CIC07,control,yes,von Frey,12,M,ipisi,pre,acute,2,49.2,
+CIC07,control,yes,von Frey,12,M,ipisi,pre,acute,3,69.1,
+CIC07,control,yes,von Frey,12,M,ipisi,day3,acute,1,29.8,32.96666667
+CIC07,control,yes,von Frey,12,M,ipisi,day3,acute,2,49,
+CIC07,control,yes,von Frey,12,M,ipisi,day3,acute,3,20.1,
+CIC07,control,yes,von Frey,12,M,ipisi,day7,acute,1,41.5,35.06666667
+CIC07,control,yes,von Frey,12,M,ipisi,day7,acute,2,35.3,
+CIC07,control,yes,von Frey,12,M,ipisi,day7,acute,3,28.4,
+CIC07,control,yes,Hargreaves,12,M,contra,pre,acute,1,10,10.83333333
+CIC07,control,yes,Hargreaves,12,M,contra,pre,acute,2,9.5,
+CIC07,control,yes,Hargreaves,12,M,contra,pre,acute,3,13,
+CIC07,control,yes,Hargreaves,12,M,contra,day3,acute,1,12,10.33333333
+CIC07,control,yes,Hargreaves,12,M,contra,day3,acute,2,9.8,
+CIC07,control,yes,Hargreaves,12,M,contra,day3,acute,3,9.2,
+CIC07,control,yes,Hargreaves,12,M,contra,day7,acute,1,10.6,10.56666667
+CIC07,control,yes,Hargreaves,12,M,contra,day7,acute,2,11.4,
+CIC07,control,yes,Hargreaves,12,M,contra,day7,acute,3,9.7,
+CIC07,control,yes,Hargreaves,12,M,ipisi,pre,acute,1,13.4,10.53333333
+CIC07,control,yes,Hargreaves,12,M,ipisi,pre,acute,2,7.9,
+CIC07,control,yes,Hargreaves,12,M,ipisi,pre,acute,3,10.3,
+CIC07,control,yes,Hargreaves,12,M,ipisi,day3,acute,1,9.4,8.966666667
+CIC07,control,yes,Hargreaves,12,M,ipisi,day3,acute,2,8.1,
+CIC07,control,yes,Hargreaves,12,M,ipisi,day3,acute,3,9.4,
+CIC07,control,yes,Hargreaves,12,M,ipisi,day7,acute,1,10.8,9.633333333
+CIC07,control,yes,Hargreaves,12,M,ipisi,day7,acute,2,8.3,
+CIC07,control,yes,Hargreaves,12,M,ipisi,day7,acute,3,9.8,
+CIC08,control,yes,von Frey,12,M,contra,pre,acute,1,28,36.63333333
+CIC08,control,yes,von Frey,12,M,contra,pre,acute,2,25,
+CIC08,control,yes,von Frey,12,M,contra,pre,acute,3,56.9,
+CIC08,control,yes,von Frey,12,M,contra,day3,acute,1,57,41.33333333
+CIC08,control,yes,von Frey,12,M,contra,day3,acute,2,43,
+CIC08,control,yes,von Frey,12,M,contra,day3,acute,3,24,
+CIC08,control,yes,von Frey,12,M,contra,day7,acute,1,46,41.1
+CIC08,control,yes,von Frey,12,M,contra,day7,acute,2,34.3,
+CIC08,control,yes,von Frey,12,M,contra,day7,acute,3,43,
+CIC08,control,yes,von Frey,12,M,ipisi,pre,acute,1,29.2,38.3
+CIC08,control,yes,von Frey,12,M,ipisi,pre,acute,2,49.3,
+CIC08,control,yes,von Frey,12,M,ipisi,pre,acute,3,36.4,
+CIC08,control,yes,von Frey,12,M,ipisi,day3,acute,1,53.1,50.5
+CIC08,control,yes,von Frey,12,M,ipisi,day3,acute,2,29.1,
+CIC08,control,yes,von Frey,12,M,ipisi,day3,acute,3,69.3,
+CIC08,control,yes,von Frey,12,M,ipisi,day7,acute,1,51.5,43.73333333
+CIC08,control,yes,von Frey,12,M,ipisi,day7,acute,2,49.7,
+CIC08,control,yes,von Frey,12,M,ipisi,day7,acute,3,30,
+CIC08,control,yes,Hargreaves,12,M,contra,pre,acute,1,16.5,14.43333333
+CIC08,control,yes,Hargreaves,12,M,contra,pre,acute,2,12.6,
+CIC08,control,yes,Hargreaves,12,M,contra,pre,acute,3,14.2,
+CIC08,control,yes,Hargreaves,12,M,contra,day3,acute,1,11,12.63333333
+CIC08,control,yes,Hargreaves,12,M,contra,day3,acute,2,14.9,
+CIC08,control,yes,Hargreaves,12,M,contra,day3,acute,3,12,
+CIC08,control,yes,Hargreaves,12,M,contra,day7,acute,1,10.2,10.6
+CIC08,control,yes,Hargreaves,12,M,contra,day7,acute,2,12.2,
+CIC08,control,yes,Hargreaves,12,M,contra,day7,acute,3,9.4,
+CIC08,control,yes,Hargreaves,12,M,ipisi,pre,acute,1,13.5,9.733333333
+CIC08,control,yes,Hargreaves,12,M,ipisi,pre,acute,2,7.3,
+CIC08,control,yes,Hargreaves,12,M,ipisi,pre,acute,3,8.4,
+CIC08,control,yes,Hargreaves,12,M,ipisi,day3,acute,1,8.3,9.333333333
+CIC08,control,yes,Hargreaves,12,M,ipisi,day3,acute,2,7.8,
+CIC08,control,yes,Hargreaves,12,M,ipisi,day3,acute,3,11.9,
+CIC08,control,yes,Hargreaves,12,M,ipisi,day7,acute,1,7.4,7.633333333
+CIC08,control,yes,Hargreaves,12,M,ipisi,day7,acute,2,7.5,
+CIC08,control,yes,Hargreaves,12,M,ipisi,day7,acute,3,8,
+CIC09,control,yes,von Frey,12,M,contra,pre,acute,1,55,27.53333333
+CIC09,control,yes,von Frey,12,M,contra,pre,acute,2,13.1,
+CIC09,control,yes,von Frey,12,M,contra,pre,acute,3,14.5,
+CIC09,control,yes,von Frey,12,M,contra,day3,acute,1,45.9,43.7
+CIC09,control,yes,von Frey,12,M,contra,day3,acute,2,27,
+CIC09,control,yes,von Frey,12,M,contra,day3,acute,3,58.2,
+CIC09,control,yes,von Frey,12,M,contra,day7,acute,1,35.9,39.43333333
+CIC09,control,yes,von Frey,12,M,contra,day7,acute,2,53.2,
+CIC09,control,yes,von Frey,12,M,contra,day7,acute,3,29.2,
+CIC09,control,yes,von Frey,12,M,ipisi,pre,acute,1,50.6,45.4
+CIC09,control,yes,von Frey,12,M,ipisi,pre,acute,2,62.1,
+CIC09,control,yes,von Frey,12,M,ipisi,pre,acute,3,23.5,
+CIC09,control,yes,von Frey,12,M,ipisi,day3,acute,1,59,43.33333333
+CIC09,control,yes,von Frey,12,M,ipisi,day3,acute,2,34.1,
+CIC09,control,yes,von Frey,12,M,ipisi,day3,acute,3,36.9,
+CIC09,control,yes,von Frey,12,M,ipisi,day7,acute,1,45,43.96666667
+CIC09,control,yes,von Frey,12,M,ipisi,day7,acute,2,30.6,
+CIC09,control,yes,von Frey,12,M,ipisi,day7,acute,3,56.3,
+CIC09,control,yes,Hargreaves,12,M,contra,pre,acute,1,10.8,10.96666667
+CIC09,control,yes,Hargreaves,12,M,contra,pre,acute,2,10.8,
+CIC09,control,yes,Hargreaves,12,M,contra,pre,acute,3,11.3,
+CIC09,control,yes,Hargreaves,12,M,contra,day3,acute,1,10.2,15.5
+CIC09,control,yes,Hargreaves,12,M,contra,day3,acute,2,17.8,
+CIC09,control,yes,Hargreaves,12,M,contra,day3,acute,3,18.5,
+CIC09,control,yes,Hargreaves,12,M,contra,day7,acute,1,11.2,12.7
+CIC09,control,yes,Hargreaves,12,M,contra,day7,acute,2,16.2,
+CIC09,control,yes,Hargreaves,12,M,contra,day7,acute,3,10.7,
+CIC09,control,yes,Hargreaves,12,M,ipisi,pre,acute,1,10.5,9.566666667
+CIC09,control,yes,Hargreaves,12,M,ipisi,pre,acute,2,6.8,
+CIC09,control,yes,Hargreaves,12,M,ipisi,pre,acute,3,11.4,
+CIC09,control,yes,Hargreaves,12,M,ipisi,day3,acute,1,9,12.8
+CIC09,control,yes,Hargreaves,12,M,ipisi,day3,acute,2,15.3,
+CIC09,control,yes,Hargreaves,12,M,ipisi,day3,acute,3,14.1,
+CIC09,control,yes,Hargreaves,12,M,ipisi,day7,acute,1,12.8,10.96666667
+CIC09,control,yes,Hargreaves,12,M,ipisi,day7,acute,2,8.1,
+CIC09,control,yes,Hargreaves,12,M,ipisi,day7,acute,3,12,
+CFA06,CFA,no,von Frey,12,F,contra,pre,acute,1,13.9,12.3
+CFA06,CFA,no,von Frey,12,F,contra,pre,acute,2,9.6,
+CFA06,CFA,no,von Frey,12,F,contra,pre,acute,3,13.4,
+CFA06,CFA,no,von Frey,12,F,contra,day1,acute,1,34.9,29.3
+CFA06,CFA,no,von Frey,12,F,contra,day1,acute,2,20.8,
+CFA06,CFA,no,von Frey,12,F,contra,day1,acute,3,32.2,
+CFA06,CFA,no,von Frey,12,F,contra,day3,acute,1,14.3,20.5
+CFA06,CFA,no,von Frey,12,F,contra,day3,acute,2,28.5,
+CFA06,CFA,no,von Frey,12,F,contra,day3,acute,3,18.7,
+CFA06,CFA,no,von Frey,12,F,ipisi,pre,acute,1,20.9,17.66666667
+CFA06,CFA,no,von Frey,12,F,ipisi,pre,acute,2,17.7,
+CFA06,CFA,no,von Frey,12,F,ipisi,pre,acute,3,14.4,
+CFA06,CFA,no,von Frey,12,F,ipisi,day1,acute,1,2.5,4.1
+CFA06,CFA,no,von Frey,12,F,ipisi,day1,acute,2,4.9,
+CFA06,CFA,no,von Frey,12,F,ipisi,day1,acute,3,4.9,
+CFA06,CFA,no,von Frey,12,F,ipisi,day3,acute,1,5.7,3.433333333
+CFA06,CFA,no,von Frey,12,F,ipisi,day3,acute,2,1.6,
+CFA06,CFA,no,von Frey,12,F,ipisi,day3,acute,3,3,
+CFA06,CFA,no,Hargreaves,12,F,contra,pre,acute,1,21.3,14.4
+CFA06,CFA,no,Hargreaves,12,F,contra,pre,acute,2,10.1,
+CFA06,CFA,no,Hargreaves,12,F,contra,pre,acute,3,11.8,
+CFA06,CFA,no,Hargreaves,12,F,contra,day1,acute,1,12.2,9.666666667
+CFA06,CFA,no,Hargreaves,12,F,contra,day1,acute,2,8.9,
+CFA06,CFA,no,Hargreaves,12,F,contra,day1,acute,3,7.9,
+CFA06,CFA,no,Hargreaves,12,F,contra,day3,acute,1,13.1,10.46666667
+CFA06,CFA,no,Hargreaves,12,F,contra,day3,acute,2,10.2,
+CFA06,CFA,no,Hargreaves,12,F,contra,day3,acute,3,8.1,
+CFA06,CFA,no,Hargreaves,12,F,ipisi,pre,acute,1,18.6,13.26666667
+CFA06,CFA,no,Hargreaves,12,F,ipisi,pre,acute,2,12.1,
+CFA06,CFA,no,Hargreaves,12,F,ipisi,pre,acute,3,9.1,
+CFA06,CFA,no,Hargreaves,12,F,ipisi,day1,acute,1,5.8,5.333333333
+CFA06,CFA,no,Hargreaves,12,F,ipisi,day1,acute,2,5,
+CFA06,CFA,no,Hargreaves,12,F,ipisi,day1,acute,3,5.2,
+CFA06,CFA,no,Hargreaves,12,F,ipisi,day3,acute,1,5.7,3.433333333
+CFA06,CFA,no,Hargreaves,12,F,ipisi,day3,acute,2,1.6,
+CFA06,CFA,no,Hargreaves,12,F,ipisi,day3,acute,3,3,
+CFA07,CFA,no,von Frey,12,F,contra,pre,acute,1,22.1,22.1
+CFA07,CFA,no,von Frey,12,F,contra,pre,acute,2,7.6,
+CFA07,CFA,no,von Frey,12,F,contra,pre,acute,3,36.6,
+CFA07,CFA,no,von Frey,12,F,contra,day1,acute,1,11.7,16.03333333
+CFA07,CFA,no,von Frey,12,F,contra,day1,acute,2,11.7,
+CFA07,CFA,no,von Frey,12,F,contra,day1,acute,3,24.7,
+CFA07,CFA,no,von Frey,12,F,contra,day3,acute,1,28.6,18
+CFA07,CFA,no,von Frey,12,F,contra,day3,acute,2,4.4,
+CFA07,CFA,no,von Frey,12,F,contra,day3,acute,3,21,
+CFA07,CFA,no,von Frey,12,F,ipisi,pre,acute,1,9.9,10.3
+CFA07,CFA,no,von Frey,12,F,ipisi,pre,acute,2,10.7,
+CFA07,CFA,no,von Frey,12,F,ipisi,day1,acute,1,5.4,3.433333333
+CFA07,CFA,no,von Frey,12,F,ipisi,day1,acute,2,2.4,
+CFA07,CFA,no,von Frey,12,F,ipisi,day1,acute,3,2.5,
+CFA07,CFA,no,von Frey,12,F,ipisi,day3,acute,1,3.8,4.866666667
+CFA07,CFA,no,von Frey,12,F,ipisi,day3,acute,2,3,
+CFA07,CFA,no,von Frey,12,F,ipisi,day3,acute,3,7.8,
+CFA07,CFA,no,Hargreaves,12,F,contra,pre,acute,1,14,11.86666667
+CFA07,CFA,no,Hargreaves,12,F,contra,pre,acute,2,13.3,
+CFA07,CFA,no,Hargreaves,12,F,contra,pre,acute,3,8.3,
+CFA07,CFA,no,Hargreaves,12,F,contra,day1,acute,1,14.3,13.03333333
+CFA07,CFA,no,Hargreaves,12,F,contra,day1,acute,2,7.2,
+CFA07,CFA,no,Hargreaves,12,F,contra,day1,acute,3,17.6,
+CFA07,CFA,no,Hargreaves,12,F,contra,day3,acute,1,14.4,17.63333333
+CFA07,CFA,no,Hargreaves,12,F,contra,day3,acute,2,21.4,
+CFA07,CFA,no,Hargreaves,12,F,contra,day3,acute,3,17.1,
+CFA07,CFA,no,Hargreaves,12,F,ipisi,pre,acute,1,15.7,11.06666667
+CFA07,CFA,no,Hargreaves,12,F,ipisi,pre,acute,2,8.9,
+CFA07,CFA,no,Hargreaves,12,F,ipisi,pre,acute,3,8.6,
+CFA07,CFA,no,Hargreaves,12,F,ipisi,day1,acute,1,13.3,10.93333333
+CFA07,CFA,no,Hargreaves,12,F,ipisi,day1,acute,2,10.4,
+CFA07,CFA,no,Hargreaves,12,F,ipisi,day1,acute,3,9.1,
+CFA07,CFA,no,Hargreaves,12,F,ipisi,day3,acute,1,12.1,9.366666667
+CFA07,CFA,no,Hargreaves,12,F,ipisi,day3,acute,2,8.7,
+CFA07,CFA,no,Hargreaves,12,F,ipisi,day3,acute,3,7.3,
+CFA08,CFA,no,von Frey,12,F,contra,pre,acute,1,33.1,37.4
+CFA08,CFA,no,von Frey,12,F,contra,pre,acute,2,42.6,
+CFA08,CFA,no,von Frey,12,F,contra,pre,acute,3,36.5,
+CFA08,CFA,no,von Frey,12,F,contra,day1,acute,1,22.4,19.56666667
+CFA08,CFA,no,von Frey,12,F,contra,day1,acute,2,18.4,
+CFA08,CFA,no,von Frey,12,F,contra,day1,acute,3,17.9,
+CFA08,CFA,no,von Frey,12,F,contra,day3,acute,1,48,30.63333333
+CFA08,CFA,no,von Frey,12,F,contra,day3,acute,2,24.9,
+CFA08,CFA,no,von Frey,12,F,contra,day3,acute,3,19,
+CFA08,CFA,no,von Frey,12,F,ipisi,pre,acute,1,13.1,14.06666667
+CFA08,CFA,no,von Frey,12,F,ipisi,pre,acute,2,15,
+CFA08,CFA,no,von Frey,12,F,ipisi,pre,acute,3,14.1,
+CFA08,CFA,no,von Frey,12,F,ipisi,day1,acute,1,17.4,10
+CFA08,CFA,no,von Frey,12,F,ipisi,day1,acute,2,7.7,
+CFA08,CFA,no,von Frey,12,F,ipisi,day1,acute,3,4.9,
+CFA08,CFA,no,von Frey,12,F,ipisi,day3,acute,1,4,7.233333333
+CFA08,CFA,no,von Frey,12,F,ipisi,day3,acute,2,4.4,
+CFA08,CFA,no,von Frey,12,F,ipisi,day3,acute,3,13.3,
+CFA08,CFA,no,Hargreaves,12,F,contra,pre,acute,1,11.7,8.966666667
+CFA08,CFA,no,Hargreaves,12,F,contra,pre,acute,2,8.7,
+CFA08,CFA,no,Hargreaves,12,F,contra,pre,acute,3,6.5,
+CFA08,CFA,no,Hargreaves,12,F,contra,day1,acute,1,7.1,7.9
+CFA08,CFA,no,Hargreaves,12,F,contra,day1,acute,2,6.2,
+CFA08,CFA,no,Hargreaves,12,F,contra,day1,acute,3,10.4,
+CFA08,CFA,no,Hargreaves,12,F,contra,day3,acute,1,10,9.933333333
+CFA08,CFA,no,Hargreaves,12,F,contra,day3,acute,2,9.3,
+CFA08,CFA,no,Hargreaves,12,F,contra,day3,acute,3,10.5,
+CFA08,CFA,no,Hargreaves,12,F,ipisi,pre,acute,1,10.2,12.06666667
+CFA08,CFA,no,Hargreaves,12,F,ipisi,pre,acute,2,6.2,
+CFA08,CFA,no,Hargreaves,12,F,ipisi,pre,acute,3,19.8,
+CFA08,CFA,no,Hargreaves,12,F,ipisi,day1,acute,1,6.1,6.6
+CFA08,CFA,no,Hargreaves,12,F,ipisi,day1,acute,2,4.8,
+CFA08,CFA,no,Hargreaves,12,F,ipisi,day1,acute,3,8.9,
+CFA08,CFA,no,Hargreaves,12,F,ipisi,day3,acute,1,6.8,7.133333333
+CFA08,CFA,no,Hargreaves,12,F,ipisi,day3,acute,2,8.1,
+CFA08,CFA,no,Hargreaves,12,F,ipisi,day3,acute,3,6.5,
+CFA09,CFA,no,von Frey,12,F,contra,pre,acute,1,13.2,22.13333333
+CFA09,CFA,no,von Frey,12,F,contra,pre,acute,2,26.6,
+CFA09,CFA,no,von Frey,12,F,contra,pre,acute,3,26.6,
+CFA09,CFA,no,von Frey,12,F,contra,day1,acute,1,20.2,10.73333333
+CFA09,CFA,no,von Frey,12,F,contra,day1,acute,2,6.9,
+CFA09,CFA,no,von Frey,12,F,contra,day1,acute,3,5.1,
+CFA09,CFA,no,von Frey,12,F,contra,day3,acute,1,6.2,12.16666667
+CFA09,CFA,no,von Frey,12,F,contra,day3,acute,2,9.9,
+CFA09,CFA,no,von Frey,12,F,contra,day3,acute,3,20.4,
+CFA09,CFA,no,von Frey,12,F,ipisi,pre,acute,1,7.6,17.36666667
+CFA09,CFA,no,von Frey,12,F,ipisi,pre,acute,2,31.1,
+CFA09,CFA,no,von Frey,12,F,ipisi,pre,acute,3,13.4,
+CFA09,CFA,no,von Frey,12,F,ipisi,day1,acute,1,7.1,8.066666667
+CFA09,CFA,no,von Frey,12,F,ipisi,day1,acute,2,6.3,
+CFA09,CFA,no,von Frey,12,F,ipisi,day1,acute,3,10.8,
+CFA09,CFA,no,von Frey,12,F,ipisi,day3,acute,1,2.3,4.9
+CFA09,CFA,no,von Frey,12,F,ipisi,day3,acute,2,3.8,
+CFA09,CFA,no,von Frey,12,F,ipisi,day3,acute,3,8.6,
+CFA09,CFA,no,Hargreaves,12,F,contra,pre,acute,1,14.3,13.63333333
+CFA09,CFA,no,Hargreaves,12,F,contra,pre,acute,2,7.6,
+CFA09,CFA,no,Hargreaves,12,F,contra,pre,acute,3,19,
+CFA09,CFA,no,Hargreaves,12,F,contra,day1,acute,1,10.5,9.466666667
+CFA09,CFA,no,Hargreaves,12,F,contra,day1,acute,2,7.4,
+CFA09,CFA,no,Hargreaves,12,F,contra,day1,acute,3,10.5,
+CFA09,CFA,no,Hargreaves,12,F,contra,day3,acute,1,6.6,7.5
+CFA09,CFA,no,Hargreaves,12,F,contra,day3,acute,2,8.3,
+CFA09,CFA,no,Hargreaves,12,F,contra,day3,acute,3,7.6,
+CFA09,CFA,no,Hargreaves,12,F,ipisi,pre,acute,1,8.7,11.73333333
+CFA09,CFA,no,Hargreaves,12,F,ipisi,pre,acute,2,15.2,
+CFA09,CFA,no,Hargreaves,12,F,ipisi,pre,acute,3,11.3,
+CFA09,CFA,no,Hargreaves,12,F,ipisi,day1,acute,1,6.9,6.5
+CFA09,CFA,no,Hargreaves,12,F,ipisi,day1,acute,2,5.4,
+CFA09,CFA,no,Hargreaves,12,F,ipisi,day1,acute,3,7.2,
+CFA09,CFA,no,Hargreaves,12,F,ipisi,day3,acute,1,3.2,4.666666667
+CFA09,CFA,no,Hargreaves,12,F,ipisi,day3,acute,2,4.3,
+CFA09,CFA,no,Hargreaves,12,F,ipisi,day3,acute,3,6.5,
+CFA10,CFA,no,von Frey,13,M,contra,pre,acute,1,47.7,36.63333333
+CFA10,CFA,no,von Frey,13,M,contra,pre,acute,2,38.5,
+CFA10,CFA,no,von Frey,13,M,contra,pre,acute,3,23.7,
+CFA10,CFA,no,von Frey,13,M,contra,day1,acute,1,56.3,46.1
+CFA10,CFA,no,von Frey,13,M,contra,day1,acute,2,44,
+CFA10,CFA,no,von Frey,13,M,contra,day1,acute,3,38,
+CFA10,CFA,no,von Frey,13,M,contra,day3,acute,1,50.5,38.5
+CFA10,CFA,no,von Frey,13,M,contra,day3,acute,2,24.6,
+CFA10,CFA,no,von Frey,13,M,contra,day3,acute,3,40.4,
+CFA10,CFA,no,von Frey,13,M,ipisi,pre,acute,1,27.1,24.3
+CFA10,CFA,no,von Frey,13,M,ipisi,pre,acute,2,21.7,
+CFA10,CFA,no,von Frey,13,M,ipisi,pre,acute,3,24.1,
+CFA10,CFA,no,von Frey,13,M,ipisi,day1,acute,1,4.8,9.3
+CFA10,CFA,no,von Frey,13,M,ipisi,day1,acute,2,11.1,
+CFA10,CFA,no,von Frey,13,M,ipisi,day1,acute,3,12,
+CFA10,CFA,no,von Frey,13,M,ipisi,day3,acute,1,9.4,4.266666667
+CFA10,CFA,no,von Frey,13,M,ipisi,day3,acute,2,0.1,
+CFA10,CFA,no,von Frey,13,M,ipisi,day3,acute,3,3.3,
+CFA10,CFA,no,Hargreaves,13,M,contra,pre,acute,1,16.9,16.7
+CFA10,CFA,no,Hargreaves,13,M,contra,pre,acute,2,13.4,
+CFA10,CFA,no,Hargreaves,13,M,contra,pre,acute,3,19.8,
+CFA10,CFA,no,Hargreaves,13,M,contra,day1,acute,1,16.1,12.83333333
+CFA10,CFA,no,Hargreaves,13,M,contra,day1,acute,2,15.1,
+CFA10,CFA,no,Hargreaves,13,M,contra,day1,acute,3,7.3,
+CFA10,CFA,no,Hargreaves,13,M,contra,day3,acute,1,7.1,7.966666667
+CFA10,CFA,no,Hargreaves,13,M,contra,day3,acute,2,7.5,
+CFA10,CFA,no,Hargreaves,13,M,contra,day3,acute,3,9.3,
+CFA10,CFA,no,Hargreaves,13,M,ipisi,pre,acute,1,10.8,14.93333333
+CFA10,CFA,no,Hargreaves,13,M,ipisi,pre,acute,2,15.2,
+CFA10,CFA,no,Hargreaves,13,M,ipisi,pre,acute,3,18.8,
+CFA10,CFA,no,Hargreaves,13,M,ipisi,day1,acute,1,6.7,6.833333333
+CFA10,CFA,no,Hargreaves,13,M,ipisi,day1,acute,2,8.5,
+CFA10,CFA,no,Hargreaves,13,M,ipisi,day1,acute,3,5.3,
+CFA10,CFA,no,Hargreaves,13,M,ipisi,day3,acute,1,5.3,6.666666667
+CFA10,CFA,no,Hargreaves,13,M,ipisi,day3,acute,2,6.6,
+CFA10,CFA,no,Hargreaves,13,M,ipisi,day3,acute,3,8.1,
+CFA11,CFA,no,von Frey,13,M,contra,pre,acute,1,41,29.46666667
+CFA11,CFA,no,von Frey,13,M,contra,pre,acute,2,28.1,
+CFA11,CFA,no,von Frey,13,M,contra,pre,acute,3,19.3,
+CFA11,CFA,no,von Frey,13,M,contra,day1,acute,1,48,31.93333333
+CFA11,CFA,no,von Frey,13,M,contra,day1,acute,2,21,
+CFA11,CFA,no,von Frey,13,M,contra,day1,acute,3,26.8,
+CFA11,CFA,no,von Frey,13,M,contra,day3,acute,1,23.1,31.03333333
+CFA11,CFA,no,von Frey,13,M,contra,day3,acute,2,26.9,
+CFA11,CFA,no,von Frey,13,M,contra,day3,acute,3,43.1,
+CFA11,CFA,no,von Frey,13,M,ipisi,pre,acute,1,46.6,27.76666667
+CFA11,CFA,no,von Frey,13,M,ipisi,pre,acute,2,22.9,
+CFA11,CFA,no,von Frey,13,M,ipisi,pre,acute,3,13.8,
+CFA11,CFA,no,von Frey,13,M,ipisi,day1,acute,1,11.2,11.93333333
+CFA11,CFA,no,von Frey,13,M,ipisi,day1,acute,2,11.2,
+CFA11,CFA,no,von Frey,13,M,ipisi,day1,acute,3,13.4,
+CFA11,CFA,no,von Frey,13,M,ipisi,day3,acute,1,1.6,2.3
+CFA11,CFA,no,von Frey,13,M,ipisi,day3,acute,2,5.1,
+CFA11,CFA,no,von Frey,13,M,ipisi,day3,acute,3,0.2,
+CFA11,CFA,no,Hargreaves,13,M,contra,pre,acute,1,9,9.633333333
+CFA11,CFA,no,Hargreaves,13,M,contra,pre,acute,2,10,
+CFA11,CFA,no,Hargreaves,13,M,contra,pre,acute,3,9.9,
+CFA11,CFA,no,Hargreaves,13,M,contra,day1,acute,1,15.8,11.06666667
+CFA11,CFA,no,Hargreaves,13,M,contra,day1,acute,2,9.1,
+CFA11,CFA,no,Hargreaves,13,M,contra,day1,acute,3,8.3,
+CFA11,CFA,no,Hargreaves,13,M,contra,day3,acute,1,9.5,8.966666667
+CFA11,CFA,no,Hargreaves,13,M,contra,day3,acute,2,9.8,
+CFA11,CFA,no,Hargreaves,13,M,contra,day3,acute,3,7.6,
+CFA11,CFA,no,Hargreaves,13,M,ipisi,pre,acute,1,11.7,18.53333333
+CFA11,CFA,no,Hargreaves,13,M,ipisi,pre,acute,2,22.7,
+CFA11,CFA,no,Hargreaves,13,M,ipisi,pre,acute,3,21.2,
+CFA11,CFA,no,Hargreaves,13,M,ipisi,day1,acute,1,4.7,5.1
+CFA11,CFA,no,Hargreaves,13,M,ipisi,day1,acute,2,5.8,
+CFA11,CFA,no,Hargreaves,13,M,ipisi,day1,acute,3,4.8,
+CFA11,CFA,no,Hargreaves,13,M,ipisi,day3,acute,1,6,6.566666667
+CFA11,CFA,no,Hargreaves,13,M,ipisi,day3,acute,2,6,
+CFA11,CFA,no,Hargreaves,13,M,ipisi,day3,acute,3,7.7,
+CFA12,CFA,no,von Frey,13,M,contra,pre,acute,1,20.8,26.16666667
+CFA12,CFA,no,von Frey,13,M,contra,pre,acute,2,21.6,
+CFA12,CFA,no,von Frey,13,M,contra,pre,acute,3,36.1,
+CFA12,CFA,no,von Frey,13,M,contra,day1,acute,1,54.3,46.03333333
+CFA12,CFA,no,von Frey,13,M,contra,day1,acute,2,44.8,
+CFA12,CFA,no,von Frey,13,M,contra,day1,acute,3,39,
+CFA12,CFA,no,von Frey,13,M,contra,day3,acute,1,38.3,31
+CFA12,CFA,no,von Frey,13,M,contra,day3,acute,2,28.7,
+CFA12,CFA,no,von Frey,13,M,contra,day3,acute,3,26,
+CFA12,CFA,no,von Frey,13,M,ipisi,pre,acute,1,54.1,42.53333333
+CFA12,CFA,no,von Frey,13,M,ipisi,pre,acute,2,42.2,
+CFA12,CFA,no,von Frey,13,M,ipisi,pre,acute,3,31.3,
+CFA12,CFA,no,von Frey,13,M,ipisi,day1,acute,1,11.5,11.63333333
+CFA12,CFA,no,von Frey,13,M,ipisi,day1,acute,2,9.7,
+CFA12,CFA,no,von Frey,13,M,ipisi,day1,acute,3,13.7,
+CFA12,CFA,no,von Frey,13,M,ipisi,day3,acute,1,2.7,6.566666667
+CFA12,CFA,no,von Frey,13,M,ipisi,day3,acute,2,10.8,
+CFA12,CFA,no,von Frey,13,M,ipisi,day3,acute,3,6.2,
+CFA12,CFA,no,Hargreaves,13,M,contra,pre,acute,1,13.1,11.4
+CFA12,CFA,no,Hargreaves,13,M,contra,pre,acute,2,11.3,
+CFA12,CFA,no,Hargreaves,13,M,contra,pre,acute,3,9.8,
+CFA12,CFA,no,Hargreaves,13,M,contra,day1,acute,1,13.2,10.36666667
+CFA12,CFA,no,Hargreaves,13,M,contra,day1,acute,2,9,
+CFA12,CFA,no,Hargreaves,13,M,contra,day1,acute,3,8.9,
+CFA12,CFA,no,Hargreaves,13,M,contra,day3,acute,1,8.4,10.2
+CFA12,CFA,no,Hargreaves,13,M,contra,day3,acute,2,12,
+CFA12,CFA,no,Hargreaves,13,M,contra,day3,acute,3,10.2,
+CFA12,CFA,no,Hargreaves,13,M,ipisi,pre,acute,1,15.1,14.9
+CFA12,CFA,no,Hargreaves,13,M,ipisi,pre,acute,2,16.8,
+CFA12,CFA,no,Hargreaves,13,M,ipisi,pre,acute,3,12.8,
+CFA12,CFA,no,Hargreaves,13,M,ipisi,day1,acute,1,5.3,7.6
+CFA12,CFA,no,Hargreaves,13,M,ipisi,day1,acute,2,8.8,
+CFA12,CFA,no,Hargreaves,13,M,ipisi,day1,acute,3,8.7,
+CFA12,CFA,no,Hargreaves,13,M,ipisi,day3,acute,1,8.2,8.2
+CFA12,CFA,no,Hargreaves,13,M,ipisi,day3,acute,2,8.3,
+CFA12,CFA,no,Hargreaves,13,M,ipisi,day3,acute,3,8.1,
+CFA13,CFA,no,von Frey,13,M,contra,pre,acute,1,32.3,38.7
+CFA13,CFA,no,von Frey,13,M,contra,pre,acute,2,48.4,
+CFA13,CFA,no,von Frey,13,M,contra,pre,acute,3,35.4,
+CFA13,CFA,no,von Frey,13,M,contra,day1,acute,1,24.3,40.13333333
+CFA13,CFA,no,von Frey,13,M,contra,day1,acute,2,27.6,
+CFA13,CFA,no,von Frey,13,M,contra,day1,acute,3,68.5,
+CFA13,CFA,no,von Frey,13,M,contra,day3,acute,1,49,37.7
+CFA13,CFA,no,von Frey,13,M,contra,day3,acute,2,38.2,
+CFA13,CFA,no,von Frey,13,M,contra,day3,acute,3,25.9,
+CFA13,CFA,no,von Frey,13,M,ipisi,pre,acute,1,47.1,31.36666667
+CFA13,CFA,no,von Frey,13,M,ipisi,pre,acute,2,30,
+CFA13,CFA,no,von Frey,13,M,ipisi,pre,acute,3,17,
+CFA13,CFA,no,von Frey,13,M,ipisi,day1,acute,1,7.3,14.33333333
+CFA13,CFA,no,von Frey,13,M,ipisi,day1,acute,2,10.4,
+CFA13,CFA,no,von Frey,13,M,ipisi,day1,acute,3,25.3,
+CFA13,CFA,no,von Frey,13,M,ipisi,day3,acute,1,10.3,6.233333333
+CFA13,CFA,no,von Frey,13,M,ipisi,day3,acute,2,8.3,
+CFA13,CFA,no,von Frey,13,M,ipisi,day3,acute,3,0.1,
+CFA13,CFA,no,Hargreaves,13,M,contra,pre,acute,1,12.2,9
+CFA13,CFA,no,Hargreaves,13,M,contra,pre,acute,2,8.1,
+CFA13,CFA,no,Hargreaves,13,M,contra,pre,acute,3,6.7,
+CFA13,CFA,no,Hargreaves,13,M,contra,day1,acute,1,7.1,8.8
+CFA13,CFA,no,Hargreaves,13,M,contra,day1,acute,2,11.9,
+CFA13,CFA,no,Hargreaves,13,M,contra,day1,acute,3,7.4,
+CFA13,CFA,no,Hargreaves,13,M,contra,day3,acute,1,5.6,11.03333333
+CFA13,CFA,no,Hargreaves,13,M,contra,day3,acute,2,8,
+CFA13,CFA,no,Hargreaves,13,M,contra,day3,acute,3,19.5,
+CFA13,CFA,no,Hargreaves,13,M,ipisi,pre,acute,1,17.1,10.86666667
+CFA13,CFA,no,Hargreaves,13,M,ipisi,pre,acute,2,8.9,
+CFA13,CFA,no,Hargreaves,13,M,ipisi,pre,acute,3,6.6,
+CFA13,CFA,no,Hargreaves,13,M,ipisi,day1,acute,1,8.5,5
+CFA13,CFA,no,Hargreaves,13,M,ipisi,day1,acute,2,3.1,
+CFA13,CFA,no,Hargreaves,13,M,ipisi,day1,acute,3,3.4,
+CFA13,CFA,no,Hargreaves,13,M,ipisi,day3,acute,1,2.9,6.166666667
+CFA13,CFA,no,Hargreaves,13,M,ipisi,day3,acute,2,6.9,
+CFA13,CFA,no,Hargreaves,13,M,ipisi,day3,acute,3,8.7,
+CFA14,CFA,no,von Frey,13,F,contra,pre,acute,1,17.9,22.36666667
+CFA14,CFA,no,von Frey,13,F,contra,pre,acute,2,28.1,
+CFA14,CFA,no,von Frey,13,F,contra,pre,acute,3,21.1,
+CFA14,CFA,no,von Frey,13,F,contra,day1,acute,1,60.1,46.33333333
+CFA14,CFA,no,von Frey,13,F,contra,day1,acute,2,57.1,
+CFA14,CFA,no,von Frey,13,F,contra,day1,acute,3,21.8,
+CFA14,CFA,no,von Frey,13,F,contra,day3,acute,1,44.4,34.86666667
+CFA14,CFA,no,von Frey,13,F,contra,day3,acute,2,30.8,
+CFA14,CFA,no,von Frey,13,F,contra,day3,acute,3,29.4,
+CFA14,CFA,no,von Frey,13,F,ipisi,pre,acute,1,51.4,34.86666667
+CFA14,CFA,no,von Frey,13,F,ipisi,pre,acute,2,27.9,
+CFA14,CFA,no,von Frey,13,F,ipisi,pre,acute,3,25.3,
+CFA14,CFA,no,von Frey,13,F,ipisi,day1,acute,1,8.3,12.36666667
+CFA14,CFA,no,von Frey,13,F,ipisi,day1,acute,2,6.7,
+CFA14,CFA,no,von Frey,13,F,ipisi,day1,acute,3,22.1,
+CFA14,CFA,no,von Frey,13,F,ipisi,day3,acute,1,3.5,8.366666667
+CFA14,CFA,no,von Frey,13,F,ipisi,day3,acute,2,11.6,
+CFA14,CFA,no,von Frey,13,F,ipisi,day3,acute,3,10,
+CFA14,CFA,no,Hargreaves,13,F,contra,pre,acute,1,8.4,9.366666667
+CFA14,CFA,no,Hargreaves,13,F,contra,pre,acute,2,8.8,
+CFA14,CFA,no,Hargreaves,13,F,contra,pre,acute,3,10.9,
+CFA14,CFA,no,Hargreaves,13,F,contra,day1,acute,1,14.2,12.5
+CFA14,CFA,no,Hargreaves,13,F,contra,day1,acute,2,9.8,
+CFA14,CFA,no,Hargreaves,13,F,contra,day1,acute,3,13.5,
+CFA14,CFA,no,Hargreaves,13,F,contra,day3,acute,1,8.6,9.466666667
+CFA14,CFA,no,Hargreaves,13,F,contra,day3,acute,2,8.8,
+CFA14,CFA,no,Hargreaves,13,F,contra,day3,acute,3,11,
+CFA14,CFA,no,Hargreaves,13,F,ipisi,pre,acute,1,8.6,8.766666667
+CFA14,CFA,no,Hargreaves,13,F,ipisi,pre,acute,2,10.3,
+CFA14,CFA,no,Hargreaves,13,F,ipisi,pre,acute,3,7.4,
+CFA14,CFA,no,Hargreaves,13,F,ipisi,day1,acute,1,6,6.133333333
+CFA14,CFA,no,Hargreaves,13,F,ipisi,day1,acute,2,7,
+CFA14,CFA,no,Hargreaves,13,F,ipisi,day1,acute,3,5.4,
+CFA14,CFA,no,Hargreaves,13,F,ipisi,day3,acute,1,8.6,7.066666667
+CFA14,CFA,no,Hargreaves,13,F,ipisi,day3,acute,2,6.8,
+CFA14,CFA,no,Hargreaves,13,F,ipisi,day3,acute,3,5.8,
+CFA15,CFA,no,von Frey,13,F,contra,pre,acute,1,20.6,25.53333333
+CFA15,CFA,no,von Frey,13,F,contra,pre,acute,2,16.8,
+CFA15,CFA,no,von Frey,13,F,contra,pre,acute,3,39.2,
+CFA15,CFA,no,von Frey,13,F,contra,day1,acute,1,20.5,31.73333333
+CFA15,CFA,no,von Frey,13,F,contra,day1,acute,2,45.9,
+CFA15,CFA,no,von Frey,13,F,contra,day1,acute,3,28.8,
+CFA15,CFA,no,von Frey,13,F,contra,day3,acute,1,50.2,43.33333333
+CFA15,CFA,no,von Frey,13,F,contra,day3,acute,2,55.5,
+CFA15,CFA,no,von Frey,13,F,contra,day3,acute,3,24.3,
+CFA15,CFA,no,von Frey,13,F,ipisi,pre,acute,1,55.7,41.83333333
+CFA15,CFA,no,von Frey,13,F,ipisi,pre,acute,2,39.1,
+CFA15,CFA,no,von Frey,13,F,ipisi,pre,acute,3,30.7,
+CFA15,CFA,no,von Frey,13,F,ipisi,day1,acute,1,5.1,10
+CFA15,CFA,no,von Frey,13,F,ipisi,day1,acute,2,20.5,
+CFA15,CFA,no,von Frey,13,F,ipisi,day1,acute,3,4.4,
+CFA15,CFA,no,von Frey,13,F,ipisi,day3,acute,1,0.7,0.833333333
+CFA15,CFA,no,von Frey,13,F,ipisi,day3,acute,2,0.8,
+CFA15,CFA,no,von Frey,13,F,ipisi,day3,acute,3,1,
+CFA15,CFA,no,Hargreaves,13,F,contra,pre,acute,1,10.1,12.4
+CFA15,CFA,no,Hargreaves,13,F,contra,pre,acute,2,16.3,
+CFA15,CFA,no,Hargreaves,13,F,contra,pre,acute,3,10.8,
+CFA15,CFA,no,Hargreaves,13,F,contra,day1,acute,1,17.5,12.76666667
+CFA15,CFA,no,Hargreaves,13,F,contra,day1,acute,2,12.2,
+CFA15,CFA,no,Hargreaves,13,F,contra,day1,acute,3,8.6,
+CFA15,CFA,no,Hargreaves,13,F,contra,day3,acute,1,9.6,11
+CFA15,CFA,no,Hargreaves,13,F,contra,day3,acute,2,9,
+CFA15,CFA,no,Hargreaves,13,F,contra,day3,acute,3,14.4,
+CFA15,CFA,no,Hargreaves,13,F,ipisi,pre,acute,1,14.3,16.63333333
+CFA15,CFA,no,Hargreaves,13,F,ipisi,pre,acute,2,16.8,
+CFA15,CFA,no,Hargreaves,13,F,ipisi,pre,acute,3,18.8,
+CFA15,CFA,no,Hargreaves,13,F,ipisi,day1,acute,1,10.4,9.933333333
+CFA15,CFA,no,Hargreaves,13,F,ipisi,day1,acute,2,12.9,
+CFA15,CFA,no,Hargreaves,13,F,ipisi,day1,acute,3,6.5,
+CFA15,CFA,no,Hargreaves,13,F,ipisi,day3,acute,1,6.5,5.95
+CFA15,CFA,no,Hargreaves,13,F,ipisi,day3,acute,2,5.4,
+CFA16,CFA,no,von Frey,13,F,contra,pre,acute,1,22.4,27.3
+CFA16,CFA,no,von Frey,13,F,contra,pre,acute,2,38.7,
+CFA16,CFA,no,von Frey,13,F,contra,pre,acute,3,20.8,
+CFA16,CFA,no,von Frey,13,F,contra,day1,acute,1,19.1,31.9
+CFA16,CFA,no,von Frey,13,F,contra,day1,acute,2,46.6,
+CFA16,CFA,no,von Frey,13,F,contra,day1,acute,3,30,
+CFA16,CFA,no,von Frey,13,F,contra,day3,acute,1,11.5,12.4
+CFA16,CFA,no,von Frey,13,F,contra,day3,acute,2,11.1,
+CFA16,CFA,no,von Frey,13,F,contra,day3,acute,3,14.6,
+CFA16,CFA,no,von Frey,13,F,ipisi,pre,acute,1,31.5,34.06666667
+CFA16,CFA,no,von Frey,13,F,ipisi,pre,acute,2,36,
+CFA16,CFA,no,von Frey,13,F,ipisi,pre,acute,3,34.7,
+CFA16,CFA,no,von Frey,13,F,ipisi,day1,acute,1,0.7,5.366666667
+CFA16,CFA,no,von Frey,13,F,ipisi,day1,acute,2,5.2,
+CFA16,CFA,no,von Frey,13,F,ipisi,day1,acute,3,10.2,
+CFA16,CFA,no,von Frey,13,F,ipisi,day3,acute,1,0.1,1
+CFA16,CFA,no,von Frey,13,F,ipisi,day3,acute,2,0.5,
+CFA16,CFA,no,von Frey,13,F,ipisi,day3,acute,3,2.4,
+CFA16,CFA,no,Hargreaves,13,F,contra,pre,acute,1,18.7,17.76666667
+CFA16,CFA,no,Hargreaves,13,F,contra,pre,acute,2,22.6,
+CFA16,CFA,no,Hargreaves,13,F,contra,pre,acute,3,12,
+CFA16,CFA,no,Hargreaves,13,F,contra,day1,acute,1,17.9,11.43333333
+CFA16,CFA,no,Hargreaves,13,F,contra,day1,acute,2,8.7,
+CFA16,CFA,no,Hargreaves,13,F,contra,day1,acute,3,7.7,
+CFA16,CFA,no,Hargreaves,13,F,contra,day3,acute,1,20.4,12.43333333
+CFA16,CFA,no,Hargreaves,13,F,contra,day3,acute,2,9.8,
+CFA16,CFA,no,Hargreaves,13,F,contra,day3,acute,3,7.1,
+CFA16,CFA,no,Hargreaves,13,F,ipisi,pre,acute,1,15.5,13.6
+CFA16,CFA,no,Hargreaves,13,F,ipisi,pre,acute,2,15.2,
+CFA16,CFA,no,Hargreaves,13,F,ipisi,pre,acute,3,10.1,
+CFA16,CFA,no,Hargreaves,13,F,ipisi,day1,acute,1,13,8.833333333
+CFA16,CFA,no,Hargreaves,13,F,ipisi,day1,acute,2,9.2,
+CFA16,CFA,no,Hargreaves,13,F,ipisi,day1,acute,3,4.3,
+CFA16,CFA,no,Hargreaves,13,F,ipisi,day3,acute,1,11.7,9.233333333
+CFA16,CFA,no,Hargreaves,13,F,ipisi,day3,acute,2,9.7,
+CFA16,CFA,no,Hargreaves,13,F,ipisi,day3,acute,3,6.3,
+CFA17,CFA,no,von Frey,13,F,contra,pre,acute,1,28.4,26.06666667
+CFA17,CFA,no,von Frey,13,F,contra,pre,acute,2,18.7,
+CFA17,CFA,no,von Frey,13,F,contra,pre,acute,3,31.1,
+CFA17,CFA,no,von Frey,13,F,contra,day1,acute,1,24.2,23.63333333
+CFA17,CFA,no,von Frey,13,F,contra,day1,acute,2,24.8,
+CFA17,CFA,no,von Frey,13,F,contra,day1,acute,3,21.9,
+CFA17,CFA,no,von Frey,13,F,contra,day3,acute,1,46.1,42.33333333
+CFA17,CFA,no,von Frey,13,F,contra,day3,acute,2,38.7,
+CFA17,CFA,no,von Frey,13,F,contra,day3,acute,3,42.2,
+CFA17,CFA,no,von Frey,13,F,ipisi,pre,acute,1,18.6,36.06666667
+CFA17,CFA,no,von Frey,13,F,ipisi,pre,acute,2,58.6,
+CFA17,CFA,no,von Frey,13,F,ipisi,pre,acute,3,31,
+CFA17,CFA,no,von Frey,13,F,ipisi,day1,acute,1,9.6,12.33333333
+CFA17,CFA,no,von Frey,13,F,ipisi,day1,acute,2,23.5,
+CFA17,CFA,no,von Frey,13,F,ipisi,day1,acute,3,3.9,
+CFA17,CFA,no,von Frey,13,F,ipisi,day3,acute,1,3.5,8.1
+CFA17,CFA,no,von Frey,13,F,ipisi,day3,acute,2,18.2,
+CFA17,CFA,no,von Frey,13,F,ipisi,day3,acute,3,2.6,
+CFA17,CFA,no,Hargreaves,13,F,contra,pre,acute,1,14.7,11.13333333
+CFA17,CFA,no,Hargreaves,13,F,contra,pre,acute,2,7.9,
+CFA17,CFA,no,Hargreaves,13,F,contra,pre,acute,3,10.8,
+CFA17,CFA,no,Hargreaves,13,F,contra,day1,acute,1,9.6,9.833333333
+CFA17,CFA,no,Hargreaves,13,F,contra,day1,acute,2,10.8,
+CFA17,CFA,no,Hargreaves,13,F,contra,day1,acute,3,9.1,
+CFA17,CFA,no,Hargreaves,13,F,contra,day3,acute,1,9,9.966666667
+CFA17,CFA,no,Hargreaves,13,F,contra,day3,acute,2,10.5,
+CFA17,CFA,no,Hargreaves,13,F,contra,day3,acute,3,10.4,
+CFA17,CFA,no,Hargreaves,13,F,ipisi,pre,acute,1,16,10.53333333
+CFA17,CFA,no,Hargreaves,13,F,ipisi,pre,acute,2,7.8,
+CFA17,CFA,no,Hargreaves,13,F,ipisi,pre,acute,3,7.8,
+CFA17,CFA,no,Hargreaves,13,F,ipisi,day1,acute,1,10,7.733333333
+CFA17,CFA,no,Hargreaves,13,F,ipisi,day1,acute,2,5.8,
+CFA17,CFA,no,Hargreaves,13,F,ipisi,day1,acute,3,7.4,
+CFA17,CFA,no,Hargreaves,13,F,ipisi,day3,acute,1,4.4,4.033333333
+CFA17,CFA,no,Hargreaves,13,F,ipisi,day3,acute,2,4.3,
+CFA17,CFA,no,Hargreaves,13,F,ipisi,day3,acute,3,3.4,
+CICFA04,CFA,yes,von Frey,12,F,contra,pre,acute,1,67.5,43.63333333
+CICFA04,CFA,yes,von Frey,12,F,contra,pre,acute,2,21.9,
+CICFA04,CFA,yes,von Frey,12,F,contra,pre,acute,3,41.5,
+CICFA04,CFA,yes,von Frey,12,F,contra,day1,acute,1,63.2,41.9
+CICFA04,CFA,yes,von Frey,12,F,contra,day1,acute,2,29.7,
+CICFA04,CFA,yes,von Frey,12,F,contra,day1,acute,3,32.8,
+CICFA04,CFA,yes,von Frey,12,F,contra,day3,acute,1,67.4,44.63333333
+CICFA04,CFA,yes,von Frey,12,F,contra,day3,acute,2,51.2,
+CICFA04,CFA,yes,von Frey,12,F,contra,day3,acute,3,15.3,
+CICFA04,CFA,yes,von Frey,12,F,ipisi,pre,acute,1,35.5,34.33333333
+CICFA04,CFA,yes,von Frey,12,F,ipisi,pre,acute,2,37.8,
+CICFA04,CFA,yes,von Frey,12,F,ipisi,pre,acute,3,29.7,
+CICFA04,CFA,yes,von Frey,12,F,ipisi,day1,acute,1,12.8,10.76666667
+CICFA04,CFA,yes,von Frey,12,F,ipisi,day1,acute,2,8.6,
+CICFA04,CFA,yes,von Frey,12,F,ipisi,day1,acute,3,10.9,
+CICFA04,CFA,yes,von Frey,12,F,ipisi,day3,acute,1,1.2,3.766666667
+CICFA04,CFA,yes,von Frey,12,F,ipisi,day3,acute,2,6.2,
+CICFA04,CFA,yes,von Frey,12,F,ipisi,day3,acute,3,3.9,
+CICFA04,CFA,yes,Hargreaves,12,F,contra,pre,acute,1,12.2,11.9
+CICFA04,CFA,yes,Hargreaves,12,F,contra,pre,acute,2,9.4,
+CICFA04,CFA,yes,Hargreaves,12,F,contra,pre,acute,3,14.1,
+CICFA04,CFA,yes,Hargreaves,12,F,contra,day1,acute,1,16.7,12.5
+CICFA04,CFA,yes,Hargreaves,12,F,contra,day1,acute,2,8.4,
+CICFA04,CFA,yes,Hargreaves,12,F,contra,day1,acute,3,12.4,
+CICFA04,CFA,yes,Hargreaves,12,F,contra,day3,acute,1,16.8,11.2
+CICFA04,CFA,yes,Hargreaves,12,F,contra,day3,acute,2,9.3,
+CICFA04,CFA,yes,Hargreaves,12,F,contra,day3,acute,3,7.5,
+CICFA04,CFA,yes,Hargreaves,12,F,ipisi,pre,acute,1,9.9,12.3
+CICFA04,CFA,yes,Hargreaves,12,F,ipisi,pre,acute,2,12.1,
+CICFA04,CFA,yes,Hargreaves,12,F,ipisi,pre,acute,3,14.9,
+CICFA04,CFA,yes,Hargreaves,12,F,ipisi,day1,acute,1,5.5,7.2
+CICFA04,CFA,yes,Hargreaves,12,F,ipisi,day1,acute,2,9.3,
+CICFA04,CFA,yes,Hargreaves,12,F,ipisi,day1,acute,3,6.8,
+CICFA04,CFA,yes,Hargreaves,12,F,ipisi,day3,acute,1,8.7,7.2
+CICFA04,CFA,yes,Hargreaves,12,F,ipisi,day3,acute,2,6.8,
+CICFA04,CFA,yes,Hargreaves,12,F,ipisi,day3,acute,3,6.1,
+CICFA05,CFA,yes,von Frey,12,F,contra,pre,acute,1,25.3,34.66666667
+CICFA05,CFA,yes,von Frey,12,F,contra,pre,acute,2,38.2,
+CICFA05,CFA,yes,von Frey,12,F,contra,pre,acute,3,40.5,
+CICFA05,CFA,yes,von Frey,12,F,contra,day1,acute,1,64.7,52.1
+CICFA05,CFA,yes,von Frey,12,F,contra,day1,acute,2,41,
+CICFA05,CFA,yes,von Frey,12,F,contra,day1,acute,3,50.6,
+CICFA05,CFA,yes,von Frey,12,F,contra,day3,acute,1,24,40.26666667
+CICFA05,CFA,yes,von Frey,12,F,contra,day3,acute,2,63.2,
+CICFA05,CFA,yes,von Frey,12,F,contra,day3,acute,3,33.6,
+CICFA05,CFA,yes,von Frey,12,F,ipisi,pre,acute,1,19.8,26.06666667
+CICFA05,CFA,yes,von Frey,12,F,ipisi,pre,acute,2,35.8,
+CICFA05,CFA,yes,von Frey,12,F,ipisi,pre,acute,3,22.6,
+CICFA05,CFA,yes,von Frey,12,F,ipisi,day1,acute,1,17.6,16.5
+CICFA05,CFA,yes,von Frey,12,F,ipisi,day1,acute,2,12.1,
+CICFA05,CFA,yes,von Frey,12,F,ipisi,day1,acute,3,19.8,
+CICFA05,CFA,yes,von Frey,12,F,ipisi,day3,acute,1,18.4,10.46666667
+CICFA05,CFA,yes,von Frey,12,F,ipisi,day3,acute,2,6.6,
+CICFA05,CFA,yes,von Frey,12,F,ipisi,day3,acute,3,6.4,
+CICFA05,CFA,yes,Hargreaves,12,F,contra,pre,acute,1,11,12.73333333
+CICFA05,CFA,yes,Hargreaves,12,F,contra,pre,acute,2,16.2,
+CICFA05,CFA,yes,Hargreaves,12,F,contra,pre,acute,3,11,
+CICFA05,CFA,yes,Hargreaves,12,F,contra,day1,acute,1,12.8,14.33333333
+CICFA05,CFA,yes,Hargreaves,12,F,contra,day1,acute,2,17.7,
+CICFA05,CFA,yes,Hargreaves,12,F,contra,day1,acute,3,12.5,
+CICFA05,CFA,yes,Hargreaves,12,F,contra,day3,acute,1,11,10.4
+CICFA05,CFA,yes,Hargreaves,12,F,contra,day3,acute,2,11.4,
+CICFA05,CFA,yes,Hargreaves,12,F,contra,day3,acute,3,8.8,
+CICFA05,CFA,yes,Hargreaves,12,F,ipisi,pre,acute,1,11.9,12.16666667
+CICFA05,CFA,yes,Hargreaves,12,F,ipisi,pre,acute,2,12.8,
+CICFA05,CFA,yes,Hargreaves,12,F,ipisi,pre,acute,3,11.8,
+CICFA05,CFA,yes,Hargreaves,12,F,ipisi,day1,acute,1,9.8,8.333333333
+CICFA05,CFA,yes,Hargreaves,12,F,ipisi,day1,acute,2,8.6,
+CICFA05,CFA,yes,Hargreaves,12,F,ipisi,day1,acute,3,6.6,
+CICFA05,CFA,yes,Hargreaves,12,F,ipisi,day3,acute,1,9.1,8.2
+CICFA05,CFA,yes,Hargreaves,12,F,ipisi,day3,acute,2,6.8,
+CICFA05,CFA,yes,Hargreaves,12,F,ipisi,day3,acute,3,8.7,
+CICFA06,CFA,yes,von Frey,12,F,contra,pre,acute,1,69.7,46.03333333
+CICFA06,CFA,yes,von Frey,12,F,contra,pre,acute,2,44.9,
+CICFA06,CFA,yes,von Frey,12,F,contra,pre,acute,3,23.5,
+CICFA06,CFA,yes,von Frey,12,F,contra,day1,acute,1,39.7,56.46666667
+CICFA06,CFA,yes,von Frey,12,F,contra,day1,acute,2,69.9,
+CICFA06,CFA,yes,von Frey,12,F,contra,day1,acute,3,59.8,
+CICFA06,CFA,yes,von Frey,12,F,contra,day3,acute,1,27.3,42
+CICFA06,CFA,yes,von Frey,12,F,contra,day3,acute,2,57.1,
+CICFA06,CFA,yes,von Frey,12,F,contra,day3,acute,3,41.6,
+CICFA06,CFA,yes,von Frey,12,F,ipisi,pre,acute,1,69,56.9
+CICFA06,CFA,yes,von Frey,12,F,ipisi,pre,acute,2,62.7,
+CICFA06,CFA,yes,von Frey,12,F,ipisi,pre,acute,3,39,
+CICFA06,CFA,yes,von Frey,12,F,ipisi,day1,acute,1,29.7,17.86666667
+CICFA06,CFA,yes,von Frey,12,F,ipisi,day1,acute,2,14.1,
+CICFA06,CFA,yes,von Frey,12,F,ipisi,day1,acute,3,9.8,
+CICFA06,CFA,yes,von Frey,12,F,ipisi,day3,acute,1,7.3,5.6
+CICFA06,CFA,yes,von Frey,12,F,ipisi,day3,acute,2,1.9,
+CICFA06,CFA,yes,von Frey,12,F,ipisi,day3,acute,3,7.6,
+CICFA06,CFA,yes,Hargreaves,12,F,contra,pre,acute,1,10.6,9.366666667
+CICFA06,CFA,yes,Hargreaves,12,F,contra,pre,acute,2,9.8,
+CICFA06,CFA,yes,Hargreaves,12,F,contra,pre,acute,3,7.7,
+CICFA06,CFA,yes,Hargreaves,12,F,contra,day1,acute,1,8.4,9.503333333
+CICFA06,CFA,yes,Hargreaves,12,F,contra,day1,acute,2,12.2,
+CICFA06,CFA,yes,Hargreaves,12,F,contra,day1,acute,3,7.91,
+CICFA06,CFA,yes,Hargreaves,12,F,contra,day3,acute,1,7.7,9.4
+CICFA06,CFA,yes,Hargreaves,12,F,contra,day3,acute,2,10.4,
+CICFA06,CFA,yes,Hargreaves,12,F,contra,day3,acute,3,10.1,
+CICFA06,CFA,yes,Hargreaves,12,F,ipisi,pre,acute,1,9.9,8.833333333
+CICFA06,CFA,yes,Hargreaves,12,F,ipisi,pre,acute,2,9.5,
+CICFA06,CFA,yes,Hargreaves,12,F,ipisi,pre,acute,3,7.1,
+CICFA06,CFA,yes,Hargreaves,12,F,ipisi,day1,acute,1,6.4,5.833333333
+CICFA06,CFA,yes,Hargreaves,12,F,ipisi,day1,acute,2,6.6,
+CICFA06,CFA,yes,Hargreaves,12,F,ipisi,day1,acute,3,4.5,
+CICFA06,CFA,yes,Hargreaves,12,F,ipisi,day3,acute,1,6.9,6.166666667
+CICFA06,CFA,yes,Hargreaves,12,F,ipisi,day3,acute,2,5.7,
+CICFA06,CFA,yes,Hargreaves,12,F,ipisi,day3,acute,3,5.9,
+CICFA01,CFA,yes,von Frey,12,M,contra,pre,acute,1,56.8,39.96666667
+CICFA01,CFA,yes,von Frey,12,M,contra,pre,acute,2,41.1,
+CICFA01,CFA,yes,von Frey,12,M,contra,pre,acute,3,22,
+CICFA01,CFA,yes,von Frey,12,M,contra,day1,acute,1,29.1,38.56666667
+CICFA01,CFA,yes,von Frey,12,M,contra,day1,acute,2,19.2,
+CICFA01,CFA,yes,von Frey,12,M,contra,day1,acute,3,67.4,
+CICFA01,CFA,yes,von Frey,12,M,contra,day3,acute,1,49.8,52.8
+CICFA01,CFA,yes,von Frey,12,M,contra,day3,acute,2,47.1,
+CICFA01,CFA,yes,von Frey,12,M,contra,day3,acute,3,61.5,
+CICFA01,CFA,yes,von Frey,12,M,ipisi,pre,acute,1,22.4,42.56666667
+CICFA01,CFA,yes,von Frey,12,M,ipisi,pre,acute,2,41.7,
+CICFA01,CFA,yes,von Frey,12,M,ipisi,pre,acute,3,63.6,
+CICFA01,CFA,yes,von Frey,12,M,ipisi,day1,acute,1,10.4,14.13333333
+CICFA01,CFA,yes,von Frey,12,M,ipisi,day1,acute,2,7.4,
+CICFA01,CFA,yes,von Frey,12,M,ipisi,day1,acute,3,24.6,
+CICFA01,CFA,yes,von Frey,12,M,ipisi,day3,acute,1,16.2,7.966666667
+CICFA01,CFA,yes,von Frey,12,M,ipisi,day3,acute,2,4.8,
+CICFA01,CFA,yes,von Frey,12,M,ipisi,day3,acute,3,2.9,
+CICFA01,CFA,yes,Hargreaves,12,M,contra,pre,acute,1,6.8,9.833333333
+CICFA01,CFA,yes,Hargreaves,12,M,contra,pre,acute,2,6.9,
+CICFA01,CFA,yes,Hargreaves,12,M,contra,pre,acute,3,15.8,
+CICFA01,CFA,yes,Hargreaves,12,M,contra,day1,acute,1,8.4,9.666666667
+CICFA01,CFA,yes,Hargreaves,12,M,contra,day1,acute,2,8.8,
+CICFA01,CFA,yes,Hargreaves,12,M,contra,day1,acute,3,11.8,
+CICFA01,CFA,yes,Hargreaves,12,M,contra,day3,acute,1,16.7,9.933333333
+CICFA01,CFA,yes,Hargreaves,12,M,contra,day3,acute,2,5.8,
+CICFA01,CFA,yes,Hargreaves,12,M,contra,day3,acute,3,7.3,
+CICFA01,CFA,yes,Hargreaves,12,M,ipisi,pre,acute,1,12.4,11.2
+CICFA01,CFA,yes,Hargreaves,12,M,ipisi,pre,acute,2,11.4,
+CICFA01,CFA,yes,Hargreaves,12,M,ipisi,pre,acute,3,9.8,
+CICFA01,CFA,yes,Hargreaves,12,M,ipisi,day1,acute,1,6.9,7.533333333
+CICFA01,CFA,yes,Hargreaves,12,M,ipisi,day1,acute,2,8.6,
+CICFA01,CFA,yes,Hargreaves,12,M,ipisi,day1,acute,3,7.1,
+CICFA01,CFA,yes,Hargreaves,12,M,ipisi,day3,acute,1,5.4,4.233333333
+CICFA01,CFA,yes,Hargreaves,12,M,ipisi,day3,acute,2,3.2,
+CICFA01,CFA,yes,Hargreaves,12,M,ipisi,day3,acute,3,4.1,
+CICFA02,CFA,yes,von Frey,12,M,contra,pre,acute,1,55.8,34.16666667
+CICFA02,CFA,yes,von Frey,12,M,contra,pre,acute,2,21.6,
+CICFA02,CFA,yes,von Frey,12,M,contra,pre,acute,3,25.1,
+CICFA02,CFA,yes,von Frey,12,M,contra,day1,acute,1,62.4,37.66666667
+CICFA02,CFA,yes,von Frey,12,M,contra,day1,acute,2,31.1,
+CICFA02,CFA,yes,von Frey,12,M,contra,day1,acute,3,19.5,
+CICFA02,CFA,yes,von Frey,12,M,contra,day3,acute,1,24,40.63333333
+CICFA02,CFA,yes,von Frey,12,M,contra,day3,acute,2,33.6,
+CICFA02,CFA,yes,von Frey,12,M,contra,day3,acute,3,64.3,
+CICFA02,CFA,yes,von Frey,12,M,ipisi,pre,acute,1,41.4,25.1
+CICFA02,CFA,yes,von Frey,12,M,ipisi,pre,acute,2,12.8,
+CICFA02,CFA,yes,von Frey,12,M,ipisi,pre,acute,3,21.1,
+CICFA02,CFA,yes,von Frey,12,M,ipisi,day1,acute,1,7.6,12.96666667
+CICFA02,CFA,yes,von Frey,12,M,ipisi,day1,acute,2,23.8,
+CICFA02,CFA,yes,von Frey,12,M,ipisi,day1,acute,3,7.5,
+CICFA02,CFA,yes,von Frey,12,M,ipisi,day3,acute,1,3.1,6.233333333
+CICFA02,CFA,yes,von Frey,12,M,ipisi,day3,acute,2,13.6,
+CICFA02,CFA,yes,von Frey,12,M,ipisi,day3,acute,3,2,
+CICFA02,CFA,yes,Hargreaves,12,M,contra,pre,acute,1,11.2,9.766666667
+CICFA02,CFA,yes,Hargreaves,12,M,contra,pre,acute,2,9.3,
+CICFA02,CFA,yes,Hargreaves,12,M,contra,pre,acute,3,8.8,
+CICFA02,CFA,yes,Hargreaves,12,M,contra,day1,acute,1,10.7,10.63333333
+CICFA02,CFA,yes,Hargreaves,12,M,contra,day1,acute,2,14.1,
+CICFA02,CFA,yes,Hargreaves,12,M,contra,day1,acute,3,7.1,
+CICFA02,CFA,yes,Hargreaves,12,M,contra,day3,acute,1,9.6,9.766666667
+CICFA02,CFA,yes,Hargreaves,12,M,contra,day3,acute,2,10.8,
+CICFA02,CFA,yes,Hargreaves,12,M,contra,day3,acute,3,8.9,
+CICFA02,CFA,yes,Hargreaves,12,M,ipisi,pre,acute,1,11.2,8.966666667
+CICFA02,CFA,yes,Hargreaves,12,M,ipisi,pre,acute,2,6.8,
+CICFA02,CFA,yes,Hargreaves,12,M,ipisi,pre,acute,3,8.9,
+CICFA02,CFA,yes,Hargreaves,12,M,ipisi,day1,acute,1,9.4,7.133333333
+CICFA02,CFA,yes,Hargreaves,12,M,ipisi,day1,acute,2,8.8,
+CICFA02,CFA,yes,Hargreaves,12,M,ipisi,day1,acute,3,3.2,
+CICFA02,CFA,yes,Hargreaves,12,M,ipisi,day3,acute,1,7.1,7.333333333
+CICFA02,CFA,yes,Hargreaves,12,M,ipisi,day3,acute,2,8.3,
+CICFA02,CFA,yes,Hargreaves,12,M,ipisi,day3,acute,3,6.6,
+CICFA03,CFA,yes,von Frey,12,M,contra,pre,acute,1,20.3,28.4
+CICFA03,CFA,yes,von Frey,12,M,contra,pre,acute,2,15,
+CICFA03,CFA,yes,von Frey,12,M,contra,pre,acute,3,49.9,
+CICFA03,CFA,yes,von Frey,12,M,contra,day1,acute,1,53.7,42
+CICFA03,CFA,yes,von Frey,12,M,contra,day1,acute,2,51.5,
+CICFA03,CFA,yes,von Frey,12,M,contra,day1,acute,3,20.8,
+CICFA03,CFA,yes,von Frey,12,M,contra,day3,acute,1,48.6,38.33333333
+CICFA03,CFA,yes,von Frey,12,M,contra,day3,acute,2,16.3,
+CICFA03,CFA,yes,von Frey,12,M,contra,day3,acute,3,50.1,
+CICFA03,CFA,yes,von Frey,12,M,ipisi,pre,acute,1,31.3,34.5
+CICFA03,CFA,yes,von Frey,12,M,ipisi,pre,acute,2,60.4,
+CICFA03,CFA,yes,von Frey,12,M,ipisi,pre,acute,3,11.8,
+CICFA03,CFA,yes,von Frey,12,M,ipisi,day1,acute,1,5.9,16.66666667
+CICFA03,CFA,yes,von Frey,12,M,ipisi,day1,acute,2,13.1,
+CICFA03,CFA,yes,von Frey,12,M,ipisi,day1,acute,3,31,
+CICFA03,CFA,yes,von Frey,12,M,ipisi,day3,acute,1,4.5,7.166666667
+CICFA03,CFA,yes,von Frey,12,M,ipisi,day3,acute,2,9.6,
+CICFA03,CFA,yes,von Frey,12,M,ipisi,day3,acute,3,7.4,
+CICFA03,CFA,yes,Hargreaves,12,M,contra,pre,acute,1,9.8,9.3
+CICFA03,CFA,yes,Hargreaves,12,M,contra,pre,acute,2,10.5,
+CICFA03,CFA,yes,Hargreaves,12,M,contra,pre,acute,3,7.6,
+CICFA03,CFA,yes,Hargreaves,12,M,contra,day1,acute,1,14.4,10.56666667
+CICFA03,CFA,yes,Hargreaves,12,M,contra,day1,acute,2,8.6,
+CICFA03,CFA,yes,Hargreaves,12,M,contra,day1,acute,3,8.7,
+CICFA03,CFA,yes,Hargreaves,12,M,contra,day3,acute,1,11.6,10.7
+CICFA03,CFA,yes,Hargreaves,12,M,contra,day3,acute,2,10.4,
+CICFA03,CFA,yes,Hargreaves,12,M,contra,day3,acute,3,10.1,
+CICFA03,CFA,yes,Hargreaves,12,M,ipisi,pre,acute,1,12,10.13333333
+CICFA03,CFA,yes,Hargreaves,12,M,ipisi,pre,acute,2,7.4,
+CICFA03,CFA,yes,Hargreaves,12,M,ipisi,pre,acute,3,11,
+CICFA03,CFA,yes,Hargreaves,12,M,ipisi,day1,acute,1,5,6.933333333
+CICFA03,CFA,yes,Hargreaves,12,M,ipisi,day1,acute,2,7.6,
+CICFA03,CFA,yes,Hargreaves,12,M,ipisi,day1,acute,3,8.2,
+CICFA03,CFA,yes,Hargreaves,12,M,ipisi,day3,acute,1,6.1,6.7
+CICFA03,CFA,yes,Hargreaves,12,M,ipisi,day3,acute,2,6.9,
+CICFA03,CFA,yes,Hargreaves,12,M,ipisi,day3,acute,3,7.1,
+SNI07,SNI,no,von Frey,13,M,contra,pre,acute,1,14,27.23333333
+SNI07,SNI,no,von Frey,13,M,contra,pre,acute,2,18,
+SNI07,SNI,no,von Frey,13,M,contra,pre,acute,3,49.7,
+SNI07,SNI,no,von Frey,13,M,contra,day3,acute,1,44.8,29.83333333
+SNI07,SNI,no,von Frey,13,M,contra,day3,acute,2,37.3,
+SNI07,SNI,no,von Frey,13,M,contra,day3,acute,3,7.4,
+SNI07,SNI,no,von Frey,13,M,contra,day7,acute,1,14,26.56666667
+SNI07,SNI,no,von Frey,13,M,contra,day7,acute,2,27.2,
+SNI07,SNI,no,von Frey,13,M,contra,day7,acute,3,38.5,
+SNI07,SNI,no,von Frey,13,M,ipisi,pre,acute,1,23.9,32.4
+SNI07,SNI,no,von Frey,13,M,ipisi,pre,acute,2,32.6,
+SNI07,SNI,no,von Frey,13,M,ipisi,pre,acute,3,40.7,
+SNI07,SNI,no,von Frey,13,M,ipisi,day3,acute,1,7.3,7.333333333
+SNI07,SNI,no,von Frey,13,M,ipisi,day3,acute,2,5.1,
+SNI07,SNI,no,von Frey,13,M,ipisi,day3,acute,3,9.6,
+SNI07,SNI,no,von Frey,13,M,ipisi,day7,acute,1,11.1,4.9
+SNI07,SNI,no,von Frey,13,M,ipisi,day7,acute,2,0.4,
+SNI07,SNI,no,von Frey,13,M,ipisi,day7,acute,3,3.2,
+SNI07,SNI,no,Hargreaves,13,M,contra,pre,acute,1,17.8,13.2
+SNI07,SNI,no,Hargreaves,13,M,contra,pre,acute,2,8.9,
+SNI07,SNI,no,Hargreaves,13,M,contra,pre,acute,3,12.9,
+SNI07,SNI,no,Hargreaves,13,M,contra,day3,acute,1,7,10.43333333
+SNI07,SNI,no,Hargreaves,13,M,contra,day3,acute,2,9.2,
+SNI07,SNI,no,Hargreaves,13,M,contra,day3,acute,3,15.1,
+SNI07,SNI,no,Hargreaves,13,M,contra,day7,acute,1,9.4,8
+SNI07,SNI,no,Hargreaves,13,M,contra,day7,acute,2,6.1,
+SNI07,SNI,no,Hargreaves,13,M,contra,day7,acute,3,8.5,
+SNI07,SNI,no,Hargreaves,13,M,ipisi,pre,acute,1,9.3,8.6
+SNI07,SNI,no,Hargreaves,13,M,ipisi,pre,acute,2,7.9,
+SNI07,SNI,no,Hargreaves,13,M,ipisi,pre,acute,3,8.6,
+SNI07,SNI,no,Hargreaves,13,M,ipisi,day3,acute,1,14.9,10.33333333
+SNI07,SNI,no,Hargreaves,13,M,ipisi,day3,acute,2,6.4,
+SNI07,SNI,no,Hargreaves,13,M,ipisi,day3,acute,3,9.7,
+SNI07,SNI,no,Hargreaves,13,M,ipisi,day7,acute,1,12.1,10.3
+SNI07,SNI,no,Hargreaves,13,M,ipisi,day7,acute,2,9.4,
+SNI07,SNI,no,Hargreaves,13,M,ipisi,day7,acute,3,9.4,
+SNI08,SNI,no,von Frey,13,M,contra,pre,acute,1,41.8,35.5
+SNI08,SNI,no,von Frey,13,M,contra,pre,acute,2,37.5,
+SNI08,SNI,no,von Frey,13,M,contra,pre,acute,3,27.2,
+SNI08,SNI,no,von Frey,13,M,contra,day3,acute,1,23,27.3
+SNI08,SNI,no,von Frey,13,M,contra,day3,acute,2,11.1,
+SNI08,SNI,no,von Frey,13,M,contra,day3,acute,3,47.8,
+SNI08,SNI,no,von Frey,13,M,contra,day7,acute,1,18.2,32.96666667
+SNI08,SNI,no,von Frey,13,M,contra,day7,acute,2,25.3,
+SNI08,SNI,no,von Frey,13,M,contra,day7,acute,3,55.4,
+SNI08,SNI,no,von Frey,13,M,ipisi,pre,acute,1,21.8,18.56666667
+SNI08,SNI,no,von Frey,13,M,ipisi,pre,acute,2,17.6,
+SNI08,SNI,no,von Frey,13,M,ipisi,pre,acute,3,16.3,
+SNI08,SNI,no,von Frey,13,M,ipisi,day3,acute,1,6.4,6.4
+SNI08,SNI,no,von Frey,13,M,ipisi,day7,acute,1,10.8,11.16666667
+SNI08,SNI,no,von Frey,13,M,ipisi,day7,acute,2,9.6,
+SNI08,SNI,no,von Frey,13,M,ipisi,day7,acute,3,13.1,
+SNI08,SNI,no,Hargreaves,13,M,contra,pre,acute,1,19.1,15.33333333
+SNI08,SNI,no,Hargreaves,13,M,contra,pre,acute,2,18.6,
+SNI08,SNI,no,Hargreaves,13,M,contra,pre,acute,3,8.3,
+SNI08,SNI,no,Hargreaves,13,M,contra,day3,acute,1,8.9,12.16666667
+SNI08,SNI,no,Hargreaves,13,M,contra,day3,acute,2,10.1,
+SNI08,SNI,no,Hargreaves,13,M,contra,day3,acute,3,17.5,
+SNI08,SNI,no,Hargreaves,13,M,contra,day7,acute,1,12.1,8.9
+SNI08,SNI,no,Hargreaves,13,M,contra,day7,acute,2,6.7,
+SNI08,SNI,no,Hargreaves,13,M,contra,day7,acute,3,7.9,
+SNI08,SNI,no,Hargreaves,13,M,ipisi,pre,acute,1,19.6,16.46666667
+SNI08,SNI,no,Hargreaves,13,M,ipisi,pre,acute,2,21.4,
+SNI08,SNI,no,Hargreaves,13,M,ipisi,pre,acute,3,8.4,
+SNI08,SNI,no,Hargreaves,13,M,ipisi,day3,acute,1,11.1,11.76666667
+SNI08,SNI,no,Hargreaves,13,M,ipisi,day3,acute,2,14.6,
+SNI08,SNI,no,Hargreaves,13,M,ipisi,day3,acute,3,9.6,
+SNI08,SNI,no,Hargreaves,13,M,ipisi,day7,acute,1,8,9.333333333
+SNI08,SNI,no,Hargreaves,13,M,ipisi,day7,acute,2,8.6,
+SNI08,SNI,no,Hargreaves,13,M,ipisi,day7,acute,3,11.4,
+SNI09,SNI,no,von Frey,13,M,contra,pre,acute,1,44.6,22.56666667
+SNI09,SNI,no,von Frey,13,M,contra,pre,acute,2,11.8,
+SNI09,SNI,no,von Frey,13,M,contra,pre,acute,3,11.3,
+SNI09,SNI,no,von Frey,13,M,contra,day3,acute,1,15.4,23.8
+SNI09,SNI,no,von Frey,13,M,contra,day3,acute,2,44,
+SNI09,SNI,no,von Frey,13,M,contra,day3,acute,3,12,
+SNI09,SNI,no,von Frey,13,M,contra,day7,acute,1,30.4,32.16666667
+SNI09,SNI,no,von Frey,13,M,contra,day7,acute,2,19.5,
+SNI09,SNI,no,von Frey,13,M,contra,day7,acute,3,46.6,
+SNI09,SNI,no,von Frey,13,M,ipisi,pre,acute,1,16.3,30.1
+SNI09,SNI,no,von Frey,13,M,ipisi,pre,acute,2,55.4,
+SNI09,SNI,no,von Frey,13,M,ipisi,pre,acute,3,18.6,
+SNI09,SNI,no,von Frey,13,M,ipisi,day3,acute,1,13.4,13.6
+SNI09,SNI,no,von Frey,13,M,ipisi,day3,acute,2,5.1,
+SNI09,SNI,no,von Frey,13,M,ipisi,day3,acute,3,22.3,
+SNI09,SNI,no,von Frey,13,M,ipisi,day7,acute,1,5.8,5.233333333
+SNI09,SNI,no,von Frey,13,M,ipisi,day7,acute,2,9.3,
+SNI09,SNI,no,von Frey,13,M,ipisi,day7,acute,3,0.6,
+SNI09,SNI,no,Hargreaves,13,M,contra,pre,acute,1,18,13.86666667
+SNI09,SNI,no,Hargreaves,13,M,contra,pre,acute,2,12.4,
+SNI09,SNI,no,Hargreaves,13,M,contra,pre,acute,3,11.2,
+SNI09,SNI,no,Hargreaves,13,M,contra,day3,acute,1,12.4,16.6
+SNI09,SNI,no,Hargreaves,13,M,contra,day3,acute,2,21.5,
+SNI09,SNI,no,Hargreaves,13,M,contra,day3,acute,3,15.9,
+SNI09,SNI,no,Hargreaves,13,M,contra,day7,acute,1,13.5,11.66666667
+SNI09,SNI,no,Hargreaves,13,M,contra,day7,acute,2,12.5,
+SNI09,SNI,no,Hargreaves,13,M,contra,day7,acute,3,9,
+SNI09,SNI,no,Hargreaves,13,M,ipisi,pre,acute,1,13.7,13.43333333
+SNI09,SNI,no,Hargreaves,13,M,ipisi,pre,acute,2,14.4,
+SNI09,SNI,no,Hargreaves,13,M,ipisi,pre,acute,3,12.2,
+SNI09,SNI,no,Hargreaves,13,M,ipisi,day3,acute,1,11.8,10.96666667
+SNI09,SNI,no,Hargreaves,13,M,ipisi,day3,acute,2,11.8,
+SNI09,SNI,no,Hargreaves,13,M,ipisi,day3,acute,3,9.3,
+SNI09,SNI,no,Hargreaves,13,M,ipisi,day7,acute,1,12.1,13.73333333
+SNI09,SNI,no,Hargreaves,13,M,ipisi,day7,acute,2,13.2,
+SNI09,SNI,no,Hargreaves,13,M,ipisi,day7,acute,3,15.9,
+SNI10,SNI,no,von Frey,12,M,contra,pre,acute,1,36.5,24.9
+SNI10,SNI,no,von Frey,12,M,contra,pre,acute,2,24.5,
+SNI10,SNI,no,von Frey,12,M,contra,pre,acute,3,13.7,
+SNI10,SNI,no,von Frey,12,M,contra,day3,acute,1,24.7,32.53333333
+SNI10,SNI,no,von Frey,12,M,contra,day3,acute,2,38.7,
+SNI10,SNI,no,von Frey,12,M,contra,day3,acute,3,34.2,
+SNI10,SNI,no,von Frey,12,M,contra,day7,acute,1,23.3,26.9
+SNI10,SNI,no,von Frey,12,M,contra,day7,acute,2,27,
+SNI10,SNI,no,von Frey,12,M,contra,day7,acute,3,30.4,
+SNI10,SNI,no,von Frey,12,M,ipisi,pre,acute,1,16.1,26.7
+SNI10,SNI,no,von Frey,12,M,ipisi,pre,acute,2,32,
+SNI10,SNI,no,von Frey,12,M,ipisi,pre,acute,3,32,
+SNI10,SNI,no,von Frey,12,M,ipisi,day3,acute,1,3.5,11.96666667
+SNI10,SNI,no,von Frey,12,M,ipisi,day3,acute,2,8.2,
+SNI10,SNI,no,von Frey,12,M,ipisi,day3,acute,3,24.2,
+SNI10,SNI,no,von Frey,12,M,ipisi,day7,acute,1,11.2,7.866666667
+SNI10,SNI,no,von Frey,12,M,ipisi,day7,acute,2,3.2,
+SNI10,SNI,no,von Frey,12,M,ipisi,day7,acute,3,9.2,
+SNI10,SNI,no,Hargreaves,12,M,contra,pre,acute,1,6,7.4
+SNI10,SNI,no,Hargreaves,12,M,contra,pre,acute,2,8.4,
+SNI10,SNI,no,Hargreaves,12,M,contra,pre,acute,3,7.8,
+SNI10,SNI,no,Hargreaves,12,M,contra,day3,acute,1,6.5,10.33333333
+SNI10,SNI,no,Hargreaves,12,M,contra,day3,acute,2,8.2,
+SNI10,SNI,no,Hargreaves,12,M,contra,day3,acute,3,16.3,
+SNI10,SNI,no,Hargreaves,12,M,contra,day7,acute,1,9.4,9.7
+SNI10,SNI,no,Hargreaves,12,M,contra,day7,acute,2,10.4,
+SNI10,SNI,no,Hargreaves,12,M,contra,day7,acute,3,9.3,
+SNI10,SNI,no,Hargreaves,12,M,ipisi,pre,acute,1,9.6,10.5
+SNI10,SNI,no,Hargreaves,12,M,ipisi,pre,acute,2,13.7,
+SNI10,SNI,no,Hargreaves,12,M,ipisi,pre,acute,3,8.2,
+SNI10,SNI,no,Hargreaves,12,M,ipisi,day3,acute,1,9.9,10.5
+SNI10,SNI,no,Hargreaves,12,M,ipisi,day3,acute,2,12.2,
+SNI10,SNI,no,Hargreaves,12,M,ipisi,day3,acute,3,9.4,
+SNI10,SNI,no,Hargreaves,12,M,ipisi,day7,acute,1,11.1,9.833333333
+SNI10,SNI,no,Hargreaves,12,M,ipisi,day7,acute,2,10.7,
+SNI10,SNI,no,Hargreaves,12,M,ipisi,day7,acute,3,7.7,
+SNI15,SNI,no,von Frey,14,M,contra,pre,acute,1,25.9,23
+SNI15,SNI,no,von Frey,14,M,contra,pre,acute,2,32.1,
+SNI15,SNI,no,von Frey,14,M,contra,pre,acute,3,11,
+SNI15,SNI,no,von Frey,14,M,contra,day3,acute,1,46.6,42.36666667
+SNI15,SNI,no,von Frey,14,M,contra,day3,acute,2,18.2,
+SNI15,SNI,no,von Frey,14,M,contra,day3,acute,3,62.3,
+SNI15,SNI,no,von Frey,14,M,contra,day7,acute,1,66.9,37.03333333
+SNI15,SNI,no,von Frey,14,M,contra,day7,acute,2,17.2,
+SNI15,SNI,no,von Frey,14,M,contra,day7,acute,3,27,
+SNI15,SNI,no,von Frey,14,M,ipisi,pre,acute,1,42.2,18.5
+SNI15,SNI,no,von Frey,14,M,ipisi,pre,acute,2,6.1,
+SNI15,SNI,no,von Frey,14,M,ipisi,pre,acute,3,7.2,
+SNI15,SNI,no,von Frey,14,M,ipisi,day3,acute,1,5.8,6.466666667
+SNI15,SNI,no,von Frey,14,M,ipisi,day3,acute,2,8.8,
+SNI15,SNI,no,von Frey,14,M,ipisi,day3,acute,3,4.8,
+SNI15,SNI,no,von Frey,14,M,ipisi,day7,acute,1,9.2,11.26666667
+SNI15,SNI,no,von Frey,14,M,ipisi,day7,acute,2,14.7,
+SNI15,SNI,no,von Frey,14,M,ipisi,day7,acute,3,9.9,
+SNI15,SNI,no,Hargreaves,14,M,contra,pre,acute,1,7,7.333333333
+SNI15,SNI,no,Hargreaves,14,M,contra,pre,acute,2,8,
+SNI15,SNI,no,Hargreaves,14,M,contra,pre,acute,3,7,
+SNI15,SNI,no,Hargreaves,14,M,contra,day3,acute,1,13.6,9.866666667
+SNI15,SNI,no,Hargreaves,14,M,contra,day3,acute,2,7.6,
+SNI15,SNI,no,Hargreaves,14,M,contra,day3,acute,3,8.4,
+SNI15,SNI,no,Hargreaves,14,M,contra,day7,acute,1,9.2,11.96666667
+SNI15,SNI,no,Hargreaves,14,M,contra,day7,acute,2,18,
+SNI15,SNI,no,Hargreaves,14,M,contra,day7,acute,3,8.7,
+SNI15,SNI,no,Hargreaves,14,M,ipisi,pre,acute,1,12.7,9.733333333
+SNI15,SNI,no,Hargreaves,14,M,ipisi,pre,acute,2,8,
+SNI15,SNI,no,Hargreaves,14,M,ipisi,pre,acute,3,8.5,
+SNI15,SNI,no,Hargreaves,14,M,ipisi,day3,acute,1,6.5,6.466666667
+SNI15,SNI,no,Hargreaves,14,M,ipisi,day3,acute,2,4.8,
+SNI15,SNI,no,Hargreaves,14,M,ipisi,day3,acute,3,8.1,
+SNI15,SNI,no,Hargreaves,14,M,ipisi,day7,acute,1,8.2,8.266666667
+SNI15,SNI,no,Hargreaves,14,M,ipisi,day7,acute,2,8.2,
+SNI15,SNI,no,Hargreaves,14,M,ipisi,day7,acute,3,8.4,
+SNI11,SNI,no,von Frey,12,F,contra,pre,acute,1,52.7,35.4
+SNI11,SNI,no,von Frey,12,F,contra,pre,acute,2,22.5,
+SNI11,SNI,no,von Frey,12,F,contra,pre,acute,3,31,
+SNI11,SNI,no,von Frey,12,F,contra,day3,acute,1,56,56
+SNI11,SNI,no,von Frey,12,F,contra,day3,acute,2,42.2,
+SNI11,SNI,no,von Frey,12,F,contra,day3,acute,3,69.8,
+SNI11,SNI,no,von Frey,12,F,contra,day7,acute,1,70.9,54.26666667
+SNI11,SNI,no,von Frey,12,F,contra,day7,acute,2,58.3,
+SNI11,SNI,no,von Frey,12,F,contra,day7,acute,3,33.6,
+SNI11,SNI,no,von Frey,12,F,ipisi,pre,acute,1,54.8,47.06666667
+SNI11,SNI,no,von Frey,12,F,ipisi,pre,acute,2,57,
+SNI11,SNI,no,von Frey,12,F,ipisi,pre,acute,3,29.4,
+SNI11,SNI,no,von Frey,12,F,ipisi,day3,acute,1,23.2,21.66666667
+SNI11,SNI,no,von Frey,12,F,ipisi,day3,acute,2,14.6,
+SNI11,SNI,no,von Frey,12,F,ipisi,day3,acute,3,27.2,
+SNI11,SNI,no,von Frey,12,F,ipisi,day7,acute,1,2.9,7.533333333
+SNI11,SNI,no,von Frey,12,F,ipisi,day7,acute,2,12.3,
+SNI11,SNI,no,von Frey,12,F,ipisi,day7,acute,3,7.4,
+SNI11,SNI,no,Hargreaves,12,F,contra,pre,acute,1,18,14.93333333
+SNI11,SNI,no,Hargreaves,12,F,contra,pre,acute,2,13.2,
+SNI11,SNI,no,Hargreaves,12,F,contra,pre,acute,3,13.6,
+SNI11,SNI,no,Hargreaves,12,F,contra,day3,acute,1,9.7,13.83333333
+SNI11,SNI,no,Hargreaves,12,F,contra,day3,acute,2,15.4,
+SNI11,SNI,no,Hargreaves,12,F,contra,day3,acute,3,16.4,
+SNI11,SNI,no,Hargreaves,12,F,contra,day7,acute,1,12,12.1
+SNI11,SNI,no,Hargreaves,12,F,contra,day7,acute,2,14,
+SNI11,SNI,no,Hargreaves,12,F,contra,day7,acute,3,10.3,
+SNI11,SNI,no,Hargreaves,12,F,ipisi,pre,acute,1,16.1,12.86666667
+SNI11,SNI,no,Hargreaves,12,F,ipisi,pre,acute,2,13.6,
+SNI11,SNI,no,Hargreaves,12,F,ipisi,pre,acute,3,8.9,
+SNI11,SNI,no,Hargreaves,12,F,ipisi,day3,acute,1,9.6,10.36666667
+SNI11,SNI,no,Hargreaves,12,F,ipisi,day3,acute,2,11.8,
+SNI11,SNI,no,Hargreaves,12,F,ipisi,day3,acute,3,9.7,
+SNI11,SNI,no,Hargreaves,12,F,ipisi,day7,acute,1,8.4,8.5
+SNI11,SNI,no,Hargreaves,12,F,ipisi,day7,acute,2,8.7,
+SNI11,SNI,no,Hargreaves,12,F,ipisi,day7,acute,3,8.4,
+SNI12,SNI,no,von Frey,12,F,contra,pre,acute,1,63,37.5
+SNI12,SNI,no,von Frey,12,F,contra,pre,acute,2,25.8,
+SNI12,SNI,no,von Frey,12,F,contra,pre,acute,3,23.7,
+SNI12,SNI,no,von Frey,12,F,contra,day3,acute,1,15.9,38.86666667
+SNI12,SNI,no,von Frey,12,F,contra,day3,acute,2,38.5,
+SNI12,SNI,no,von Frey,12,F,contra,day3,acute,3,62.2,
+SNI12,SNI,no,von Frey,12,F,contra,day7,acute,1,14.7,21.9
+SNI12,SNI,no,von Frey,12,F,contra,day7,acute,2,33.4,
+SNI12,SNI,no,von Frey,12,F,contra,day7,acute,3,17.6,
+SNI12,SNI,no,von Frey,12,F,ipisi,pre,acute,1,40.3,42.13333333
+SNI12,SNI,no,von Frey,12,F,ipisi,pre,acute,2,27.9,
+SNI12,SNI,no,von Frey,12,F,ipisi,pre,acute,3,58.2,
+SNI12,SNI,no,von Frey,12,F,ipisi,day3,acute,1,7.9,4.4
+SNI12,SNI,no,von Frey,12,F,ipisi,day3,acute,2,0.5,
+SNI12,SNI,no,von Frey,12,F,ipisi,day3,acute,3,4.8,
+SNI12,SNI,no,von Frey,12,F,ipisi,day7,acute,1,0.6,0.566666667
+SNI12,SNI,no,von Frey,12,F,ipisi,day7,acute,2,0.9,
+SNI12,SNI,no,von Frey,12,F,ipisi,day7,acute,3,0.2,
+SNI12,SNI,no,Hargreaves,12,F,contra,pre,acute,1,16.2,13.73333333
+SNI12,SNI,no,Hargreaves,12,F,contra,pre,acute,2,9.8,
+SNI12,SNI,no,Hargreaves,12,F,contra,pre,acute,3,15.2,
+SNI12,SNI,no,Hargreaves,12,F,contra,day3,acute,1,17.6,14.53333333
+SNI12,SNI,no,Hargreaves,12,F,contra,day3,acute,2,14.8,
+SNI12,SNI,no,Hargreaves,12,F,contra,day3,acute,3,11.2,
+SNI12,SNI,no,Hargreaves,12,F,contra,day7,acute,1,12,10.8
+SNI12,SNI,no,Hargreaves,12,F,contra,day7,acute,2,10.1,
+SNI12,SNI,no,Hargreaves,12,F,contra,day7,acute,3,10.3,
+SNI12,SNI,no,Hargreaves,12,F,ipisi,pre,acute,1,20.5,16.43333333
+SNI12,SNI,no,Hargreaves,12,F,ipisi,pre,acute,2,7.1,
+SNI12,SNI,no,Hargreaves,12,F,ipisi,pre,acute,3,21.7,
+SNI12,SNI,no,Hargreaves,12,F,ipisi,day3,acute,1,8.6,10.5
+SNI12,SNI,no,Hargreaves,12,F,ipisi,day3,acute,2,11.6,
+SNI12,SNI,no,Hargreaves,12,F,ipisi,day3,acute,3,11.3,
+SNI12,SNI,no,Hargreaves,12,F,ipisi,day7,acute,1,4.5,7.333333333
+SNI12,SNI,no,Hargreaves,12,F,ipisi,day7,acute,2,12.1,
+SNI12,SNI,no,Hargreaves,12,F,ipisi,day7,acute,3,5.4,
+SNI13,SNI,no,von Frey,12,F,contra,pre,acute,1,52.1,49.66666667
+SNI13,SNI,no,von Frey,12,F,contra,pre,acute,2,51.4,
+SNI13,SNI,no,von Frey,12,F,contra,pre,acute,3,45.5,
+SNI13,SNI,no,von Frey,12,F,contra,day3,acute,1,36.6,35.33333333
+SNI13,SNI,no,von Frey,12,F,contra,day3,acute,2,17.2,
+SNI13,SNI,no,von Frey,12,F,contra,day3,acute,3,52.2,
+SNI13,SNI,no,von Frey,12,F,contra,day7,acute,1,39.7,57.36666667
+SNI13,SNI,no,von Frey,12,F,contra,day7,acute,2,66.2,
+SNI13,SNI,no,von Frey,12,F,contra,day7,acute,3,66.2,
+SNI13,SNI,no,von Frey,12,F,ipisi,pre,acute,1,31.7,25.63333333
+SNI13,SNI,no,von Frey,12,F,ipisi,pre,acute,2,21.6,
+SNI13,SNI,no,von Frey,12,F,ipisi,pre,acute,3,23.6,
+SNI13,SNI,no,von Frey,12,F,ipisi,day3,acute,1,1.9,4.6
+SNI13,SNI,no,von Frey,12,F,ipisi,day3,acute,2,6.6,
+SNI13,SNI,no,von Frey,12,F,ipisi,day3,acute,3,5.3,
+SNI13,SNI,no,von Frey,12,F,ipisi,day7,acute,1,0.3,2.6
+SNI13,SNI,no,von Frey,12,F,ipisi,day7,acute,2,2.4,
+SNI13,SNI,no,von Frey,12,F,ipisi,day7,acute,3,5.1,
+SNI13,SNI,no,Hargreaves,12,F,contra,pre,acute,1,14,11.93333333
+SNI13,SNI,no,Hargreaves,12,F,contra,pre,acute,2,7,
+SNI13,SNI,no,Hargreaves,12,F,contra,pre,acute,3,14.8,
+SNI13,SNI,no,Hargreaves,12,F,contra,day3,acute,1,6.9,8
+SNI13,SNI,no,Hargreaves,12,F,contra,day3,acute,2,8.6,
+SNI13,SNI,no,Hargreaves,12,F,contra,day3,acute,3,8.5,
+SNI13,SNI,no,Hargreaves,12,F,contra,day7,acute,1,9.7,9.7
+SNI13,SNI,no,Hargreaves,12,F,contra,day7,acute,2,7.6,
+SNI13,SNI,no,Hargreaves,12,F,contra,day7,acute,3,11.8,
+SNI13,SNI,no,Hargreaves,12,F,ipisi,pre,acute,1,10.1,10
+SNI13,SNI,no,Hargreaves,12,F,ipisi,pre,acute,2,8.3,
+SNI13,SNI,no,Hargreaves,12,F,ipisi,pre,acute,3,11.6,
+SNI13,SNI,no,Hargreaves,12,F,ipisi,day3,acute,1,6.7,7.733333333
+SNI13,SNI,no,Hargreaves,12,F,ipisi,day3,acute,2,8.6,
+SNI13,SNI,no,Hargreaves,12,F,ipisi,day3,acute,3,7.9,
+SNI13,SNI,no,Hargreaves,12,F,ipisi,day7,acute,1,10.5,10.63333333
+SNI13,SNI,no,Hargreaves,12,F,ipisi,day7,acute,2,10.1,
+SNI13,SNI,no,Hargreaves,12,F,ipisi,day7,acute,3,11.3,
+SNI14,SNI,no,von Frey,12,F,contra,pre,acute,1,62.4,54.9
+SNI14,SNI,no,von Frey,12,F,contra,pre,acute,2,46,
+SNI14,SNI,no,von Frey,12,F,contra,pre,acute,3,56.3,
+SNI14,SNI,no,von Frey,12,F,contra,day3,acute,1,20.3,43.26666667
+SNI14,SNI,no,von Frey,12,F,contra,day3,acute,2,68.6,
+SNI14,SNI,no,von Frey,12,F,contra,day3,acute,3,40.9,
+SNI14,SNI,no,von Frey,12,F,contra,day7,acute,1,31,25.76666667
+SNI14,SNI,no,von Frey,12,F,contra,day7,acute,2,20.1,
+SNI14,SNI,no,von Frey,12,F,contra,day7,acute,3,26.2,
+SNI14,SNI,no,von Frey,12,F,ipisi,pre,acute,1,35.8,32.4
+SNI14,SNI,no,von Frey,12,F,ipisi,pre,acute,2,24.9,
+SNI14,SNI,no,von Frey,12,F,ipisi,pre,acute,3,36.5,
+SNI14,SNI,no,von Frey,12,F,ipisi,day3,acute,1,6.9,14.93333333
+SNI14,SNI,no,von Frey,12,F,ipisi,day3,acute,2,13.1,
+SNI14,SNI,no,von Frey,12,F,ipisi,day3,acute,3,24.8,
+SNI14,SNI,no,von Frey,12,F,ipisi,day7,acute,1,0.9,3.466666667
+SNI14,SNI,no,von Frey,12,F,ipisi,day7,acute,2,7,
+SNI14,SNI,no,von Frey,12,F,ipisi,day7,acute,3,2.5,
+SNI14,SNI,no,Hargreaves,12,F,contra,pre,acute,1,22.7,16.7
+SNI14,SNI,no,Hargreaves,12,F,contra,pre,acute,2,17,
+SNI14,SNI,no,Hargreaves,12,F,contra,pre,acute,3,10.4,
+SNI14,SNI,no,Hargreaves,12,F,contra,day3,acute,1,9.7,9.166666667
+SNI14,SNI,no,Hargreaves,12,F,contra,day3,acute,2,7.3,
+SNI14,SNI,no,Hargreaves,12,F,contra,day3,acute,3,10.5,
+SNI14,SNI,no,Hargreaves,12,F,contra,day7,acute,1,16.8,14.2
+SNI14,SNI,no,Hargreaves,12,F,contra,day7,acute,2,11.6,
+SNI14,SNI,no,Hargreaves,12,F,contra,day7,acute,3,14.2,
+SNI14,SNI,no,Hargreaves,12,F,ipisi,pre,acute,1,22.7,17.03333333
+SNI14,SNI,no,Hargreaves,12,F,ipisi,pre,acute,2,15.7,
+SNI14,SNI,no,Hargreaves,12,F,ipisi,pre,acute,3,12.7,
+SNI14,SNI,no,Hargreaves,12,F,ipisi,day3,acute,1,7.9,9.2
+SNI14,SNI,no,Hargreaves,12,F,ipisi,day3,acute,2,7.5,
+SNI14,SNI,no,Hargreaves,12,F,ipisi,day3,acute,3,12.2,
+SNI14,SNI,no,Hargreaves,12,F,ipisi,day7,acute,1,13.7,10
+SNI14,SNI,no,Hargreaves,12,F,ipisi,day7,acute,2,8.2,
+SNI14,SNI,no,Hargreaves,12,F,ipisi,day7,acute,3,8.1,
+CISNI01,SNI,yes,von Frey,12,F,contra,pre,acute,1,27.2,31.9
+CISNI01,SNI,yes,von Frey,12,F,contra,pre,acute,2,31.5,
+CISNI01,SNI,yes,von Frey,12,F,contra,pre,acute,3,37,
+CISNI01,SNI,yes,von Frey,12,F,contra,day3,acute,1,16.6,38.93333333
+CISNI01,SNI,yes,von Frey,12,F,contra,day3,acute,2,61.5,
+CISNI01,SNI,yes,von Frey,12,F,contra,day3,acute,3,38.7,
+CISNI01,SNI,yes,von Frey,12,F,contra,day7,acute,1,23.6,45.1
+CISNI01,SNI,yes,von Frey,12,F,contra,day7,acute,2,46.1,
+CISNI01,SNI,yes,von Frey,12,F,contra,day7,acute,3,65.6,
+CISNI01,SNI,yes,von Frey,12,F,ipisi,pre,acute,1,67.9,35.33333333
+CISNI01,SNI,yes,von Frey,12,F,ipisi,pre,acute,2,27.7,
+CISNI01,SNI,yes,von Frey,12,F,ipisi,pre,acute,3,10.4,
+CISNI01,SNI,yes,von Frey,12,F,ipisi,day3,acute,1,10.2,15.83333333
+CISNI01,SNI,yes,von Frey,12,F,ipisi,day3,acute,2,7.6,
+CISNI01,SNI,yes,von Frey,12,F,ipisi,day3,acute,3,29.7,
+CISNI01,SNI,yes,von Frey,12,F,ipisi,day7,acute,1,17.2,15.16666667
+CISNI01,SNI,yes,von Frey,12,F,ipisi,day7,acute,2,0.5,
+CISNI01,SNI,yes,von Frey,12,F,ipisi,day7,acute,3,27.8,
+CISNI01,SNI,yes,Hargreaves,12,F,contra,pre,acute,1,12.4,10.1
+CISNI01,SNI,yes,Hargreaves,12,F,contra,pre,acute,2,9.2,
+CISNI01,SNI,yes,Hargreaves,12,F,contra,pre,acute,3,8.7,
+CISNI01,SNI,yes,Hargreaves,12,F,contra,day3,acute,1,8.3,8.9
+CISNI01,SNI,yes,Hargreaves,12,F,contra,day3,acute,2,7.3,
+CISNI01,SNI,yes,Hargreaves,12,F,contra,day3,acute,3,11.1,
+CISNI01,SNI,yes,Hargreaves,12,F,contra,day7,acute,1,9.6,11.13333333
+CISNI01,SNI,yes,Hargreaves,12,F,contra,day7,acute,2,7.2,
+CISNI01,SNI,yes,Hargreaves,12,F,contra,day7,acute,3,16.6,
+CISNI01,SNI,yes,Hargreaves,12,F,ipisi,pre,acute,1,9.1,9.366666667
+CISNI01,SNI,yes,Hargreaves,12,F,ipisi,pre,acute,2,8.6,
+CISNI01,SNI,yes,Hargreaves,12,F,ipisi,pre,acute,3,10.4,
+CISNI01,SNI,yes,Hargreaves,12,F,ipisi,day3,acute,1,8.4,8.8
+CISNI01,SNI,yes,Hargreaves,12,F,ipisi,day3,acute,2,8.2,
+CISNI01,SNI,yes,Hargreaves,12,F,ipisi,day3,acute,3,9.8,
+CISNI01,SNI,yes,Hargreaves,12,F,ipisi,day7,acute,1,11,8.6
+CISNI01,SNI,yes,Hargreaves,12,F,ipisi,day7,acute,2,6.8,
+CISNI01,SNI,yes,Hargreaves,12,F,ipisi,day7,acute,3,8,
+CISNI02,SNI,yes,von Frey,14,M,contra,pre,acute,1,49.4,40.1
+CISNI02,SNI,yes,von Frey,14,M,contra,pre,acute,2,43.8,
+CISNI02,SNI,yes,von Frey,14,M,contra,pre,acute,3,27.1,
+CISNI02,SNI,yes,von Frey,14,M,contra,day3,acute,1,37.4,57.7
+CISNI02,SNI,yes,von Frey,14,M,contra,day3,acute,2,72.6,
+CISNI02,SNI,yes,von Frey,14,M,contra,day3,acute,3,63.1,
+CISNI02,SNI,yes,von Frey,14,M,contra,day7,acute,1,42.4,35.23333333
+CISNI02,SNI,yes,von Frey,14,M,contra,day7,acute,2,46.4,
+CISNI02,SNI,yes,von Frey,14,M,contra,day7,acute,3,16.9,
+CISNI02,SNI,yes,von Frey,14,M,ipisi,pre,acute,1,28.7,25.5
+CISNI02,SNI,yes,von Frey,14,M,ipisi,pre,acute,2,24.4,
+CISNI02,SNI,yes,von Frey,14,M,ipisi,pre,acute,3,23.4,
+CISNI02,SNI,yes,von Frey,14,M,ipisi,day3,acute,1,2.5,9.633333333
+CISNI02,SNI,yes,von Frey,14,M,ipisi,day3,acute,2,4.2,
+CISNI02,SNI,yes,von Frey,14,M,ipisi,day3,acute,3,22.2,
+CISNI02,SNI,yes,von Frey,14,M,ipisi,day7,acute,1,1.1,2.733333333
+CISNI02,SNI,yes,von Frey,14,M,ipisi,day7,acute,2,3.9,
+CISNI02,SNI,yes,von Frey,14,M,ipisi,day7,acute,3,3.2,
+CISNI02,SNI,yes,Hargreaves,14,M,contra,pre,acute,1,14.6,12.03333333
+CISNI02,SNI,yes,Hargreaves,14,M,contra,pre,acute,2,11.4,
+CISNI02,SNI,yes,Hargreaves,14,M,contra,pre,acute,3,10.1,
+CISNI02,SNI,yes,Hargreaves,14,M,contra,day3,acute,1,8.8,9.066666667
+CISNI02,SNI,yes,Hargreaves,14,M,contra,day3,acute,2,8.7,
+CISNI02,SNI,yes,Hargreaves,14,M,contra,day3,acute,3,9.7,
+CISNI02,SNI,yes,Hargreaves,14,M,contra,day7,acute,1,11.6,10.3
+CISNI02,SNI,yes,Hargreaves,14,M,contra,day7,acute,2,10.5,
+CISNI02,SNI,yes,Hargreaves,14,M,contra,day7,acute,3,8.8,
+CISNI02,SNI,yes,Hargreaves,14,M,ipisi,pre,acute,1,11,9.966666667
+CISNI02,SNI,yes,Hargreaves,14,M,ipisi,pre,acute,2,10.4,
+CISNI02,SNI,yes,Hargreaves,14,M,ipisi,pre,acute,3,8.5,
+CISNI02,SNI,yes,Hargreaves,14,M,ipisi,day3,acute,1,7.5,6.566666667
+CISNI02,SNI,yes,Hargreaves,14,M,ipisi,day3,acute,2,8,
+CISNI02,SNI,yes,Hargreaves,14,M,ipisi,day3,acute,3,4.2,
+CISNI02,SNI,yes,Hargreaves,14,M,ipisi,day7,acute,1,9.2,8.5
+CISNI02,SNI,yes,Hargreaves,14,M,ipisi,day7,acute,2,8.6,
+CISNI02,SNI,yes,Hargreaves,14,M,ipisi,day7,acute,3,7.7,
+CISNI03,SNI,yes,von Frey,14,M,contra,pre,acute,1,30.2,26.66666667
+CISNI03,SNI,yes,von Frey,14,M,contra,pre,acute,2,26.5,
+CISNI03,SNI,yes,von Frey,14,M,contra,pre,acute,3,23.3,
+CISNI03,SNI,yes,von Frey,14,M,contra,day3,acute,1,54.7,47.86666667
+CISNI03,SNI,yes,von Frey,14,M,contra,day3,acute,2,73.5,
+CISNI03,SNI,yes,von Frey,14,M,contra,day3,acute,3,15.4,
+CISNI03,SNI,yes,von Frey,14,M,contra,day7,acute,1,20.5,33.03333333
+CISNI03,SNI,yes,von Frey,14,M,contra,day7,acute,2,23.2,
+CISNI03,SNI,yes,von Frey,14,M,contra,day7,acute,3,55.4,
+CISNI03,SNI,yes,von Frey,14,M,ipisi,pre,acute,1,15.3,17.96666667
+CISNI03,SNI,yes,von Frey,14,M,ipisi,pre,acute,2,15.5,
+CISNI03,SNI,yes,von Frey,14,M,ipisi,pre,acute,3,23.1,
+CISNI03,SNI,yes,von Frey,14,M,ipisi,day3,acute,1,18.1,21.13333333
+CISNI03,SNI,yes,von Frey,14,M,ipisi,day3,acute,2,18.1,
+CISNI03,SNI,yes,von Frey,14,M,ipisi,day3,acute,3,27.2,
+CISNI03,SNI,yes,von Frey,14,M,ipisi,day7,acute,1,4,5.533333333
+CISNI03,SNI,yes,von Frey,14,M,ipisi,day7,acute,2,11.2,
+CISNI03,SNI,yes,von Frey,14,M,ipisi,day7,acute,3,1.4,
+CISNI03,SNI,yes,Hargreaves,14,M,contra,pre,acute,1,12.9,12.26666667
+CISNI03,SNI,yes,Hargreaves,14,M,contra,pre,acute,2,10.8,
+CISNI03,SNI,yes,Hargreaves,14,M,contra,pre,acute,3,13.1,
+CISNI03,SNI,yes,Hargreaves,14,M,contra,day3,acute,1,15,14.03333333
+CISNI03,SNI,yes,Hargreaves,14,M,contra,day3,acute,2,15,
+CISNI03,SNI,yes,Hargreaves,14,M,contra,day3,acute,3,12.1,
+CISNI03,SNI,yes,Hargreaves,14,M,contra,day7,acute,1,6.2,7.633333333
+CISNI03,SNI,yes,Hargreaves,14,M,contra,day7,acute,2,7.3,
+CISNI03,SNI,yes,Hargreaves,14,M,contra,day7,acute,3,9.4,
+CISNI03,SNI,yes,Hargreaves,14,M,ipisi,pre,acute,1,12.6,12.16666667
+CISNI03,SNI,yes,Hargreaves,14,M,ipisi,pre,acute,2,9.7,
+CISNI03,SNI,yes,Hargreaves,14,M,ipisi,pre,acute,3,14.2,
+CISNI03,SNI,yes,Hargreaves,14,M,ipisi,day3,acute,1,9.6,10.96666667
+CISNI03,SNI,yes,Hargreaves,14,M,ipisi,day3,acute,2,13.5,
+CISNI03,SNI,yes,Hargreaves,14,M,ipisi,day3,acute,3,9.8,
+CISNI03,SNI,yes,Hargreaves,14,M,ipisi,day7,acute,1,8.4,7.1
+CISNI03,SNI,yes,Hargreaves,14,M,ipisi,day7,acute,2,7.2,
+CISNI03,SNI,yes,Hargreaves,14,M,ipisi,day7,acute,3,5.7,
+CISNI04,SNI,yes,von Frey,14,M,contra,pre,acute,1,38.7,27.3
+CISNI04,SNI,yes,von Frey,14,M,contra,pre,acute,2,12.5,
+CISNI04,SNI,yes,von Frey,14,M,contra,pre,acute,3,30.7,
+CISNI04,SNI,yes,von Frey,14,M,contra,day3,acute,1,17.6,24
+CISNI04,SNI,yes,von Frey,14,M,contra,day3,acute,2,16.6,
+CISNI04,SNI,yes,von Frey,14,M,contra,day3,acute,3,37.8,
+CISNI04,SNI,yes,von Frey,14,M,contra,day7,acute,1,53.4,41.73333333
+CISNI04,SNI,yes,von Frey,14,M,contra,day7,acute,2,16.8,
+CISNI04,SNI,yes,von Frey,14,M,contra,day7,acute,3,55,
+CISNI04,SNI,yes,von Frey,14,M,ipisi,pre,acute,1,17.2,19.33333333
+CISNI04,SNI,yes,von Frey,14,M,ipisi,pre,acute,2,19.4,
+CISNI04,SNI,yes,von Frey,14,M,ipisi,pre,acute,3,21.4,
+CISNI04,SNI,yes,von Frey,14,M,ipisi,day3,acute,1,1.2,8.3
+CISNI04,SNI,yes,von Frey,14,M,ipisi,day3,acute,2,4.8,
+CISNI04,SNI,yes,von Frey,14,M,ipisi,day3,acute,3,18.9,
+CISNI04,SNI,yes,von Frey,14,M,ipisi,day7,acute,1,3.7,5.4
+CISNI04,SNI,yes,von Frey,14,M,ipisi,day7,acute,2,9.2,
+CISNI04,SNI,yes,von Frey,14,M,ipisi,day7,acute,3,3.3,
+CISNI04,SNI,yes,Hargreaves,14,M,contra,pre,acute,1,12,8.633333333
+CISNI04,SNI,yes,Hargreaves,14,M,contra,pre,acute,2,6.7,
+CISNI04,SNI,yes,Hargreaves,14,M,contra,pre,acute,3,7.2,
+CISNI04,SNI,yes,Hargreaves,14,M,contra,day3,acute,1,7,7.333333333
+CISNI04,SNI,yes,Hargreaves,14,M,contra,day3,acute,2,8.2,
+CISNI04,SNI,yes,Hargreaves,14,M,contra,day3,acute,3,6.8,
+CISNI04,SNI,yes,Hargreaves,14,M,contra,day7,acute,1,10.7,10.93333333
+CISNI04,SNI,yes,Hargreaves,14,M,contra,day7,acute,2,8.3,
+CISNI04,SNI,yes,Hargreaves,14,M,contra,day7,acute,3,13.8,
+CISNI04,SNI,yes,Hargreaves,14,M,ipisi,pre,acute,1,8.2,8.866666667
+CISNI04,SNI,yes,Hargreaves,14,M,ipisi,pre,acute,2,8.8,
+CISNI04,SNI,yes,Hargreaves,14,M,ipisi,pre,acute,3,9.6,
+CISNI04,SNI,yes,Hargreaves,14,M,ipisi,day3,acute,1,7,7
+CISNI04,SNI,yes,Hargreaves,14,M,ipisi,day3,acute,2,9.9,
+CISNI04,SNI,yes,Hargreaves,14,M,ipisi,day3,acute,3,4.1,
+CISNI04,SNI,yes,Hargreaves,14,M,ipisi,day7,acute,1,11,11.06666667
+CISNI04,SNI,yes,Hargreaves,14,M,ipisi,day7,acute,2,11,
+CISNI04,SNI,yes,Hargreaves,14,M,ipisi,day7,acute,3,11.2,
+CISNI05,SNI,yes,von Frey,12,F,contra,pre,acute,1,22.7,30.2
+CISNI05,SNI,yes,von Frey,12,F,contra,pre,acute,2,23.1,
+CISNI05,SNI,yes,von Frey,12,F,contra,pre,acute,3,44.8,
+CISNI05,SNI,yes,von Frey,12,F,contra,day3,acute,1,17.2,32.5
+CISNI05,SNI,yes,von Frey,12,F,contra,day3,acute,2,40.5,
+CISNI05,SNI,yes,von Frey,12,F,contra,day3,acute,3,39.8,
+CISNI05,SNI,yes,von Frey,12,F,contra,day7,acute,1,59.2,43.96666667
+CISNI05,SNI,yes,von Frey,12,F,contra,day7,acute,2,47.6,
+CISNI05,SNI,yes,von Frey,12,F,contra,day7,acute,3,25.1,
+CISNI05,SNI,yes,von Frey,12,F,ipisi,pre,acute,1,28.1,32.73333333
+CISNI05,SNI,yes,von Frey,12,F,ipisi,pre,acute,2,27.1,
+CISNI05,SNI,yes,von Frey,12,F,ipisi,pre,acute,3,43,
+CISNI05,SNI,yes,von Frey,12,F,ipisi,day3,acute,1,12.6,12.73333333
+CISNI05,SNI,yes,von Frey,12,F,ipisi,day3,acute,2,13.8,
+CISNI05,SNI,yes,von Frey,12,F,ipisi,day3,acute,3,11.8,
+CISNI05,SNI,yes,von Frey,12,F,ipisi,day7,acute,1,4.4,8.133333333
+CISNI05,SNI,yes,von Frey,12,F,ipisi,day7,acute,2,11.4,
+CISNI05,SNI,yes,von Frey,12,F,ipisi,day7,acute,3,8.6,
+CISNI05,SNI,yes,Hargreaves,12,F,contra,pre,acute,1,8.6,8.4
+CISNI05,SNI,yes,Hargreaves,12,F,contra,pre,acute,2,8.3,
+CISNI05,SNI,yes,Hargreaves,12,F,contra,pre,acute,3,8.3,
+CISNI05,SNI,yes,Hargreaves,12,F,contra,day3,acute,1,13.1,10.36666667
+CISNI05,SNI,yes,Hargreaves,12,F,contra,day3,acute,2,8.6,
+CISNI05,SNI,yes,Hargreaves,12,F,contra,day3,acute,3,9.4,
+CISNI05,SNI,yes,Hargreaves,12,F,contra,day7,acute,1,8.5,8.966666667
+CISNI05,SNI,yes,Hargreaves,12,F,contra,day7,acute,2,7.9,
+CISNI05,SNI,yes,Hargreaves,12,F,contra,day7,acute,3,10.5,
+CISNI05,SNI,yes,Hargreaves,12,F,ipisi,pre,acute,1,7.6,9.533333333
+CISNI05,SNI,yes,Hargreaves,12,F,ipisi,pre,acute,2,11.9,
+CISNI05,SNI,yes,Hargreaves,12,F,ipisi,pre,acute,3,9.1,
+CISNI05,SNI,yes,Hargreaves,12,F,ipisi,day3,acute,1,7.9,6.1
+CISNI05,SNI,yes,Hargreaves,12,F,ipisi,day3,acute,2,4.1,
+CISNI05,SNI,yes,Hargreaves,12,F,ipisi,day3,acute,3,6.3,
+CISNI05,SNI,yes,Hargreaves,12,F,ipisi,day7,acute,1,6.7,5.566666667
+CISNI05,SNI,yes,Hargreaves,12,F,ipisi,day7,acute,2,5.3,
+CISNI05,SNI,yes,Hargreaves,12,F,ipisi,day7,acute,3,4.7,
+CISNI06,SNI,yes,von Frey,12,F,contra,pre,acute,1,23,27.36666667
+CISNI06,SNI,yes,von Frey,12,F,contra,pre,acute,2,33.7,
+CISNI06,SNI,yes,von Frey,12,F,contra,pre,acute,3,25.4,
+CISNI06,SNI,yes,von Frey,12,F,contra,day3,acute,1,58.5,37.1
+CISNI06,SNI,yes,von Frey,12,F,contra,day3,acute,2,32.1,
+CISNI06,SNI,yes,von Frey,12,F,contra,day3,acute,3,20.7,
+CISNI06,SNI,yes,von Frey,12,F,contra,day7,acute,1,36.5,32.63333333
+CISNI06,SNI,yes,von Frey,12,F,contra,day7,acute,2,34.5,
+CISNI06,SNI,yes,von Frey,12,F,contra,day7,acute,3,26.9,
+CISNI06,SNI,yes,von Frey,12,F,ipisi,pre,acute,1,53.5,44.7
+CISNI06,SNI,yes,von Frey,12,F,ipisi,pre,acute,2,44.5,
+CISNI06,SNI,yes,von Frey,12,F,ipisi,pre,acute,3,36.1,
+CISNI06,SNI,yes,von Frey,12,F,ipisi,day3,acute,1,14.9,16.23333333
+CISNI06,SNI,yes,von Frey,12,F,ipisi,day3,acute,2,15.6,
+CISNI06,SNI,yes,von Frey,12,F,ipisi,day3,acute,3,18.2,
+CISNI06,SNI,yes,von Frey,12,F,ipisi,day7,acute,1,3.3,5.233333333
+CISNI06,SNI,yes,von Frey,12,F,ipisi,day7,acute,2,4.1,
+CISNI06,SNI,yes,von Frey,12,F,ipisi,day7,acute,3,8.3,
+CISNI06,SNI,yes,Hargreaves,12,F,contra,pre,acute,1,10.1,10.03333333
+CISNI06,SNI,yes,Hargreaves,12,F,contra,pre,acute,2,10,
+CISNI06,SNI,yes,Hargreaves,12,F,contra,pre,acute,3,10,
+CISNI06,SNI,yes,Hargreaves,12,F,contra,day3,acute,1,7.6,9.633333333
+CISNI06,SNI,yes,Hargreaves,12,F,contra,day3,acute,2,8.8,
+CISNI06,SNI,yes,Hargreaves,12,F,contra,day3,acute,3,12.5,
+CISNI06,SNI,yes,Hargreaves,12,F,contra,day7,acute,1,11.5,10.6
+CISNI06,SNI,yes,Hargreaves,12,F,contra,day7,acute,2,10.7,
+CISNI06,SNI,yes,Hargreaves,12,F,contra,day7,acute,3,9.6,
+CISNI06,SNI,yes,Hargreaves,12,F,ipisi,pre,acute,1,9.3,11.23333333
+CISNI06,SNI,yes,Hargreaves,12,F,ipisi,pre,acute,2,13.8,
+CISNI06,SNI,yes,Hargreaves,12,F,ipisi,pre,acute,3,10.6,
+CISNI06,SNI,yes,Hargreaves,12,F,ipisi,day3,acute,1,9.1,9.166666667
+CISNI06,SNI,yes,Hargreaves,12,F,ipisi,day3,acute,2,8.4,
+CISNI06,SNI,yes,Hargreaves,12,F,ipisi,day3,acute,3,10,
+CISNI06,SNI,yes,Hargreaves,12,F,ipisi,day7,acute,1,5.9,6.6
+CISNI06,SNI,yes,Hargreaves,12,F,ipisi,day7,acute,2,8.1,
+CISNI06,SNI,yes,Hargreaves,12,F,ipisi,day7,acute,3,5.8,
+CISNI07,SNI,yes,von Frey,12,F,contra,pre,acute,1,31,39.95
+CISNI07,SNI,yes,von Frey,12,F,contra,pre,acute,2,48.9,
+CISNI07,SNI,yes,von Frey,12,F,contra,day3,acute,1,40.4,38.93333333
+CISNI07,SNI,yes,von Frey,12,F,contra,day3,acute,2,19.2,
+CISNI07,SNI,yes,von Frey,12,F,contra,day3,acute,3,57.2,
+CISNI07,SNI,yes,von Frey,12,F,contra,day7,acute,1,34.9,26.03333333
+CISNI07,SNI,yes,von Frey,12,F,contra,day7,acute,2,19.8,
+CISNI07,SNI,yes,von Frey,12,F,contra,day7,acute,3,23.4,
+CISNI07,SNI,yes,von Frey,12,F,ipisi,pre,acute,1,19.2,29.5
+CISNI07,SNI,yes,von Frey,12,F,ipisi,pre,acute,2,31.8,
+CISNI07,SNI,yes,von Frey,12,F,ipisi,pre,acute,3,37.5,
+CISNI07,SNI,yes,von Frey,12,F,ipisi,day3,acute,1,6,8
+CISNI07,SNI,yes,von Frey,12,F,ipisi,day3,acute,2,10,
+CISNI07,SNI,yes,von Frey,12,F,ipisi,day3,acute,3,8,
+CISNI07,SNI,yes,von Frey,12,F,ipisi,day7,acute,1,2.9,5.733333333
+CISNI07,SNI,yes,von Frey,12,F,ipisi,day7,acute,2,8.9,
+CISNI07,SNI,yes,von Frey,12,F,ipisi,day7,acute,3,5.4,
+CISNI07,SNI,yes,Hargreaves,12,F,contra,pre,acute,1,10.2,8.933333333
+CISNI07,SNI,yes,Hargreaves,12,F,contra,pre,acute,2,7.9,
+CISNI07,SNI,yes,Hargreaves,12,F,contra,pre,acute,3,8.7,
+CISNI07,SNI,yes,Hargreaves,12,F,contra,day3,acute,1,13,9.3
+CISNI07,SNI,yes,Hargreaves,12,F,contra,day3,acute,2,5.5,
+CISNI07,SNI,yes,Hargreaves,12,F,contra,day3,acute,3,9.4,
+CISNI07,SNI,yes,Hargreaves,12,F,contra,day7,acute,1,5.5,6.033333333
+CISNI07,SNI,yes,Hargreaves,12,F,contra,day7,acute,2,6,
+CISNI07,SNI,yes,Hargreaves,12,F,contra,day7,acute,3,6.6,
+CISNI07,SNI,yes,Hargreaves,12,F,ipisi,pre,acute,1,6.9,9.033333333
+CISNI07,SNI,yes,Hargreaves,12,F,ipisi,pre,acute,2,7.1,
+CISNI07,SNI,yes,Hargreaves,12,F,ipisi,pre,acute,3,13.1,
+CISNI07,SNI,yes,Hargreaves,12,F,ipisi,day3,acute,1,4.9,7.166666667
+CISNI07,SNI,yes,Hargreaves,12,F,ipisi,day3,acute,2,6,
+CISNI07,SNI,yes,Hargreaves,12,F,ipisi,day3,acute,3,10.6,
+CISNI07,SNI,yes,Hargreaves,12,F,ipisi,day7,acute,1,7.4,6.2
+CISNI07,SNI,yes,Hargreaves,12,F,ipisi,day7,acute,2,5.1,
+CISNI07,SNI,yes,Hargreaves,12,F,ipisi,day7,acute,3,6.1,
+CCIC01,control,yes,von Frey,14,M,contra,pre,chronic,1,23.6,37.53333333
+CCIC01,control,yes,von Frey,14,M,contra,pre,chronic,2,40.6,
+CCIC01,control,yes,von Frey,14,M,contra,pre,chronic,3,48.4,
+CCIC01,control,yes,von Frey,14,M,contra,day3,chronic,1,42.5,47.7
+CCIC01,control,yes,von Frey,14,M,contra,day3,chronic,2,50.9,
+CCIC01,control,yes,von Frey,14,M,contra,day3,chronic,3,49.7,
+CCIC01,control,yes,von Frey,14,M,contra,day7,chronic,1,58.8,51.3
+CCIC01,control,yes,von Frey,14,M,contra,day7,chronic,2,57.7,
+CCIC01,control,yes,von Frey,14,M,contra,day7,chronic,3,37.4,
+CCIC01,control,yes,von Frey,14,M,contra,day14,chronic,1,68.5,46.36666667
+CCIC01,control,yes,von Frey,14,M,contra,day14,chronic,2,20.1,
+CCIC01,control,yes,von Frey,14,M,contra,day14,chronic,3,50.5,
+CCIC01,control,yes,von Frey,14,M,contra,day21,chronic,1,47.5,46.66666667
+CCIC01,control,yes,von Frey,14,M,contra,day21,chronic,2,22.7,
+CCIC01,control,yes,von Frey,14,M,contra,day21,chronic,3,69.8,
+CCIC01,control,yes,von Frey,14,M,contra,day28,chronic,1,51.7,51.46666667
+CCIC01,control,yes,von Frey,14,M,contra,day28,chronic,2,66.5,
+CCIC01,control,yes,von Frey,14,M,contra,day28,chronic,3,36.2,
+CCIC01,control,yes,von Frey,14,M,ipisi,pre,chronic,1,29.5,24.36666667
+CCIC01,control,yes,von Frey,14,M,ipisi,pre,chronic,2,23.5,
+CCIC01,control,yes,von Frey,14,M,ipisi,pre,chronic,3,20.1,
+CCIC01,control,yes,von Frey,14,M,ipisi,day3,chronic,1,22.1,28.86666667
+CCIC01,control,yes,von Frey,14,M,ipisi,day3,chronic,2,36.9,
+CCIC01,control,yes,von Frey,14,M,ipisi,day3,chronic,3,27.6,
+CCIC01,control,yes,von Frey,14,M,ipisi,day7,chronic,1,38,41.56666667
+CCIC01,control,yes,von Frey,14,M,ipisi,day7,chronic,2,31.3,
+CCIC01,control,yes,von Frey,14,M,ipisi,day7,chronic,3,55.4,
+CCIC01,control,yes,von Frey,14,M,ipisi,day14,chronic,1,62.9,54.36666667
+CCIC01,control,yes,von Frey,14,M,ipisi,day14,chronic,2,56,
+CCIC01,control,yes,von Frey,14,M,ipisi,day14,chronic,3,44.2,
+CCIC01,control,yes,von Frey,14,M,ipisi,day21,chronic,1,36.2,49.96666667
+CCIC01,control,yes,von Frey,14,M,ipisi,day21,chronic,2,44.8,
+CCIC01,control,yes,von Frey,14,M,ipisi,day21,chronic,3,68.9,
+CCIC01,control,yes,von Frey,14,M,ipisi,day28,chronic,1,57.8,48.76666667
+CCIC01,control,yes,von Frey,14,M,ipisi,day28,chronic,2,49.6,
+CCIC01,control,yes,von Frey,14,M,ipisi,day28,chronic,3,38.9,
+CCIC01,control,yes,Hargreaves,14,M,contra,pre,chronic,1,13.8,10.33333333
+CCIC01,control,yes,Hargreaves,14,M,contra,pre,chronic,2,9.6,
+CCIC01,control,yes,Hargreaves,14,M,contra,pre,chronic,3,7.6,
+CCIC01,control,yes,Hargreaves,14,M,contra,day3,chronic,1,9.1,8.566666667
+CCIC01,control,yes,Hargreaves,14,M,contra,day3,chronic,2,7.6,
+CCIC01,control,yes,Hargreaves,14,M,contra,day3,chronic,3,9,
+CCIC01,control,yes,Hargreaves,14,M,contra,day7,chronic,1,11.2,10.2
+CCIC01,control,yes,Hargreaves,14,M,contra,day7,chronic,2,8.4,
+CCIC01,control,yes,Hargreaves,14,M,contra,day7,chronic,3,11,
+CCIC01,control,yes,Hargreaves,14,M,contra,day14,chronic,1,8,8.833333333
+CCIC01,control,yes,Hargreaves,14,M,contra,day14,chronic,2,9.8,
+CCIC01,control,yes,Hargreaves,14,M,contra,day14,chronic,3,8.7,
+CCIC01,control,yes,Hargreaves,14,M,contra,day21,chronic,1,7.4,10.16666667
+CCIC01,control,yes,Hargreaves,14,M,contra,day21,chronic,2,10.8,
+CCIC01,control,yes,Hargreaves,14,M,contra,day21,chronic,3,12.3,
+CCIC01,control,yes,Hargreaves,14,M,contra,day28,chronic,1,11.3,10.26666667
+CCIC01,control,yes,Hargreaves,14,M,contra,day28,chronic,2,9.4,
+CCIC01,control,yes,Hargreaves,14,M,contra,day28,chronic,3,10.1,
+CCIC01,control,yes,Hargreaves,14,M,ipisi,pre,chronic,1,7.2,7.9
+CCIC01,control,yes,Hargreaves,14,M,ipisi,pre,chronic,2,8.5,
+CCIC01,control,yes,Hargreaves,14,M,ipisi,pre,chronic,3,8,
+CCIC01,control,yes,Hargreaves,14,M,ipisi,day3,chronic,1,11.5,9.933333333
+CCIC01,control,yes,Hargreaves,14,M,ipisi,day3,chronic,2,9.5,
+CCIC01,control,yes,Hargreaves,14,M,ipisi,day3,chronic,3,8.8,
+CCIC01,control,yes,Hargreaves,14,M,ipisi,day7,chronic,1,14.2,10.1
+CCIC01,control,yes,Hargreaves,14,M,ipisi,day7,chronic,2,9.3,
+CCIC01,control,yes,Hargreaves,14,M,ipisi,day7,chronic,3,6.8,
+CCIC01,control,yes,Hargreaves,14,M,ipisi,day14,chronic,1,7.1,7.466666667
+CCIC01,control,yes,Hargreaves,14,M,ipisi,day14,chronic,2,7.2,
+CCIC01,control,yes,Hargreaves,14,M,ipisi,day14,chronic,3,8.1,
+CCIC01,control,yes,Hargreaves,14,M,ipisi,day21,chronic,1,10.9,8.966666667
+CCIC01,control,yes,Hargreaves,14,M,ipisi,day21,chronic,2,8.1,
+CCIC01,control,yes,Hargreaves,14,M,ipisi,day21,chronic,3,7.9,
+CCIC01,control,yes,Hargreaves,14,M,ipisi,day28,chronic,1,9.7,10.2
+CCIC01,control,yes,Hargreaves,14,M,ipisi,day28,chronic,2,13.3,
+CCIC01,control,yes,Hargreaves,14,M,ipisi,day28,chronic,3,7.6,
+CCIC02,control,yes,von Frey,14,M,contra,pre,chronic,1,39.7,32.8
+CCIC02,control,yes,von Frey,14,M,contra,pre,chronic,2,21,
+CCIC02,control,yes,von Frey,14,M,contra,pre,chronic,3,37.7,
+CCIC02,control,yes,von Frey,14,M,contra,day3,chronic,1,31.7,25.63333333
+CCIC02,control,yes,von Frey,14,M,contra,day3,chronic,2,29.4,
+CCIC02,control,yes,von Frey,14,M,contra,day3,chronic,3,15.8,
+CCIC02,control,yes,von Frey,14,M,contra,day7,chronic,1,45.5,34.16666667
+CCIC02,control,yes,von Frey,14,M,contra,day7,chronic,2,28.9,
+CCIC02,control,yes,von Frey,14,M,contra,day7,chronic,3,28.1,
+CCIC02,control,yes,von Frey,14,M,contra,day14,chronic,1,45.8,38.86666667
+CCIC02,control,yes,von Frey,14,M,contra,day14,chronic,2,23.4,
+CCIC02,control,yes,von Frey,14,M,contra,day14,chronic,3,47.4,
+CCIC02,control,yes,von Frey,14,M,contra,day21,chronic,1,69.4,44.43333333
+CCIC02,control,yes,von Frey,14,M,contra,day21,chronic,2,15.9,
+CCIC02,control,yes,von Frey,14,M,contra,day21,chronic,3,48,
+CCIC02,control,yes,von Frey,14,M,contra,day28,chronic,1,53.2,47.66666667
+CCIC02,control,yes,von Frey,14,M,contra,day28,chronic,2,49.6,
+CCIC02,control,yes,von Frey,14,M,contra,day28,chronic,3,40.2,
+CCIC02,control,yes,von Frey,14,M,ipisi,pre,chronic,1,56.5,57.93333333
+CCIC02,control,yes,von Frey,14,M,ipisi,pre,chronic,2,61,
+CCIC02,control,yes,von Frey,14,M,ipisi,pre,chronic,3,56.3,
+CCIC02,control,yes,von Frey,14,M,ipisi,day3,chronic,1,61.2,46
+CCIC02,control,yes,von Frey,14,M,ipisi,day3,chronic,2,56.3,
+CCIC02,control,yes,von Frey,14,M,ipisi,day3,chronic,3,20.5,
+CCIC02,control,yes,von Frey,14,M,ipisi,day7,chronic,1,33.7,37.73333333
+CCIC02,control,yes,von Frey,14,M,ipisi,day7,chronic,2,32.5,
+CCIC02,control,yes,von Frey,14,M,ipisi,day7,chronic,3,47,
+CCIC02,control,yes,von Frey,14,M,ipisi,day14,chronic,1,43.4,41.33333333
+CCIC02,control,yes,von Frey,14,M,ipisi,day14,chronic,2,46.1,
+CCIC02,control,yes,von Frey,14,M,ipisi,day14,chronic,3,34.5,
+CCIC02,control,yes,von Frey,14,M,ipisi,day21,chronic,1,48.2,50.86666667
+CCIC02,control,yes,von Frey,14,M,ipisi,day21,chronic,2,49.9,
+CCIC02,control,yes,von Frey,14,M,ipisi,day21,chronic,3,54.5,
+CCIC02,control,yes,von Frey,14,M,ipisi,day28,chronic,1,33.8,39.4
+CCIC02,control,yes,von Frey,14,M,ipisi,day28,chronic,2,35.9,
+CCIC02,control,yes,von Frey,14,M,ipisi,day28,chronic,3,48.5,
+CCIC02,control,yes,Hargreaves,14,M,contra,pre,chronic,1,11.9,9.933333333
+CCIC02,control,yes,Hargreaves,14,M,contra,pre,chronic,2,9.7,
+CCIC02,control,yes,Hargreaves,14,M,contra,pre,chronic,3,8.2,
+CCIC02,control,yes,Hargreaves,14,M,contra,day3,chronic,1,15.1,10.2
+CCIC02,control,yes,Hargreaves,14,M,contra,day3,chronic,2,6,
+CCIC02,control,yes,Hargreaves,14,M,contra,day3,chronic,3,9.5,
+CCIC02,control,yes,Hargreaves,14,M,contra,day7,chronic,1,8.3,7.733333333
+CCIC02,control,yes,Hargreaves,14,M,contra,day7,chronic,2,6.4,
+CCIC02,control,yes,Hargreaves,14,M,contra,day7,chronic,3,8.5,
+CCIC02,control,yes,Hargreaves,14,M,contra,day14,chronic,1,14.8,12.56666667
+CCIC02,control,yes,Hargreaves,14,M,contra,day14,chronic,2,13.7,
+CCIC02,control,yes,Hargreaves,14,M,contra,day14,chronic,3,9.2,
+CCIC02,control,yes,Hargreaves,14,M,contra,day21,chronic,1,11.7,10.1
+CCIC02,control,yes,Hargreaves,14,M,contra,day21,chronic,2,9.7,
+CCIC02,control,yes,Hargreaves,14,M,contra,day21,chronic,3,8.9,
+CCIC02,control,yes,Hargreaves,14,M,contra,day28,chronic,1,7.4,10.63333333
+CCIC02,control,yes,Hargreaves,14,M,contra,day28,chronic,2,16.4,
+CCIC02,control,yes,Hargreaves,14,M,contra,day28,chronic,3,8.1,
+CCIC02,control,yes,Hargreaves,14,M,ipisi,pre,chronic,1,10.7,9.5
+CCIC02,control,yes,Hargreaves,14,M,ipisi,pre,chronic,2,9.5,
+CCIC02,control,yes,Hargreaves,14,M,ipisi,pre,chronic,3,8.3,
+CCIC02,control,yes,Hargreaves,14,M,ipisi,day3,chronic,1,8.4,9.233333333
+CCIC02,control,yes,Hargreaves,14,M,ipisi,day3,chronic,2,9.5,
+CCIC02,control,yes,Hargreaves,14,M,ipisi,day3,chronic,3,9.8,
+CCIC02,control,yes,Hargreaves,14,M,ipisi,day7,chronic,1,6.3,7.7
+CCIC02,control,yes,Hargreaves,14,M,ipisi,day7,chronic,2,8.6,
+CCIC02,control,yes,Hargreaves,14,M,ipisi,day7,chronic,3,8.2,
+CCIC02,control,yes,Hargreaves,14,M,ipisi,day14,chronic,1,11.6,9.666666667
+CCIC02,control,yes,Hargreaves,14,M,ipisi,day14,chronic,2,7.5,
+CCIC02,control,yes,Hargreaves,14,M,ipisi,day14,chronic,3,9.9,
+CCIC02,control,yes,Hargreaves,14,M,ipisi,day21,chronic,1,13.5,9.9
+CCIC02,control,yes,Hargreaves,14,M,ipisi,day21,chronic,2,8.1,
+CCIC02,control,yes,Hargreaves,14,M,ipisi,day21,chronic,3,8.1,
+CCIC02,control,yes,Hargreaves,14,M,ipisi,day28,chronic,1,13.2,10.56666667
+CCIC02,control,yes,Hargreaves,14,M,ipisi,day28,chronic,2,10.4,
+CCIC02,control,yes,Hargreaves,14,M,ipisi,day28,chronic,3,8.1,
+CCIC03,control,yes,von Frey,14,M,contra,pre,chronic,1,29.9,26.96666667
+CCIC03,control,yes,von Frey,14,M,contra,pre,chronic,2,22.1,
+CCIC03,control,yes,von Frey,14,M,contra,pre,chronic,3,28.9,
+CCIC03,control,yes,von Frey,14,M,contra,day3,chronic,1,24.7,29.86666667
+CCIC03,control,yes,von Frey,14,M,contra,day3,chronic,2,25.3,
+CCIC03,control,yes,von Frey,14,M,contra,day3,chronic,3,39.6,
+CCIC03,control,yes,von Frey,14,M,contra,day7,chronic,1,24.3,35.33333333
+CCIC03,control,yes,von Frey,14,M,contra,day7,chronic,2,53,
+CCIC03,control,yes,von Frey,14,M,contra,day7,chronic,3,28.7,
+CCIC03,control,yes,von Frey,14,M,contra,day14,chronic,1,29,29.43333333
+CCIC03,control,yes,von Frey,14,M,contra,day14,chronic,2,25.7,
+CCIC03,control,yes,von Frey,14,M,contra,day14,chronic,3,33.6,
+CCIC03,control,yes,von Frey,14,M,contra,day21,chronic,1,32.7,29.1
+CCIC03,control,yes,von Frey,14,M,contra,day21,chronic,2,28.7,
+CCIC03,control,yes,von Frey,14,M,contra,day21,chronic,3,25.9,
+CCIC03,control,yes,von Frey,14,M,contra,day28,chronic,1,24.4,31.16666667
+CCIC03,control,yes,von Frey,14,M,contra,day28,chronic,2,48.8,
+CCIC03,control,yes,von Frey,14,M,contra,day28,chronic,3,20.3,
+CCIC03,control,yes,von Frey,14,M,ipisi,pre,chronic,1,27.8,27.16666667
+CCIC03,control,yes,von Frey,14,M,ipisi,pre,chronic,2,21.1,
+CCIC03,control,yes,von Frey,14,M,ipisi,pre,chronic,3,32.6,
+CCIC03,control,yes,von Frey,14,M,ipisi,day3,chronic,1,27.9,36.63333333
+CCIC03,control,yes,von Frey,14,M,ipisi,day3,chronic,2,42.9,
+CCIC03,control,yes,von Frey,14,M,ipisi,day3,chronic,3,39.1,
+CCIC03,control,yes,von Frey,14,M,ipisi,day7,chronic,1,30.4,33.96666667
+CCIC03,control,yes,von Frey,14,M,ipisi,day7,chronic,2,25.5,
+CCIC03,control,yes,von Frey,14,M,ipisi,day7,chronic,3,46,
+CCIC03,control,yes,von Frey,14,M,ipisi,day14,chronic,1,30.1,28.5
+CCIC03,control,yes,von Frey,14,M,ipisi,day14,chronic,2,24.6,
+CCIC03,control,yes,von Frey,14,M,ipisi,day14,chronic,3,30.8,
+CCIC03,control,yes,von Frey,14,M,ipisi,day21,chronic,1,27.6,37.3
+CCIC03,control,yes,von Frey,14,M,ipisi,day21,chronic,2,41.7,
+CCIC03,control,yes,von Frey,14,M,ipisi,day21,chronic,3,42.6,
+CCIC03,control,yes,von Frey,14,M,ipisi,day28,chronic,1,64.3,42.66666667
+CCIC03,control,yes,von Frey,14,M,ipisi,day28,chronic,2,30.9,
+CCIC03,control,yes,von Frey,14,M,ipisi,day28,chronic,3,32.8,
+CCIC03,control,yes,Hargreaves,14,M,contra,pre,chronic,1,12.7,8.733333333
+CCIC03,control,yes,Hargreaves,14,M,contra,pre,chronic,2,5.8,
+CCIC03,control,yes,Hargreaves,14,M,contra,pre,chronic,3,7.7,
+CCIC03,control,yes,Hargreaves,14,M,contra,day3,chronic,1,10.9,8.2
+CCIC03,control,yes,Hargreaves,14,M,contra,day3,chronic,2,6.8,
+CCIC03,control,yes,Hargreaves,14,M,contra,day3,chronic,3,6.9,
+CCIC03,control,yes,Hargreaves,14,M,contra,day7,chronic,1,7.2,8.733333333
+CCIC03,control,yes,Hargreaves,14,M,contra,day7,chronic,2,9.9,
+CCIC03,control,yes,Hargreaves,14,M,contra,day7,chronic,3,9.1,
+CCIC03,control,yes,Hargreaves,14,M,contra,day14,chronic,1,9.8,8.033333333
+CCIC03,control,yes,Hargreaves,14,M,contra,day14,chronic,2,6.8,
+CCIC03,control,yes,Hargreaves,14,M,contra,day14,chronic,3,7.5,
+CCIC03,control,yes,Hargreaves,14,M,contra,day21,chronic,1,11.9,8.9
+CCIC03,control,yes,Hargreaves,14,M,contra,day21,chronic,2,7.7,
+CCIC03,control,yes,Hargreaves,14,M,contra,day21,chronic,3,7.1,
+CCIC03,control,yes,Hargreaves,14,M,contra,day28,chronic,1,10.6,8.266666667
+CCIC03,control,yes,Hargreaves,14,M,contra,day28,chronic,2,6.9,
+CCIC03,control,yes,Hargreaves,14,M,contra,day28,chronic,3,7.3,
+CCIC03,control,yes,Hargreaves,14,M,ipisi,pre,chronic,1,10.6,7.933333333
+CCIC03,control,yes,Hargreaves,14,M,ipisi,pre,chronic,2,6.1,
+CCIC03,control,yes,Hargreaves,14,M,ipisi,pre,chronic,3,7.1,
+CCIC03,control,yes,Hargreaves,14,M,ipisi,day3,chronic,1,8.9,8.266666667
+CCIC03,control,yes,Hargreaves,14,M,ipisi,day3,chronic,2,8.1,
+CCIC03,control,yes,Hargreaves,14,M,ipisi,day3,chronic,3,7.8,
+CCIC03,control,yes,Hargreaves,14,M,ipisi,day7,chronic,1,5.6,5.6
+CCIC03,control,yes,Hargreaves,14,M,ipisi,day7,chronic,2,5.1,
+CCIC03,control,yes,Hargreaves,14,M,ipisi,day7,chronic,3,6.1,
+CCIC03,control,yes,Hargreaves,14,M,ipisi,day14,chronic,1,5.5,7.3
+CCIC03,control,yes,Hargreaves,14,M,ipisi,day14,chronic,2,7.2,
+CCIC03,control,yes,Hargreaves,14,M,ipisi,day14,chronic,3,9.2,
+CCIC03,control,yes,Hargreaves,14,M,ipisi,day21,chronic,1,9.3,8.09
+CCIC03,control,yes,Hargreaves,14,M,ipisi,day21,chronic,2,7.1,
+CCIC03,control,yes,Hargreaves,14,M,ipisi,day21,chronic,3,7.87,
+CCIC03,control,yes,Hargreaves,14,M,ipisi,day28,chronic,1,8.9,7.533333333
+CCIC03,control,yes,Hargreaves,14,M,ipisi,day28,chronic,2,6.4,
+CCIC03,control,yes,Hargreaves,14,M,ipisi,day28,chronic,3,7.3,
+CCIC04,control,yes,von Frey,15,F,contra,pre,chronic,1,25.1,38.06666667
+CCIC04,control,yes,von Frey,15,F,contra,pre,chronic,2,44.7,
+CCIC04,control,yes,von Frey,15,F,contra,pre,chronic,3,44.4,
+CCIC04,control,yes,von Frey,15,F,contra,day3,chronic,1,15.5,32.46666667
+CCIC04,control,yes,von Frey,15,F,contra,day3,chronic,2,26.1,
+CCIC04,control,yes,von Frey,15,F,contra,day3,chronic,3,55.8,
+CCIC04,control,yes,von Frey,15,F,contra,day7,chronic,1,16,23.1
+CCIC04,control,yes,von Frey,15,F,contra,day7,chronic,2,19.6,
+CCIC04,control,yes,von Frey,15,F,contra,day7,chronic,3,33.7,
+CCIC04,control,yes,von Frey,15,F,contra,day14,chronic,1,23.5,29.93333333
+CCIC04,control,yes,von Frey,15,F,contra,day14,chronic,2,48.4,
+CCIC04,control,yes,von Frey,15,F,contra,day14,chronic,3,17.9,
+CCIC04,control,yes,von Frey,15,F,contra,day21,chronic,1,18.1,24.66666667
+CCIC04,control,yes,von Frey,15,F,contra,day21,chronic,2,40.7,
+CCIC04,control,yes,von Frey,15,F,contra,day21,chronic,3,15.2,
+CCIC04,control,yes,von Frey,15,F,contra,day28,chronic,1,36.5,29.3
+CCIC04,control,yes,von Frey,15,F,contra,day28,chronic,2,28.1,
+CCIC04,control,yes,von Frey,15,F,contra,day28,chronic,3,23.3,
+CCIC04,control,yes,von Frey,15,F,ipisi,pre,chronic,1,30.6,36.63333333
+CCIC04,control,yes,von Frey,15,F,ipisi,pre,chronic,2,50.2,
+CCIC04,control,yes,von Frey,15,F,ipisi,pre,chronic,3,29.1,
+CCIC04,control,yes,von Frey,15,F,ipisi,day3,chronic,1,67.2,36.13333333
+CCIC04,control,yes,von Frey,15,F,ipisi,day3,chronic,2,28.8,
+CCIC04,control,yes,von Frey,15,F,ipisi,day3,chronic,3,12.4,
+CCIC04,control,yes,von Frey,15,F,ipisi,day7,chronic,1,30.1,38.76666667
+CCIC04,control,yes,von Frey,15,F,ipisi,day7,chronic,2,66.1,
+CCIC04,control,yes,von Frey,15,F,ipisi,day7,chronic,3,20.1,
+CCIC04,control,yes,von Frey,15,F,ipisi,day14,chronic,1,34.1,29.3
+CCIC04,control,yes,von Frey,15,F,ipisi,day14,chronic,2,24.3,
+CCIC04,control,yes,von Frey,15,F,ipisi,day14,chronic,3,29.5,
+CCIC04,control,yes,von Frey,15,F,ipisi,day21,chronic,1,22.7,24.9
+CCIC04,control,yes,von Frey,15,F,ipisi,day21,chronic,2,34.8,
+CCIC04,control,yes,von Frey,15,F,ipisi,day21,chronic,3,17.2,
+CCIC04,control,yes,von Frey,15,F,ipisi,day28,chronic,1,52.3,31.5
+CCIC04,control,yes,von Frey,15,F,ipisi,day28,chronic,2,25.9,
+CCIC04,control,yes,von Frey,15,F,ipisi,day28,chronic,3,16.3,
+CCIC04,control,yes,Hargreaves,15,F,contra,pre,chronic,1,16.3,13.96666667
+CCIC04,control,yes,Hargreaves,15,F,contra,pre,chronic,2,15.1,
+CCIC04,control,yes,Hargreaves,15,F,contra,pre,chronic,3,10.5,
+CCIC04,control,yes,Hargreaves,15,F,contra,day3,chronic,1,8.4,14.23333333
+CCIC04,control,yes,Hargreaves,15,F,contra,day3,chronic,2,17.5,
+CCIC04,control,yes,Hargreaves,15,F,contra,day3,chronic,3,16.8,
+CCIC04,control,yes,Hargreaves,15,F,contra,day7,chronic,1,18.7,13.83333333
+CCIC04,control,yes,Hargreaves,15,F,contra,day7,chronic,2,9.6,
+CCIC04,control,yes,Hargreaves,15,F,contra,day7,chronic,3,13.2,
+CCIC04,control,yes,Hargreaves,15,F,contra,day14,chronic,1,14.3,13.43333333
+CCIC04,control,yes,Hargreaves,15,F,contra,day14,chronic,2,16.3,
+CCIC04,control,yes,Hargreaves,15,F,contra,day14,chronic,3,9.7,
+CCIC04,control,yes,Hargreaves,15,F,contra,day21,chronic,1,7.2,10.73333333
+CCIC04,control,yes,Hargreaves,15,F,contra,day21,chronic,2,12,
+CCIC04,control,yes,Hargreaves,15,F,contra,day21,chronic,3,13,
+CCIC04,control,yes,Hargreaves,15,F,contra,day28,chronic,1,11.4,11.26666667
+CCIC04,control,yes,Hargreaves,15,F,contra,day28,chronic,2,9.3,
+CCIC04,control,yes,Hargreaves,15,F,contra,day28,chronic,3,13.1,
+CCIC04,control,yes,Hargreaves,15,F,ipisi,pre,chronic,1,14,13.96666667
+CCIC04,control,yes,Hargreaves,15,F,ipisi,pre,chronic,2,15.7,
+CCIC04,control,yes,Hargreaves,15,F,ipisi,pre,chronic,3,12.2,
+CCIC04,control,yes,Hargreaves,15,F,ipisi,day3,chronic,1,11.4,11.83333333
+CCIC04,control,yes,Hargreaves,15,F,ipisi,day3,chronic,2,11.5,
+CCIC04,control,yes,Hargreaves,15,F,ipisi,day3,chronic,3,12.6,
+CCIC04,control,yes,Hargreaves,15,F,ipisi,day7,chronic,1,15.6,11.8
+CCIC04,control,yes,Hargreaves,15,F,ipisi,day7,chronic,2,6.9,
+CCIC04,control,yes,Hargreaves,15,F,ipisi,day7,chronic,3,12.9,
+CCIC04,control,yes,Hargreaves,15,F,ipisi,day14,chronic,1,10,10.83333333
+CCIC04,control,yes,Hargreaves,15,F,ipisi,day14,chronic,2,8.5,
+CCIC04,control,yes,Hargreaves,15,F,ipisi,day14,chronic,3,14,
+CCIC04,control,yes,Hargreaves,15,F,ipisi,day21,chronic,1,9.3,10.76666667
+CCIC04,control,yes,Hargreaves,15,F,ipisi,day21,chronic,2,12.1,
+CCIC04,control,yes,Hargreaves,15,F,ipisi,day21,chronic,3,10.9,
+CCIC04,control,yes,Hargreaves,15,F,ipisi,day28,chronic,1,10,11.33333333
+CCIC04,control,yes,Hargreaves,15,F,ipisi,day28,chronic,2,9.2,
+CCIC04,control,yes,Hargreaves,15,F,ipisi,day28,chronic,3,14.8,
+CCIC05,control,yes,von Frey,15,F,contra,pre,chronic,1,44.5,45.46666667
+CCIC05,control,yes,von Frey,15,F,contra,pre,chronic,2,69.6,
+CCIC05,control,yes,von Frey,15,F,contra,pre,chronic,3,22.3,
+CCIC05,control,yes,von Frey,15,F,contra,day3,chronic,1,32.9,29.26666667
+CCIC05,control,yes,von Frey,15,F,contra,day3,chronic,2,36.7,
+CCIC05,control,yes,von Frey,15,F,contra,day3,chronic,3,18.2,
+CCIC05,control,yes,von Frey,15,F,contra,day7,chronic,1,27.4,27.16666667
+CCIC05,control,yes,von Frey,15,F,contra,day7,chronic,2,12.7,
+CCIC05,control,yes,von Frey,15,F,contra,day7,chronic,3,41.4,
+CCIC05,control,yes,von Frey,15,F,contra,day14,chronic,1,33,26.03333333
+CCIC05,control,yes,von Frey,15,F,contra,day14,chronic,2,24.9,
+CCIC05,control,yes,von Frey,15,F,contra,day14,chronic,3,20.2,
+CCIC05,control,yes,von Frey,15,F,contra,day21,chronic,1,49.9,30.3
+CCIC05,control,yes,von Frey,15,F,contra,day21,chronic,2,15.4,
+CCIC05,control,yes,von Frey,15,F,contra,day21,chronic,3,25.6,
+CCIC05,control,yes,von Frey,15,F,contra,day28,chronic,1,56.3,35.56666667
+CCIC05,control,yes,von Frey,15,F,contra,day28,chronic,2,30.3,
+CCIC05,control,yes,von Frey,15,F,contra,day28,chronic,3,20.1,
+CCIC05,control,yes,von Frey,15,F,ipisi,pre,chronic,1,35.2,34.53333333
+CCIC05,control,yes,von Frey,15,F,ipisi,pre,chronic,2,42.7,
+CCIC05,control,yes,von Frey,15,F,ipisi,pre,chronic,3,25.7,
+CCIC05,control,yes,von Frey,15,F,ipisi,day3,chronic,1,25.7,24.96666667
+CCIC05,control,yes,von Frey,15,F,ipisi,day3,chronic,2,37.4,
+CCIC05,control,yes,von Frey,15,F,ipisi,day3,chronic,3,11.8,
+CCIC05,control,yes,von Frey,15,F,ipisi,day7,chronic,1,36.3,35.36666667
+CCIC05,control,yes,von Frey,15,F,ipisi,day7,chronic,2,28.7,
+CCIC05,control,yes,von Frey,15,F,ipisi,day7,chronic,3,41.1,
+CCIC05,control,yes,von Frey,15,F,ipisi,day14,chronic,1,23.3,26.46666667
+CCIC05,control,yes,von Frey,15,F,ipisi,day14,chronic,2,34.9,
+CCIC05,control,yes,von Frey,15,F,ipisi,day14,chronic,3,21.2,
+CCIC05,control,yes,von Frey,15,F,ipisi,day21,chronic,1,32.2,30.23333333
+CCIC05,control,yes,von Frey,15,F,ipisi,day21,chronic,2,22.4,
+CCIC05,control,yes,von Frey,15,F,ipisi,day21,chronic,3,36.1,
+CCIC05,control,yes,von Frey,15,F,ipisi,day28,chronic,1,24.9,32.63333333
+CCIC05,control,yes,von Frey,15,F,ipisi,day28,chronic,2,41.3,
+CCIC05,control,yes,von Frey,15,F,ipisi,day28,chronic,3,31.7,
+CCIC05,control,yes,Hargreaves,15,F,contra,pre,chronic,1,8.6,8.5
+CCIC05,control,yes,Hargreaves,15,F,contra,pre,chronic,2,8.4,
+CCIC05,control,yes,Hargreaves,15,F,contra,day3,chronic,1,10.9,11.53333333
+CCIC05,control,yes,Hargreaves,15,F,contra,day3,chronic,2,13.2,
+CCIC05,control,yes,Hargreaves,15,F,contra,day3,chronic,3,10.5,
+CCIC05,control,yes,Hargreaves,15,F,contra,day7,chronic,1,10.5,10.93333333
+CCIC05,control,yes,Hargreaves,15,F,contra,day7,chronic,2,9.7,
+CCIC05,control,yes,Hargreaves,15,F,contra,day7,chronic,3,12.6,
+CCIC05,control,yes,Hargreaves,15,F,contra,day14,chronic,1,13.7,11.2
+CCIC05,control,yes,Hargreaves,15,F,contra,day14,chronic,2,8.3,
+CCIC05,control,yes,Hargreaves,15,F,contra,day14,chronic,3,11.6,
+CCIC05,control,yes,Hargreaves,15,F,contra,day21,chronic,1,11.2,11.4
+CCIC05,control,yes,Hargreaves,15,F,contra,day21,chronic,2,14.2,
+CCIC05,control,yes,Hargreaves,15,F,contra,day21,chronic,3,8.8,
+CCIC05,control,yes,Hargreaves,15,F,contra,day28,chronic,1,14.1,11.2
+CCIC05,control,yes,Hargreaves,15,F,contra,day28,chronic,2,9.2,
+CCIC05,control,yes,Hargreaves,15,F,contra,day28,chronic,3,10.3,
+CCIC05,control,yes,Hargreaves,15,F,ipisi,pre,chronic,1,11.1,9.266666667
+CCIC05,control,yes,Hargreaves,15,F,ipisi,pre,chronic,2,8.1,
+CCIC05,control,yes,Hargreaves,15,F,ipisi,pre,chronic,3,8.6,
+CCIC05,control,yes,Hargreaves,15,F,ipisi,day3,chronic,1,8.6,9.566666667
+CCIC05,control,yes,Hargreaves,15,F,ipisi,day3,chronic,2,7.8,
+CCIC05,control,yes,Hargreaves,15,F,ipisi,day3,chronic,3,12.3,
+CCIC05,control,yes,Hargreaves,15,F,ipisi,day7,chronic,1,6.5,10.1
+CCIC05,control,yes,Hargreaves,15,F,ipisi,day7,chronic,2,12.7,
+CCIC05,control,yes,Hargreaves,15,F,ipisi,day7,chronic,3,11.1,
+CCIC05,control,yes,Hargreaves,15,F,ipisi,day14,chronic,1,12.7,11.26666667
+CCIC05,control,yes,Hargreaves,15,F,ipisi,day14,chronic,2,9.5,
+CCIC05,control,yes,Hargreaves,15,F,ipisi,day14,chronic,3,11.6,
+CCIC05,control,yes,Hargreaves,15,F,ipisi,day21,chronic,1,13.8,12.73333333
+CCIC05,control,yes,Hargreaves,15,F,ipisi,day21,chronic,2,10.6,
+CCIC05,control,yes,Hargreaves,15,F,ipisi,day21,chronic,3,13.8,
+CCIC05,control,yes,Hargreaves,15,F,ipisi,day28,chronic,1,13.1,12.2
+CCIC05,control,yes,Hargreaves,15,F,ipisi,day28,chronic,2,10.9,
+CCIC05,control,yes,Hargreaves,15,F,ipisi,day28,chronic,3,12.6,
+CCIC06,control,yes,von Frey,15,F,contra,pre,chronic,1,37,47.4
+CCIC06,control,yes,von Frey,15,F,contra,pre,chronic,2,38.1,
+CCIC06,control,yes,von Frey,15,F,contra,pre,chronic,3,67.1,
+CCIC06,control,yes,von Frey,15,F,contra,day3,chronic,1,23.3,29.06666667
+CCIC06,control,yes,von Frey,15,F,contra,day3,chronic,2,40.5,
+CCIC06,control,yes,von Frey,15,F,contra,day3,chronic,3,23.4,
+CCIC06,control,yes,von Frey,15,F,contra,day7,chronic,1,55.7,38.3
+CCIC06,control,yes,von Frey,15,F,contra,day7,chronic,2,28.2,
+CCIC06,control,yes,von Frey,15,F,contra,day7,chronic,3,31,
+CCIC06,control,yes,von Frey,15,F,contra,day14,chronic,1,23,29.4
+CCIC06,control,yes,von Frey,15,F,contra,day14,chronic,2,41.3,
+CCIC06,control,yes,von Frey,15,F,contra,day14,chronic,3,23.9,
+CCIC06,control,yes,von Frey,15,F,contra,day21,chronic,1,42.1,40.03333333
+CCIC06,control,yes,von Frey,15,F,contra,day21,chronic,2,56.8,
+CCIC06,control,yes,von Frey,15,F,contra,day21,chronic,3,21.2,
+CCIC06,control,yes,von Frey,15,F,contra,day28,chronic,1,49.6,44.26666667
+CCIC06,control,yes,von Frey,15,F,contra,day28,chronic,2,42.6,
+CCIC06,control,yes,von Frey,15,F,contra,day28,chronic,3,40.6,
+CCIC06,control,yes,von Frey,15,F,ipisi,pre,chronic,1,57.6,45.1
+CCIC06,control,yes,von Frey,15,F,ipisi,pre,chronic,2,23.8,
+CCIC06,control,yes,von Frey,15,F,ipisi,pre,chronic,3,53.9,
+CCIC06,control,yes,von Frey,15,F,ipisi,day3,chronic,1,66.9,58.2
+CCIC06,control,yes,von Frey,15,F,ipisi,day3,chronic,2,37.8,
+CCIC06,control,yes,von Frey,15,F,ipisi,day3,chronic,3,69.9,
+CCIC06,control,yes,von Frey,15,F,ipisi,day7,chronic,1,24.3,39.4
+CCIC06,control,yes,von Frey,15,F,ipisi,day7,chronic,2,26.1,
+CCIC06,control,yes,von Frey,15,F,ipisi,day7,chronic,3,67.8,
+CCIC06,control,yes,von Frey,15,F,ipisi,day14,chronic,1,49.6,43.46666667
+CCIC06,control,yes,von Frey,15,F,ipisi,day14,chronic,2,55.5,
+CCIC06,control,yes,von Frey,15,F,ipisi,day14,chronic,3,25.3,
+CCIC06,control,yes,von Frey,15,F,ipisi,day21,chronic,1,46.5,42.36666667
+CCIC06,control,yes,von Frey,15,F,ipisi,day21,chronic,2,66.9,
+CCIC06,control,yes,von Frey,15,F,ipisi,day21,chronic,3,13.7,
+CCIC06,control,yes,von Frey,15,F,ipisi,day28,chronic,1,23.5,37.3
+CCIC06,control,yes,von Frey,15,F,ipisi,day28,chronic,2,48.6,
+CCIC06,control,yes,von Frey,15,F,ipisi,day28,chronic,3,39.8,
+CCIC06,control,yes,Hargreaves,15,F,contra,pre,chronic,1,10.6,9.766666667
+CCIC06,control,yes,Hargreaves,15,F,contra,pre,chronic,2,9.9,
+CCIC06,control,yes,Hargreaves,15,F,contra,pre,chronic,3,8.8,
+CCIC06,control,yes,Hargreaves,15,F,contra,day3,chronic,1,11.4,10.76666667
+CCIC06,control,yes,Hargreaves,15,F,contra,day3,chronic,2,11.5,
+CCIC06,control,yes,Hargreaves,15,F,contra,day3,chronic,3,9.4,
+CCIC06,control,yes,Hargreaves,15,F,contra,day7,chronic,1,10,10.73333333
+CCIC06,control,yes,Hargreaves,15,F,contra,day7,chronic,2,9.9,
+CCIC06,control,yes,Hargreaves,15,F,contra,day7,chronic,3,12.3,
+CCIC06,control,yes,Hargreaves,15,F,contra,day14,chronic,1,11.8,10.9
+CCIC06,control,yes,Hargreaves,15,F,contra,day14,chronic,2,10.5,
+CCIC06,control,yes,Hargreaves,15,F,contra,day14,chronic,3,10.4,
+CCIC06,control,yes,Hargreaves,15,F,contra,day21,chronic,1,11.2,11.96666667
+CCIC06,control,yes,Hargreaves,15,F,contra,day21,chronic,2,11.8,
+CCIC06,control,yes,Hargreaves,15,F,contra,day21,chronic,3,12.9,
+CCIC06,control,yes,Hargreaves,15,F,contra,day28,chronic,1,8.2,11.06666667
+CCIC06,control,yes,Hargreaves,15,F,contra,day28,chronic,2,13,
+CCIC06,control,yes,Hargreaves,15,F,contra,day28,chronic,3,12,
+CCIC06,control,yes,Hargreaves,15,F,ipisi,pre,chronic,1,12.6,12.03333333
+CCIC06,control,yes,Hargreaves,15,F,ipisi,pre,chronic,2,11.3,
+CCIC06,control,yes,Hargreaves,15,F,ipisi,pre,chronic,3,12.2,
+CCIC06,control,yes,Hargreaves,15,F,ipisi,day3,chronic,1,12.7,10.16666667
+CCIC06,control,yes,Hargreaves,15,F,ipisi,day3,chronic,2,9.2,
+CCIC06,control,yes,Hargreaves,15,F,ipisi,day3,chronic,3,8.6,
+CCIC06,control,yes,Hargreaves,15,F,ipisi,day7,chronic,1,15.4,10.3
+CCIC06,control,yes,Hargreaves,15,F,ipisi,day7,chronic,2,8.1,
+CCIC06,control,yes,Hargreaves,15,F,ipisi,day7,chronic,3,7.4,
+CCIC06,control,yes,Hargreaves,15,F,ipisi,day14,chronic,1,8.4,10.26666667
+CCIC06,control,yes,Hargreaves,15,F,ipisi,day14,chronic,2,11.6,
+CCIC06,control,yes,Hargreaves,15,F,ipisi,day14,chronic,3,10.8,
+CCIC06,control,yes,Hargreaves,15,F,ipisi,day21,chronic,1,10.1,12.5
+CCIC06,control,yes,Hargreaves,15,F,ipisi,day21,chronic,2,13.6,
+CCIC06,control,yes,Hargreaves,15,F,ipisi,day21,chronic,3,13.8,
+CCIC06,control,yes,Hargreaves,15,F,ipisi,day28,chronic,1,7.9,10.16666667
+CCIC06,control,yes,Hargreaves,15,F,ipisi,day28,chronic,2,11.7,
+CCIC06,control,yes,Hargreaves,15,F,ipisi,day28,chronic,3,10.9,

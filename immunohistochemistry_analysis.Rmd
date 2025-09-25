@@ -1,0 +1,788 @@
+---
+title: "immunohistochemistry"
+author: "Catherine Guo"
+date: "2025-02-11"
+output: html_document
+---
+# Immunohistochemical analysis of the safety of a nerve cuff in rats with neuropathic and inflammatory pain
+
+The purpose of this analysis is to examine the safety of an implanted nerve cuff around the sciatic nerve of rats by examining the differences of various markers including TCR, Iba1, CGRP, IB4, GFAP and MBP in three tissues: sciatic nerves, DRG and spinal cord among different cohorts. The six different cohorts we have are the CFA-treated group, the CFA-treated with cuff implantation group, the SNI-treated group, the SNI-treated with cuff implantation cohort, the acutely implanted control cohort and the chronically implanted control group.The tissues were always collected at day 4 for CFA groups, at day 8 for SNI and acute control cohorts, and at day 29 for chronic control cohorts.
+
+# Data structure
+
+This data is taken from the .csv file that one column corresponds to one independent and dependent variable and one row corresponds to one data point.
+
+### Data Headings
+
+    ref_animal = unique animal identifier
+    ref_cohort = the cohort which contains the information of treatment group, time and implantation that the rat is in (CFA, CICFA, SNI, CISNI, CIC, CCIC)
+    ref_marker: the specific staining/marker/antibody that's used
+    ref_tissue = the tissue that the staining was performed on
+    ref_section = the number of sections that comes from the same unique animal
+    ref_side = the side which the quantification is computed from (ipsilateral,contralateral)
+    ref_side_binary = assigned a binary value to the two sides, ipsilateral = 1, contralateral = 0
+    ref_quantification = the percentage of positive staining out of the whole region or the average intensity across certain defined area
+    
+      ## Initial Setup 
+
+Run the following block to clear the workspace and import the relevant packages. Add more as necessary. You may not need many of these packages for this script but doesn't hurt to include them.
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+
+
+# library(mvabund)
+# library(reshape2)
+# library(glmmTMB)
+# library(dplyr)
+# library(ggpubr) # for ggarange
+# library(relaimpo) # for calc.relimp
+# library(car) # needed fro qqp
+# library(sjPlot) # needed for plot_model
+# library(rsample) # required for spitting data into training and testing
+# library(plotly)
+# library(see)
+# library(patchwork)
+# library(Hmisc)
+# library(lmerTest)
+# library(ordinal)
+# library(ggeffects)
+# library(sjmisc)
+# library(rstatix) # for effect size: anova_test(), values ges or pes
+# library(simr)
+# library(data.table)
+# library(BSDA)
+library(lme4)
+library(emmeans)
+library(ggplot2)
+
+```
+
+## Data import
+
+The following section imports and refines the dataset.
+
+
+```{r}
+
+immuno <- read.csv("immunohistochemistry.csv") # this makes a dataframe (df). You call the columns as follows: df$column_name.
+
+```
+
+
+Subsetting the dataset in terms of different tissues and different antibodies
+
+```{r}
+
+immuno_TCR_SN <- subset(immuno, immuno$ref_tissue == "SN" & immuno$ref_marker == "TCR")
+
+ggplot(immuno_TCR_SN, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+
+
+
+immuno_Iba1_SN <- subset(immuno, immuno$ref_tissue == "SN" & immuno$ref_marker == "Iba1")
+
+ggplot(immuno_Iba1_SN, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+
+
+
+immuno_MBP_SN <- subset(immuno, immuno$ref_tissue == "SN" & immuno$ref_marker == "MBP")
+
+ggplot(immuno_MBP_SN, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+
+
+
+immuno_bTubulin_SN <- subset(immuno, immuno$ref_tissue == "SN" & immuno$ref_marker == "bTubulin")
+
+ggplot(immuno_bTubulin_SN, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+
+
+
+immuno_aSMA_intensity_SN <- subset(immuno, immuno$ref_tissue == "SN" & immuno$ref_marker == "aSMA_intensity")
+
+ggplot(immuno_aSMA_intensity_SN, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+
+
+
+immuno_aSMA_thickness_SN <- subset(immuno, immuno$ref_tissue == "SN" & immuno$ref_marker == "aSMA_thickness")
+
+ggplot(immuno_aSMA_thickness_SN, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+
+
+
+immuno_TCR_DRG <- subset(immuno, immuno$ref_tissue == "DRG" & immuno$ref_marker == "TCR")
+
+ggplot(immuno_TCR_DRG, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+
+
+
+immuno_Iba1_DRG <- subset(immuno, immuno$ref_tissue == "DRG" & immuno$ref_marker == "Iba1")
+
+ggplot(immuno_MBP_SN, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+
+
+
+immuno_GFAP_DRG <- subset(immuno, immuno$ref_tissue == "DRG" & immuno$ref_marker == "GFAP")
+
+ggplot(immuno_GFAP_DRG, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+
+
+
+immuno_CGRP_SC <- subset(immuno, immuno$ref_tissue == "SC" & immuno$ref_marker == "CGRP")
+
+ggplot(immuno_CGRP_SC, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+
+
+
+immuno_IB4_SC <- subset(immuno, immuno$ref_tissue == "SC" & immuno$ref_marker == "IB4")
+
+ggplot(immuno_IB4_SC, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+
+
+
+immuno_GFAP_SC <- subset(immuno, immuno$ref_tissue == "SC" & immuno$ref_marker == "GFAP")
+
+ggplot(immuno_GFAP_SC, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+
+
+
+
+immuno_Iba1_SC <- subset(immuno, immuno$ref_tissue == "SC" & immuno$ref_marker == "Iba1")
+
+ggplot(immuno_Iba1_SC, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+
+
+```
+
+
+
+1. We perform analysis of TCR at sciatic nerve first.
+
+Fit the model and check assumptions
+
+```{r}
+mod0 <- lmer(ref_quantification ~ ref_treatment*ref_implantation + (1|ref_animal),  data = immuno_TCR_SN)
+
+
+plot(residuals(mod0) ~ predict(mod0, re.form = NA))
+```
+This residual plot indicates the data does not meet the assumtions of a linear model. 
+
+We need to log transform the response because it is highly skewed. log of 0 doesn't exists, so we need to add a little to all the outcome values, the usual recommendation is to add half the minimum non-zero value
+
+```{r}
+#half the minimum non 0 value
+d = min((immuno_TCR_SN$ref_quantification[immuno_TCR_SN$ref_quantification!=0]))/2
+
+ggplot(immuno_TCR_SN, aes(log(ref_quantification+d), 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+```
+This looks a fair bit more symmetric
+
+
+```{r}
+#log transform if it's not linear
+mod1 <- lmer(log(ref_quantification+d) ~ ref_treatment*ref_implantation + (1|ref_animal),  data = immuno_TCR_SN)
+
+# no log transform version: 
+# mod1 <- lmer(ref_quantification ~ ref_treatment*ref_implantation + (1|ref_animal),  data = immuno_within_TCR_SN)
+
+# log transform if it's the spinal cord which we want to add section number as a nested random effect
+# mod1 <- lmer(log(ref_quantification+d) ~ ref_treatment*ref_implantation + (1|ref_animal/ref_section_number),  data = immuno_TCR_SN)
+#summary(mod1)
+
+plot(residuals(mod1) ~ predict(mod1, re.form = NA))
+```
+
+The residual plot now looks quite good. 
+
+When we log transform the outcome and then model it as linear, we are actually modelling ratios on the original scale, so if we want answers on the original scale of the outcome, they will be ratios. We can get emmeans to back transform to the original scale and give us all the pairwise ratios. 
+
+At this point i do not want to adjust for multiple testing, because it would have too many tests, so i set adjust = NULL.
+
+```{r}
+# this transforms the predictions to the outcome scale
+logemm0 <- regrid(emmeans(mod1, ~ ref_treatment*ref_implantation), transform = "log")
+
+
+# if not log transformed 
+# logemm <- emmeans(mod1, ~ ref_treatment*ref_implantation)
+
+
+all_pairs0 <- pairs(logemm0, type = "response", adjust = NULL)
+all_pairs0
+```
+We can then choose just the pairs we want using `subset` and the row numbers we want.
+We adjust for multiple testing at this point using the multivariate t (we can't use Tukeys because that only works for all pairs)
+
+```{r}
+diffs0 <- subset(all_pairs0, c(6, 21, 11, 34, 36, 14, 29, 7, 20), adjust = "mvt")
+summary(diffs0)
+confint(diffs0)
+```
+Results_GP:
+
+We found that ref_quantification for SNI acute implant is 6.2 (95%CI: 1.82 - 20.89, p=0.0014) times larger than SNI no implant. We found no evidence of differences between CFA acute vs no implant (ratio = 6.62, 95%CI: 0.28 - 158.77, p=0.3910), and also no evidence of differences between no implant acute and chronic (ratio = 0.754 , 95%CI: 0.15 - 3.85, p=0.9659)
+
+Notes.
+
+It is important to present the results of all planned tests, even if not significant. 
+
+Also, if the p-value is large, often people like to say there is no difference, but this is not true and one of the most common misinterpretations of p-values, you can only say there is no evidence of a difference.
+
+
+Results_CG:
+
+We have no evidence of differences in CFA ipsi and CFA implanted ipsi (95% CI: 0.1790 - 244.111, p = 0.6648), acute implanted naive ipsi and chronic implanted naive ipsi (95% CI: 0.1262 - 5.218, p =  0.9998), CFA ipsi and control (95% CI: 0.0112 - 8.050, p = 0.9114), acute implanted naive ipsi and control (95% CI: 0.4656  - 10.069, p = 0.7047), chronic implanted naive ipsi and control (95% CI: 0.7965 -  8.938, p = 0.1850), and CFA implanted ipsi and control (95% CI: 0.4296 - 9.168, p = 0.8018). However, we found significant differences between SNI implanted ipsi and SNI ipsi (95% CI: 1.5377 - 24.686, p = 0.0036), SNI ipsi and control (95% CI: 0.1123 - 0.994, p = 0.0479), and SNI implanted ipsi and control (95% CI: 6.1541- 55.245, p < .0001).
+
+
+
+
+2. We perform analysis of Iba1 at sciatic nerve.
+
+Fit the model, check assumptions and plot ggplot
+
+```{r}
+mod2 <- lmer(ref_quantification ~ ref_treatment*ref_implantation + (1|ref_animal),  data = immuno_Iba1_SN)
+
+
+plot(residuals(mod2) ~ predict(mod2, re.form = NA))
+
+ggplot(immuno_Iba1_SN, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+```
+This residual plot indicates the data meets the assumtions of a linear model so we don't need to log transform it. 
+
+```{r}
+
+logemm1 <- emmeans(mod2, ~ ref_treatment*ref_implantation)
+
+
+all_pairs1 <- pairs(logemm1, type = "response", adjust = NULL)
+all_pairs1
+
+```
+
+We can then choose just the pairs we want using `subset` and the row numbers we want.
+We adjust for multiple testing at this point using the multivariate t (we can't use Tukeys because that only works for all pairs)
+
+```{r}
+diffs1 <- subset(all_pairs1, c(6, 21, 11, 34, 36, 14, 29, 7, 20), adjust = "mvt")
+summary(diffs1)
+confint(diffs1)
+
+```
+
+
+Results:
+
+We found that Iba1 for SNI acute implant ipsi is significantly different from SNI no implant ipsi (95%CI: 0.002753 - 0.008924m p < .0001). SNI ipsi is also signficantly different from control (95% CI: -0.004151 - -0.000272, p = 0.0167). Both acute implantation naive ipsi (95% CI: 0.000915 - 0.005024, p = 0.001) and chronic implantation naive ipsi (95% CI: 0.000735 - 0.004846, p = 0.0023) are  signficantly different from control. SNI implant ipsi is also significantly different from control (95%CI: 0.002753 - 0.008924m p < .0001)
+
+
+We have no evidence of differences in CFA ipsi and CFA implanted ipsi (95%CI: -0.001191 - 0.004717, p =  0.4968), acute implanted naive ipsi and chronic implanted naive ipsi (95% CI: -0.002685 - 0.003043, p = 1.0000), CFA ipsi and control (95% CI: -0.002351 - 0.001476, p = 0.9878), and CFA implanted ipsi and control (95% CI: 0.005532 - 0.01057, p < .0001).
+
+
+
+3. We perform analysis of MBP at sciatic nerve.
+
+Fit the model, check assumptions and generate ggplot
+
+```{r}
+mod3 <- lmer(ref_quantification ~ ref_treatment*ref_implantation + (1|ref_animal),  data = immuno_MBP_SN)
+
+
+plot(residuals(mod3) ~ predict(mod3, re.form = NA))
+
+ggplot(immuno_MBP_SN, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+```
+This residual plot indicates the data meets the assumtions of a linear model so we don't need to log transform it. 
+
+```{r}
+
+logemm2 <- emmeans(mod3, ~ ref_treatment*ref_implantation)
+
+
+all_pairs2 <- pairs(logemm2, type = "response", adjust = NULL)
+all_pairs2
+
+```
+
+We can then choose just the pairs we want using `subset` and the row numbers we want.
+We adjust for multiple testing at this point using the multivariate t (we can't use Tukeys because that only works for all pairs)
+
+```{r}
+diffs2 <- subset(all_pairs2, c(6, 21, 11, 34, 36, 14, 29, 7, 20), adjust = "mvt")
+summary(diffs2)
+confint(diffs2)
+
+```
+Results:
+
+We found no evidence of significant differences across any of the comparisons above: CFA ipsi and CFA implanted ipsi (95%CI: -0.09634 - 0.076705, p =  0.9997),SNI acute implant ipsi and SNI no implant ipsi (95%CI: -0.10306 - 0.058079, p = 0.9634), acute implanted naive ipsi and chronic implanted naive ipsi (95% CI: -0.12864 - 0.055018, p = 0.8392), CFA ipsi and control (95% CI: -0.08663 - 0.034784, p = 0.7994), acute implantation naive ipsi (95% CI: -0.14202 - 0.000126, p = 0.0506) and control, and chronic implantation naive ipsi and control (95% CI: -0.09439 - 0.026122, p = 0.5456). However, significant differences were found in the following comparisons: SNI ipsi and control (95% CI: 0.000725 - 0.130300, p = 0.0458), and SNI implant ipsi and control (95% CI: -0.138142 - -0.030778, p = 0.0002).
+
+
+
+4. We then perform analysis of bTubulin at sciatic nerve.
+
+Fit the model, check assumptions and generate ggplot
+
+```{r}
+mod4 <- lmer(ref_quantification ~ ref_treatment*ref_implantation + (1|ref_animal),  data = immuno_bTubulin_SN)
+
+
+plot(residuals(mod4) ~ predict(mod4, re.form = NA))
+
+ggplot(immuno_bTubulin_SN, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+```
+
+This residual plot indicates the data meets the assumtions of a linear model so we don't need to log transform it. 
+
+```{r}
+
+logemm3 <- emmeans(mod4, ~ ref_treatment*ref_implantation)
+
+
+all_pairs3 <- pairs(logemm3, type = "response", adjust = NULL)
+all_pairs3
+
+```
+
+We can then choose just the pairs we want using `subset` and the row numbers we want.
+We adjust for multiple testing at this point using the multivariate t (we can't use Tukeys because that only works for all pairs)
+
+```{r}
+diffs3 <- subset(all_pairs3, c(6, 21, 11, 34, 36, 14, 29, 7, 20), adjust = "mvt")
+summary(diffs3)
+confint(diffs3)
+
+```
+Results:
+
+We found no evidence of significant differences across any of the comparisons above: CFA ipsi and CFA implanted ipsi (95%CI:  -0.0993 - 0.0475, p =  0.9242),SNI acute implant ipsi and SNI no implant ipsi (95%CI: -0.0767 - 0.0537, p = 0.9978), acute implanted naive ipsi and chronic implanted naive ipsi (95% CI: -0.12864 - 0.055018, p = 0.5118), CFA ipsi and control (95% CI: -0.0485 - 0.0591, p = 0.9999), SNI ipsi and control (95% CI: -0.0342 - 0.0621, p = 0.9706), acute implantation naive ipsi (95% CI: -0.0664 - 0.0580, p = 1.0000) and control, chronic implantation naive ipsi and control (95% CI: -0.0144 - 0.1073, p = 0.2395), CFA implant ipsi and control (95% CI: -0.0750 - 0.0339, p = 0.9004), and SNI implant ipsi and control (95% CI: -0.0747  - 0.0239, p = 0.6845).
+
+
+
+
+5.1. We then perform analysis of aSMA_intensity at sciatic nerve
+
+Fit the model, check assumptions 
+```{r}
+
+mod5 <- lmer(ref_quantification ~ ref_treatment*ref_implantation + (1|ref_animal),  data = immuno_aSMA_intensity_SN)
+
+
+plot(residuals(mod5) ~ predict(mod5, re.form = NA))
+
+ggplot(immuno_aSMA_intensity_SN, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+
+
+
+```
+This residual plot indicates the data meets the assumtions of a linear model so we don't need to log transform it. 
+
+```{r}
+
+logemm4 <- emmeans(mod5, ~ ref_treatment*ref_implantation)
+
+
+all_pairs4 <- pairs(logemm4, type = "response", adjust = NULL)
+all_pairs4
+
+```
+
+
+We can then choose just the pairs we want using `subset` and the row numbers we want.
+We adjust for multiple testing at this point using the multivariate t (we can't use Tukeys because that only works for all pairs)
+
+```{r}
+diffs4 <- subset(all_pairs4, c(6, 21, 11, 34, 36, 14, 29, 7, 20), adjust = "mvt")
+summary(diffs4)
+confint(diffs4)
+
+```
+5.2. We then perform analysis of aSMA_thickness at sciatic nerve
+
+Fit the model, check assumptions 
+```{r}
+
+mod6 <- lmer(ref_quantification ~ ref_treatment*ref_implantation + (1|ref_animal),  data = immuno_aSMA_thickness_SN)
+
+
+plot(residuals(mod6) ~ predict(mod6, re.form = NA))
+
+ggplot(immuno_aSMA_thickness_SN, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+
+
+
+```
+This residual plot indicates the data meets the assumtions of a linear model so we don't need to log transform it. 
+
+```{r}
+
+logemm5 <- emmeans(mod6, ~ ref_treatment*ref_implantation)
+
+
+all_pairs5 <- pairs(logemm5, type = "response", adjust = NULL)
+all_pairs5
+
+```
+
+We can then choose just the pairs we want using `subset` and the row numbers we want.
+We adjust for multiple testing at this point using the multivariate t (we can't use Tukeys because that only works for all pairs)
+
+```{r}
+diffs5 <- subset(all_pairs5, c(6, 21, 11, 34, 36, 14, 29, 7, 20), adjust = "mvt")
+summary(diffs5)
+confint(diffs5)
+
+```
+
+
+
+
+
+
+
+6. We then perform analysis of TCR at DRG.
+
+Fit the model, check assumptions and generate ggplot
+
+```{r}
+mod8 <- lmer(ref_quantification ~ ref_treatment*ref_implantation + (1|ref_animal),  data = immuno_TCR_DRG)
+
+
+plot(residuals(mod8) ~ predict(mod8, re.form = NA))
+
+ggplot(immuno_TCR_DRG, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+```
+
+This residual plot indicates the data meets the assumtions of a linear model so we don't need to log transform it. 
+
+```{r}
+
+logemm6 <- emmeans(mod8, ~ ref_treatment*ref_implantation)
+
+
+all_pairs6 <- pairs(logemm6, type = "response", adjust = NULL)
+all_pairs6
+
+```
+
+We can then choose just the pairs we want using `subset` and the row numbers we want.
+We adjust for multiple testing at this point using the multivariate t (we can't use Tukeys because that only works for all pairs)
+
+```{r}
+diffs6 <- subset(all_pairs6, c(6, 21, 11, 34, 36, 14, 29, 7, 20), adjust = "mvt")
+summary(diffs6)
+confint(diffs6)
+
+```
+Results:
+
+We found no evidence of significant differences across these comparisons : CFA ipsi and CFA implanted ipsi (95%CI:  -1.49e-05 - 9.76e-06, p =  0.9949),SNI acute implant ipsi and SNI no implant ipsi (95%CI: -2.57e-06 - 1.69e-05, p = 0.2789), acute implanted naive ipsi and chronic implanted naive ipsi (95% CI: -1.09e-05 - 8.78e-06, p = 0.9999), CFA ipsi and control (95% CI: -7.41e-06 - 8.93e-06, p = 0.9999), SNI ipsi and control (95% CI: -9.80e-06 - 4.02e-06, p = 0.8512), acute implantation naive ipsi (95% CI: -7.94e-06 - 6.74e-06, p = 1.0000) and control, chronic implantation naive ipsi and control (95% CI: -6.52e-06 - 7.42e-06, p = 1.0000), and CFA implant ipsi and control (95% CI: -1.13e-05 - 7.70e-06, p = 0.9969). However, significant differences were found between SNI implant ipsi and control (95% CI: 2.83e-06 - 1.73e-05, p = 0.0015).
+
+
+7. We then perform analysis of Iba1 at DRG.
+
+Fit the model, check assumptions and generate ggplot
+
+```{r}
+mod9 <- lmer(ref_quantification ~ ref_treatment*ref_implantation + (1|ref_animal),  data = immuno_Iba1_DRG)
+
+
+plot(residuals(mod9) ~ predict(mod9, re.form = NA))
+
+ggplot(immuno_TCR_DRG, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+```
+
+This residual plot indicates the data meets the assumptions of a linear model. 
+
+
+
+##
+
+mod10 <- lmer(log(ref_quantification) ~ ref_treatment*ref_implantation + (1|ref_animal),  data = immuno_Iba1_DRG)
+
+plot(residuals(mod10) ~ predict(mod10, re.form = NA))
+
+
+ggplot(immuno_Iba1_DRG, aes(log(ref_quantification), 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+
+
+```{r}
+# this transforms the predictions to the outcome scale
+logemm7 <- emmeans(mod9, ~ ref_treatment*ref_implantation)
+
+all_pairs7 <- pairs(logemm7, type = "response", adjust = NULL)
+all_pairs7
+```
+We can then choose just the pairs we want using `subset` and the row numbers we want.
+We adjust for multiple testing at this point using the multivariate t (we can't use Tukeys because that only works for all pairs)
+
+```{r}
+diffs7 <- subset(all_pairs7, c(6, 21, 11, 34, 36, 14, 29, 7, 20), adjust = "mvt")
+summary(diffs7)
+confint(diffs7)
+```
+
+Results:
+
+We found no evidence of significant differences across the following comparisons: C, acute implanted naive ipsi and chronic implanted naive ipsi (95% CI: 0.2372  -  3.104, p = 0.9998), CFA ipsi and control (95% CI: 0.1495  -  1.543, p = 0.4581), SNI ipsi and control (95% CI: 0.3619  -  2.305, p = 0.9999), acute implantation naive ipsi (95% CI: 0.2587  - 1.478, p = 0.6091) and control, chronic implantation naive ipsi and control (95% CI: 0.5867 -  2.825, p = 0.9551), CFA implant ipsi and control (95% CI: 0.2264  -  2.064, = 0.9329), and SNI implant ipsi and control (95% CI: 0.3743 -  2.358, p = 1.0000). However, surprisingly, significant differences were found between CFA implant ipsi and CFA ipsi (95% CI: 0.0417  - 0.887, p = 0.0272), as well as CFA no implant ipsi and control (95% CI: 1.2069  - 10.477, p = 0.0123).
+
+
+
+8. We then perform analysis of GFAP at DRG.
+
+Fit the model, check assumptions and generate ggplot
+
+```{r}
+mod11 <- lmer(ref_quantification ~ ref_treatment*ref_implantation + (1|ref_animal),  data = immuno_GFAP_DRG)
+
+
+plot(residuals(mod11) ~ predict(mod11, re.form = NA))
+
+ggplot(immuno_GFAP_DRG, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+```
+
+This residual plot indicates the data meets the assumtions of a linear model so we don't need to log transform it. 
+
+```{r}
+
+logemm8 <- emmeans(mod11, ~ ref_treatment*ref_implantation)
+
+
+all_pairs8 <- pairs(logemm8, type = "response", adjust = NULL)
+all_pairs8
+
+```
+
+We can then choose just the pairs we want using `subset` and the row numbers we want.
+We adjust for multiple testing at this point using the multivariate t (we can't use Tukeys because that only works for all pairs)
+
+```{r}
+diffs8 <- subset(all_pairs8, c(6, 21, 11, 34, 36, 14, 29, 7, 20), adjust = "mvt")
+summary(diffs8)
+confint(diffs8)
+
+```
+Results:
+
+We found no evidence of significant differences across all above comparisons : CFA ipsi and CFA implanted ipsi (95%CI:  -0.02759 - 0.006914, p =  0.5206),SNI acute implant ipsi and SNI no implant ipsi (95%CI: -0.01263 - 0.022761, p = 0.9727), acute implanted naive ipsi and chronic implanted naive ipsi (95% CI: -0.01240 - 0.020451, p = 0.9876), CFA ipsi and control (95% CI: -0.00114 - 0.022976, p = 0.0993), SNI ipsi and control (95% CI: -0.02478 - 0.000979, p = 0.0873), acute implantation naive ipsi (95% CI: -0.00811 - 0.015740, p = 0.9536) and control, chronic implantation naive ipsi and control (95% CI:-0.01206 - 0.011643, p = 1.0000), and CFA implant ipsi and control (95% CI: -0.01243 - 0.013586, p = 1.0000). However, significant differences were found between SNI implant ipsi and control (95% CI: 0.00423 - 0.029706, p = 0.0027).
+
+
+
+
+
+9. We then perform analysis of IB4 at spinal cord
+
+Fit the model, check assumptions and generate ggplot
+
+```{r}
+mod12 <- lmer(ref_quantification ~ ref_treatment*ref_implantation + (1|ref_animal/ref_section_number),  data = immuno_IB4_SC)
+
+
+plot(residuals(mod12) ~ predict(mod12, re.form = NA))
+
+ggplot(immuno_IB4_SC, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+```
+
+This residual plot indicates the data meets the assumtions of a linear model so we don't need to log transform it. 
+
+```{r}
+
+logemm9 <- emmeans(mod12, ~ ref_treatment*ref_implantation)
+
+
+all_pairs9 <- pairs(logemm9, type = "response", adjust = NULL)
+all_pairs9
+
+```
+
+
+
+We can then choose just the pairs we want using `subset` and the row numbers we want.
+We adjust for multiple testing at this point using the multivariate t (we can't use Tukeys because that only works for all pairs)
+
+```{r}
+diffs9 <- subset(all_pairs9, c(6, 21, 11, 34, 36, 14, 29, 7, 20), adjust = "mvt")
+summary(diffs9)
+confint(diffs9)
+
+```
+Results:
+
+We found no evidence of significant differences on the following comparisons : CFA ipsi (N=10 animals) and CFA implanted ipsi (n=5 animals) (95%CI:  -191.7  - 5.9, p =  0.0774),SNI acute implant ipsi and SNI no implant ipsi (95%CI: -115.8 - 69.7, p = 0.9862), acute implanted naive ipsi and chronic implanted naive ipsi (95% CI: -110.5 - 92.1, p = 1.0000), CFA ipsi and control (95% CI: -58.7   -  65.7, p = 1.0000), acute implantation naive ipsi (95% CI:  -58.7 - 91.0, p = 0.9935) and control, and chronic implantation naive ipsi and control (95% CI: -43.1  - 93.7, p = 0.9073), However, significant differences were found between SNI ipsi and control (95% CI:  29.1  - 151.4, p = 0.0007), CFA implant ipsi and control (95% CI: -166.2 - -12.6, p = 0.0133), and SNI implant ipsi and control (95% CI: -183.2 -  -43.5, p = 0.0001).
+
+
+
+
+
+
+10. We then perform analysis of CGRP at spinal cord
+
+Fit the model, check assumptions and generate ggplot
+
+```{r}
+mod13 <- lmer(ref_quantification ~ ref_treatment*ref_implantation + (1|ref_animal/ref_section_number),  data = immuno_CGRP_SC)
+
+
+plot(residuals(mod13) ~ predict(mod13, re.form = NA))
+
+ggplot(immuno_CGRP_SC, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+```
+
+This residual plot indicates the data meets the assumtions of a linear model so we don't need to log transform it. 
+
+```{r}
+
+logemm11 <- emmeans(mod13, ~ ref_treatment*ref_implantation)
+
+
+all_pairs11 <- pairs(logemm11, type = "response", adjust = NULL)
+all_pairs11
+
+```
+
+We can then choose just the pairs we want using `subset` and the row numbers we want.
+We adjust for multiple testing at this point using the multivariate t (we can't use Tukeys because that only works for all pairs)
+
+```{r}
+diffs11 <- subset(all_pairs11, c(6, 21, 11, 34, 36, 14, 29, 7, 20), adjust = "mvt")
+summary(diffs11)
+confint(diffs11)
+
+```
+Results:
+
+We found no evidence of significant differences on the following comparisons : CFA ipsi and CFA implanted ipsi (95%CI:  -28.71  - 205.0, p =  0.2501),SNI acute implant ipsi and SNI no implant ipsi (95%CI: -98.48 - 121.0, p = 0.9999), acute implanted naive ipsi and chronic implanted naive ipsi (95% CI: -56.62 - 183.1, p = 0.6575), SNI ipsi and control (95% CI: -9.44  -  135.2, p = 0.1253), acute implantation naive ipsi (95% CI: -34.37 -  142.7, p = 0.4911) and control, chronic implantation naive ipsi and control (95% CI:-89.92  - 71.8, p = 0.9998), CFA implant ipsi and control (95% CI: -100.54  - 81.2, p = 0.9999), and SNI implant ipsi and control (95% CI: -134.20 -  31.0, p = 0.4658). However, significant differences were found between CFA ipsi and control (95% CI: -171.38 -  -24.3, p = 0.0029).
+
+
+
+11. We then perform analysis of GFAP at spinal cord
+
+Fit the model, check assumptions and generate ggplot
+
+```{r}
+mod14 <- lmer(ref_quantification ~ ref_treatment*ref_implantation + (1|ref_animal/ref_section_number),  data = immuno_GFAP_SC)
+
+
+plot(residuals(mod14) ~ predict(mod14, re.form = NA))
+
+ggplot(immuno_GFAP_SC, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+```
+
+This residual plot indicates the data meets the assumtions of a linear model so we don't need to log transform it. 
+
+```{r}
+
+logemm12 <- emmeans(mod14, ~ ref_treatment*ref_implantation)
+
+
+all_pairs12 <- pairs(logemm12, type = "response", adjust = NULL)
+all_pairs12
+
+```
+
+We can then choose just the pairs we want using `subset` and the row numbers we want.
+We adjust for multiple testing at this point using the multivariate t (we can't use Tukeys because that only works for all pairs)
+
+```{r}
+diffs12 <- subset(all_pairs12, c(6, 21, 11, 34, 36, 14, 29, 7, 20), adjust = "mvt")
+summary(diffs12)
+confint(diffs12)
+
+```
+Results:
+
+We found no evidence of significant differences on following comparisons : CFA ipsi and CFA implanted ipsi (95%CI:  -22.8 -  33.78, p =  0.9964),SNI acute implant ipsi and SNI no implant ipsi (95%CI: -41.3  -  9.99, p = 0.4946), acute implanted naive ipsi and chronic implanted naive ipsi (95% CI: -28.3 - 29.92, p = 1.0000), CFA ipsi and control (95% CI: -24.3  -  11.90, p = 0.9345), acute implantation naive ipsi and control (95% CI:  -23.9  -  15.93, p = 0.9958), chronic implantation naive ipsi and control (95% CI:-26.0  - 16.49, p = 0.9920), CFA implant ipsi and control (95% CI: -22.5 - 21.06, p = 1.0000), and SNI implant ipsi and control (95% CI: -13.4  - 24.13, p = 0.9717). However, significant differences were found between SNI ipsi and control (95% CI: -38.5 -  -3.53, p = 0.0095)
+
+
+
+12. We then perform analysis of Iba1 at spinal cord
+
+Fit the model, check assumptions and generate ggplot
+
+```{r}
+mod15 <- lmer(ref_quantification ~ ref_treatment*ref_implantation + (1|ref_animal/ref_section_number),  data = immuno_Iba1_SC)
+
+
+plot(residuals(mod15) ~ predict(mod15, re.form = NA))
+
+ggplot(immuno_Iba1_SC, aes(ref_quantification, 
+                                 ref_treatment, colour = ref_implantation)) + 
+  geom_boxplot()
+```
+
+This residual plot indicates the data meets the assumtions of a linear model so we don't need to log transform it. 
+
+```{r}
+
+logemm13 <- emmeans(mod15, ~ ref_treatment*ref_implantation)
+
+
+all_pairs13 <- pairs(logemm13, type = "response", adjust = NULL)
+all_pairs13
+
+```
+
+We can then choose just the pairs we want using `subset` and the row numbers we want.
+We adjust for multiple testing at this point using the multivariate t (we can't use Tukeys because that only works for all pairs)
+
+```{r}
+diffs13 <- subset(all_pairs13, c(6, 21, 11, 34, 36, 14, 29, 7, 20), adjust = "mvt")
+summary(diffs13)
+confint(diffs13)
+
+```
+Results:
+
+We found no evidence of significant differences on following comparisons : SNI acute implant ipsi and SNI no implant ipsi (95%CI: -235.2 - 193.0, p = 0.9999), acute implanted naive ipsi and chronic implanted naive ipsi (95% CI: -122.7 - 414.2, p = 0.6274), CFA ipsi and control (95% CI: -142.4 - 165.1, p = 1.0000), acute implantation naive ipsi and control (95% CI: -91.3  - 250.9, p = 0.7710), and chronic implantation naive ipsi and control (95% CI:-274.0 - 142.0, p = 0.9539). Significant differences were found between CFA ipsi and CFA implanted ipsi (95%CI:  70.4 -  557.7, p =  0.0043), SNI ipsi and control (95% CI: -344.8 -  -75.2, p = 0.0003), CFA implant ipsi and control (95% CI: 135.4 - 515.4, p = 0.0001), and SNI implant ipsi and control (95% CI: 21.6 - 356.1, p = 0.0178). 

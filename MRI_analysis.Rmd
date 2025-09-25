@@ -1,0 +1,117 @@
+---
+title: "MRI"
+author: "Catherine Guo"
+date: "2023-10-10"
+output:
+  html_document:
+    code_folding: hide
+    toc: yes
+    toc_float: yes
+  pdf_document:
+    toc: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# MRI analysis of the chronic safety of a nerve cuff in rats with neuropathic a pain
+
+The purpose of this analysis is to examine the safety of an implanted nerve cuff around the sciatic nerve of rats by examining the volume of the edema within the cuff (i.e. that is surrounding the nerve) and the volume of the encapsulation around the cuff over a four-week implantation.
+
+# Data structure
+
+This data is taken from the .csv file that one column corresponds to one independent and dependent variable and one row corresponds to one data point.
+
+### Data Headings
+
+    ref_image_ID = unique image identifier that was assigned to the MRI scans collected from each rat
+    ref_animal_ID = unique animal identifier
+    ref_week_number = the week which the MRI scan was taken (week1, week2, week3, week4)
+    ref_segment = the location where the volume of edema is measured from
+    ref_volume = the volume of the edema that's been traced and calculated in Sqaure millimeters
+    
+    ## Initial Setup 
+
+Run the following block to clear the workspace and import the relevant packages. Add more as necessary. You may not need many of these packages for this script but doesn't hurt to include them.
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+
+ 
+
+rm(list = ls()) # this empties the workspace
+# source('summarySE.R') # contains plyr
+library(ggplot2)
+library(dplyr)
+library(ggpubr) # for ggarange
+library(relaimpo) # for calc.relimp
+library(car) # needed fro qqp
+library(sjPlot) # needed for plot_model
+library(rsample) # required for spitting data into training and testing
+library(plotly)
+library(see)
+library(patchwork)
+library(Hmisc)
+library(lmerTest)
+library(emmeans)
+library(ordinal)
+library(ggeffects)
+library(sjmisc)
+library(rstatix) # for effect size: anova_test(), values ges or pes
+library(simr)
+library(data.table)
+library(BSDA)
+
+ 
+
+
+pd = 0.2 # this is for plotting, it just defines the "position dodge"
+```
+
+## Data import
+
+The following section imports and refines the dataset.
+
+
+```{r}
+
+MRI <- read.csv("MRI.csv") # this makes a dataframe (df). You call the columns as follows: df$column_name.
+```
+
+## Data Analysis
+
+The section describes the analysis of the dataset.
+
+### Statistical analysis of responses using the one-way ANOVA 
+
+ We will separate out the volume of the edema within the cuff and the volume of cuff encapsulation
+ 
+```{r}
+MRI_within <- subset(MRI, MRI$ref_segment == "within")
+MRI_encapsulation <- subset(MRI, MRI$ref_segment == "encapsulation")
+```
+
+
+#### Differences in the edema volume within the cuff across time
+
+We will then check whether the data for each cohort are normally distributed using QQ plots
+
+```{r}
+qqp(MRI_within$ref_volume)
+qqp(MRI_encapsulation$ref_volume)
+```
+
+
+##### One-way ANOVA for within-cuff voume across weeks
+```{r}
+res.aov1 <- aov(ref_volume ~ ref_week_number, data = MRI_within)
+summary(res.aov1)
+```
+
+##### One-way ANOVA and Tukey multiple pairwise-comparisons for excapsulation voume across weeks
+```{r}
+res.aov2 <- aov(ref_volume ~ ref_week_number, data = MRI_encapsulation)
+summary(res.aov2)
+TukeyHSD(res.aov2)
+```

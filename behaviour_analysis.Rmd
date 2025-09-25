@@ -1,0 +1,468 @@
+---
+title: "behaviour"
+author: "Catherine Guo"
+date: "2023-07-19"
+output:
+  html_document:
+    code_folding: hide
+    toc: yes
+    toc_float: yes
+  pdf_document:
+    toc: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Behavioural analysis of the safety of a nerve cuff in rats with neuropathic and inflammatory pain
+
+The purpose of this experiment is to examine the safety of an implanted nerve cuff around the sciatic nerve of rats by examining the changes of the paw withdraw threshold in response to both the von Frey test and the Hargreaves tests between the implanted and unimplanted cohorts. The three treatment groups we have are the control group, the inflammatory pain group and the neuropathic pain group. CFA was injected to the inflammatory pain group and spared nerve injury surgery was performed to rats in the neuropathic pain group.
+
+## Data structure
+
+This data is taken from the .csv file that one column corresponds to one independent and dependent variable and one row corresponds to one data point.
+
+### Data Headings
+
+    ref_animal_ID = unique animal identifier
+    ref_treatment = the treatment group that each rat belongs to (control, CFA, SNI)
+    ref_implantation = gives the information on whether the rat was implanted with a cuff
+    ref_behaviour_test = describles the behaviour test that's performed (von Frey, Hargreaves)
+    ref_age = the age of the rat when the first behaviour experiment was performed
+    ref_sex =  the sex of the rat (female, male)
+    ref_hindpaw =  the side of the hindpaw which the behaviour test was performed (ipsilateral, contralateral)
+    ref_day_number = the number of post-surgery days when the behaviour test was performed ('pre' idnicates pre-surgery, 'day1', 'day3' and 'day7' indicates post-surgery day 1, post-surgery day 3 and post-surgery day 7, respectively)
+    ref_experiment_length =  the length of whole experiment ('acute' indicates the animal was either kept for 3 or 7 days, 'chronic' indicates the animal was kept for 4 weeks.)
+    ref_trial_number = the number of repeated behavioural trials that was performed on the same rat	
+    ref_response =  the hindpaw withdraw threshold from performing the von Frey or the Hargreaves test
+    
+## Initial Setup 
+
+Run the following block to clear the workspace and import the relevant packages. Add more as necessary. You may not need many of these packages for this script but doesn't hurt to include them.
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+
+ 
+
+rm(list = ls()) # this empties the workspace
+# source('summarySE.R') # contains plyr
+library(ggplot2)
+library(dplyr)
+library(ggpubr) # for ggarange
+library(relaimpo) # for calc.relimp
+library(car) # needed fro qqp
+library(sjPlot) # needed for plot_model
+library(rsample) # required for spitting data into training and testing
+library(plotly)
+library(see)
+library(patchwork)
+library(Hmisc)
+library(lmerTest)
+library(emmeans)
+library(ordinal)
+library(ggeffects)
+library(sjmisc)
+library(rstatix) # for effect size: anova_test(), values ges or pes
+library(simr)
+library(data.table)
+library(BSDA)
+
+ 
+
+
+pd = 0.2 # this is for plotting, it just defines the "position dodge"
+```
+
+## Data import
+
+The following section imports and refines the dataset.
+
+```{r}
+
+behaviour <- read.csv("behaviour.csv") # this makes a dataframe (df). You call the columns as follows: df$column_name.
+```
+
+## Data Analysis
+
+The section describes the analysis of the dataset.
+
+### Sample sizes
+
+This section finds out how many unique animals we have of each cohort.
+
+First we will find out how many unique animals we have for the experiment.
+
+```{r}
+length((unique(behaviour$ref_animal_ID)))
+```
+
+
+
+We will then find out how many unique animals we have for each sex.
+
+```{r}
+male_data <- subset(behaviour, behaviour$ref_sex == "M" )
+length((unique(male_data$ref_animal_ID)))
+female_data <- subset(behaviour, behaviour$ref_sex == "F" )
+length((unique(female_data$ref_animal_ID)))
+```
+
+
+
+We will then find out how many unique animals we have for acute implantation
+
+```{r}
+acute_data <- subset(behaviour, behaviour$ref_experiment_length == "acute" )
+length((unique(acute_data$ref_animal_ID)))
+```
+
+
+
+We will also find out how many unique animals we have for chronic implantation
+
+```{r}
+chronic_data <- subset(behaviour, behaviour$ref_experiment_length == "chronic" )
+length((unique(chronic_data$ref_animal_ID)))
+```
+
+
+
+We will separate out CFA and SNI animals.
+```{r}
+cfa_data <- subset(behaviour, behaviour$ref_experiment_length == "acute" & behaviour$ref_treatment == "CFA")
+
+sni_data <- subset(behaviour, behaviour$ref_experiment_length == "acute" & behaviour$ref_treatment == "SNI")
+
+```
+
+
+We will separate out thermal and mechanical data for acute animals.
+```{r}
+acute_mechanical_data <- subset(behaviour, behaviour$ref_experiment_length == "acute" & behaviour$ref_behaviour_test == "von Frey")
+
+acute_thermal_data <- subset(behaviour, behaviour$ref_experiment_length == "acute" & behaviour$ref_behaviour_test == "Hargreaves")
+
+```
+
+
+We will then separate out the mechanical and thermal responses for CFA, SNI and CIC animals.
+
+```{r}
+acute_cfa_mechan_data <- subset(behaviour, behaviour$ref_experiment_length == "acute" & behaviour$ref_treatment == "CFA" & behaviour$ref_behaviour_test == "von Frey") 
+acute_cfa_mechan_data <- subset(acute_cfa_mechan_data, acute_cfa_mechan_data$ref_implantation == "no")
+
+acute_cfa_thermal_data <- subset(behaviour, behaviour$ref_experiment_length == "acute" & behaviour$ref_treatment == "CFA" & behaviour$ref_behaviour_test == "Hargreaves") 
+acute_cfa_thermal_data <- subset(acute_cfa_thermal_data, acute_cfa_thermal_data$ref_implantation == "no")
+
+acute_sni_mechan_data <- subset(behaviour, behaviour$ref_experiment_length == "acute" & behaviour$ref_treatment == "SNI" & behaviour$ref_behaviour_test == "von Frey") 
+acute_sni_mechan_data <- subset(acute_sni_mechan_data, acute_sni_mechan_data$ref_implantation == "no")
+
+acute_sni_thermal_data <- subset(behaviour, behaviour$ref_experiment_length == "acute" & behaviour$ref_treatment == "SNI" & behaviour$ref_behaviour_test == "Hargreaves") 
+acute_sni_thermal_data <- subset(acute_sni_thermal_data, acute_sni_thermal_data$ref_implantation == "no")
+
+acute_cic_mechan_data <- subset(behaviour, behaviour$ref_experiment_length == "acute" & behaviour$ref_treatment == "control" & behaviour$ref_behaviour_test == "von Frey") 
+acute_cic_mechan_data <- subset(acute_cic_mechan_data, acute_cic_mechan_data$ref_implantation == "yes")
+
+acute_cic_thermal_data <- subset(behaviour, behaviour$ref_experiment_length == "acute" & behaviour$ref_treatment == "control" & behaviour$ref_behaviour_test == "Hargreaves") 
+acute_cic_thermal_data <- subset(acute_cic_thermal_data, acute_cic_thermal_data$ref_implantation == "yes")
+```
+
+
+
+We will also separate out the mechanical and thermal responses for CICFA and CISNI cohorts.
+
+```{r}
+acute_cfaimplant_mechan_data <- subset(behaviour, behaviour$ref_experiment_length == "acute" & behaviour$ref_treatment == "CFA" & behaviour$ref_behaviour_test == "von Frey") 
+
+acute_cfaimplant_thermal_data <- subset(behaviour, behaviour$ref_experiment_length == "acute" & behaviour$ref_treatment == "CFA" & behaviour$ref_behaviour_test == "Hargreaves") 
+
+
+acute_sniimplant_mechan_data <- subset(behaviour, behaviour$ref_experiment_length == "acute" & behaviour$ref_behaviour_test == "von Frey" & behaviour$ref_treatment == "SNI")
+
+acute_sniimplant_thermal_data <- subset(behaviour, behaviour$ref_experiment_length == "acute" & behaviour$ref_behaviour_test == "Hargreaves" & behaviour$ref_treatment == "SNI")
+
+```
+
+We will also separate out the ipsilateral responses for cfa and sni
+
+```{r}
+acute_cfaimplantipsi_mechan_data <- subset(behaviour, behaviour$ref_experiment_length == "acute" & behaviour$ref_treatment == "CFA" & behaviour$ref_behaviour_test == "von Frey" & behaviour$ref_hindpaw == "ipsi") 
+
+acute_cfaimplantipsi_thermal_data <- subset(behaviour, behaviour$ref_experiment_length == "acute" & behaviour$ref_treatment == "CFA" & behaviour$ref_behaviour_test == "Hargreaves" & behaviour$ref_hindpaw == "ipsi") 
+
+
+acute_sniimplantipsi_mechan_data <- subset(behaviour, behaviour$ref_experiment_length == "acute" & behaviour$ref_behaviour_test == "von Frey" & behaviour$ref_treatment == "SNI" & behaviour$ref_hindpaw == "ipsi")
+
+acute_sniimplantipsi_thermal_data <- subset(behaviour, behaviour$ref_experiment_length == "acute" & behaviour$ref_behaviour_test == "Hargreaves" & behaviour$ref_treatment == "SNI" & behaviour$ref_hindpaw == "ipsi")
+
+```
+
+
+
+
+
+### Statistical analysis of responses using the general linear model (acute implantation)
+
+#### Examine the hypersensitivity of the ipisilateral hindpaw versues the contralateral side in CFA model
+
+##### von Frey
+
+```{r}
+#acute_cfa_mechan_data$ref_day_number <- factor(acute_cfa_mechan_data$ref_day_number, levels = c( pre, day1, day3 ))
+mod1 <- lmer(ref_response ~ ref_hindpaw * ref_day_number + ref_sex + (1|ref_animal_ID),  data = acute_cfa_mechan_data)
+plot(mod1)
+shapiro.test(resid(mod1))
+x<-resid(mod1) 
+hist(x)
+qqp(x) # requires the car package
+plot(fitted(mod1),x)
+ 
+
+
+anova(mod1)
+emmeans(mod1, pairwise ~ref_day_number|ref_hindpaw)
+```
+
+
+##### Hargreaves
+
+```{r}
+#acute_cfa_thermal_data$ref_day_number <- factor(acute_cfa_thermal_data$ref_day_number, levels = c( pre, day1, day3 ))
+mod2 <- lmer(ref_response ~ ref_hindpaw * ref_day_number + ref_sex + (1|ref_animal_ID),  data = acute_cfa_thermal_data)
+plot(mod2)
+shapiro.test(resid(mod2))
+x<-resid(mod2) 
+hist(x)
+qqp(x) # requires the car package
+
+ 
+
+
+anova(mod2)
+emmeans(mod2, pairwise ~ref_day_number|ref_hindpaw)
+```
+
+
+
+
+#### Examine the hypersensitivity of the ipisilateral hindpaw versues the contralateral side in SNI model
+
+##### von Frey
+
+```{r}
+#acute_sni_mechan_data$ref_day_number <- factor(acute_sni_mechan_data$ref_day_number, levels = c( pre, day3, day7 ))
+mod3 <- lmer(ref_response ~ ref_hindpaw * ref_day_number + ref_sex + (1|ref_animal_ID),  data = acute_sni_mechan_data)
+plot(mod3)
+shapiro.test(resid(mod3))
+x<-resid(mod3) 
+hist(x)
+qqp(x) # requires the car package
+
+ 
+
+
+anova(mod3)
+emmeans(mod3, pairwise ~ref_day_number|ref_hindpaw)
+```
+
+
+##### Hargreaves
+
+```{r}
+#acute_sni_thermal_data$ref_day_number <- factor(acute_sni_thermal_data$ref_day_number, levels = c( pre, day3, day7 ))
+mod4 <- lmer(ref_response ~ ref_hindpaw * ref_day_number + ref_sex + (1|ref_animal_ID),  data = acute_sni_thermal_data)
+plot(mod4)
+shapiro.test(resid(mod4))
+x<-resid(mod4) 
+hist(x)
+qqp(x) # requires the car package
+
+ 
+
+
+anova(mod4)
+emmeans(mod4, pairwise ~ref_day_number)
+emmeans(mod4, pairwise ~ref_day_number|ref_hindpaw)
+```
+
+
+#### Examine the hypersensitivity of the ipisilateral hindpaw versues the contralateral side in implanted controls cohort
+
+##### von Frey
+
+```{r}
+#acute_cic_mechan_data$ref_day_number <- factor(acute_cic_mechan_data$ref_day_number, levels = c( pre, day3, day7 ))
+mod5 <- lmer(ref_response ~ ref_hindpaw * ref_day_number + ref_sex + (1|ref_animal_ID),  data = acute_cic_mechan_data)
+plot(mod5)
+shapiro.test(resid(mod5))
+x<-resid(mod5) 
+hist(x)
+qqp(x) # requires the car package
+
+ 
+
+
+anova(mod5)
+```
+
+
+##### Hargreaves
+
+```{r}
+#acute_cic_thermal_data$ref_day_number <- factor(acute_cic_thermal_data$ref_day_number, levels = c( pre, day3, day7 ))
+mod6 <- lmer(ref_response ~ ref_hindpaw * ref_day_number + ref_sex + (1|ref_animal_ID),  data = acute_cic_thermal_data)
+plot(mod6)
+shapiro.test(resid(mod6))
+x<-resid(mod6) 
+hist(x)
+qqp(x) # requires the car package
+
+ 
+
+
+anova(mod6)
+emmeans(mod6, pairwise ~ref_day_number)
+emmeans(mod6, pairwise ~ref_hindpaw)
+```
+
+
+
+#### Differences in mechanical responses between CFA and CICFA (acute)
+```{r}
+#acute_mechan_data$ref_day_number <- factor(acute_cfaimplant__mechan_data$ref_day_number, levels = c( pre, day1, day3 ))
+mod7 <- lmer(ref_response ~ ref_implantation * ref_hindpaw * ref_day_number + ref_sex + (1|ref_animal_ID),  data = acute_cfaimplant_mechan_data)
+plot(mod7)
+shapiro.test(resid(mod7))
+x<-resid(mod7) 
+hist(x)
+qqp(x) # requires the car package
+
+
+
+
+anova(mod7)
+emmeans(mod7, pairwise ~ref_implantation|ref_hindpaw)
+emmeans(mod7, pairwise ~ref_day_number|ref_hindpaw)
+emmeans(mod7, pairwise ~ref_implantation|ref_day_number)
+```
+
+#### Differences in thermal responses between CFA and CICFA (acute)
+```{r}
+#acute_thermal_data$ref_day_number <- factor(acute_cfaimplant__thermal_data$ref_day_number, levels = c( pre, day1, day3 ))
+mod8 <- lmer(ref_response ~ ref_implantation * ref_hindpaw * ref_day_number + ref_sex + (1|ref_animal_ID),  data = acute_cfaimplant_thermal_data)
+plot(mod8)
+shapiro.test(resid(mod8))
+x<-resid(mod8) 
+hist(x)
+qqp(x) # requires the car package
+
+
+
+
+anova(mod8)
+emmeans(mod8, pairwise ~ref_implantation|ref_day_number)
+emmeans(mod8, pairwise ~ref_day_number|ref_hindpaw)
+#highest pre-surgery response for CFA ipsi is 22.7 and for lowest is 6.2
+```
+
+
+#### Differences in mechanical responses between SNI and CISNI (acute)
+```{r}
+#acute_mechan_data$ref_day_number <- factor(acute_sniimplant__mechan_data$ref_day_number, levels = c( pre, day3, day7 ))
+mod9 <- lmer(ref_response ~ ref_implantation * ref_hindpaw * ref_day_number + ref_sex + (1|ref_animal_ID),  data = acute_sniimplant_mechan_data)
+plot(mod9)
+shapiro.test(resid(mod9))
+x<-resid(mod9) 
+hist(x)
+qqp(x) # requires the car package
+
+
+
+
+anova(mod9)
+emmeans(mod9, pairwise ~ref_day_number|ref_hindpaw)
+emmeans(mod9, pairwise ~ref_implantation|ref_day_number)
+```
+
+
+#### Differences in thermal responses between SNI and CISNI (acute)
+```{r}
+#acute_thermal_data$ref_day_number <- factor(acute_sniimplant__thermal_data$ref_day_number, levels = c( pre, day3, day7 ))
+mod10 <- lmer(ref_response ~ ref_implantation * ref_hindpaw * ref_day_number + ref_sex + (1|ref_animal_ID),  data = acute_sniimplant_thermal_data)
+plot(mod10)
+shapiro.test(resid(mod10))
+x<-resid(mod10) 
+hist(x)
+qqp(x) # requires the car package
+
+
+
+
+anova(mod10)
+emmeans(mod10, pairwise ~ref_day_number|ref_hindpaw)
+emmeans(mod10, pairwise ~ref_implantation)
+emmeans(mod10, pairwise ~ref_implantation|ref_day_number)
+```
+
+
+
+### Statistical analysis of responses using the general linear model (chronic implantation)
+
+#### Differences in mechanical and thermal reponses at different time points across 4-week implantation.
+
+We will first separate out mechanical and thermal responses for each treatment cohort.
+
+```{r}
+chronic_mechan_data <- subset(behaviour, behaviour$ref_experiment_length == "chronic" & behaviour$ref_behaviour_test == "von Frey")
+
+length((unique(chronic_mechan_data$ref_animal_ID)))
+
+chronic_thermal_data <- subset(behaviour, behaviour$ref_experiment_length == "chronic" & behaviour$ref_behaviour_test == "Hargreaves")
+
+length((unique(chronic_thermal_data$ref_animal_ID)))
+```
+
+#### Differences in mechanical responses across time (chronic)
+
+```{r}
+#chronic_mechan_data$ref_day_number <- factor(chronic_mechan_data$ref_day_number, levels = c( pre, day3, day7, day14, day21, day28 ))
+mod11 <- lmer(ref_response ~  ref_hindpaw * ref_day_number + ref_sex + (1|ref_animal_ID),  data = chronic_mechan_data)
+plot(mod11)
+shapiro.test(resid(mod11))
+x<-resid(mod11) 
+hist(x)
+qqp(x) # requires the car package
+
+
+
+
+anova(mod11)
+#emmeans(mod11, pairwise ~ref_hindpaw)
+RG <- ref_grid(mod11)
+EMM.source <- emmeans(RG, "ref_hindpaw")
+PRS.source <- pairs(EMM.source)
+test(PRS.source, delta = 10, ajust = "none")
+```
+
+#### Differences in thermal responses across time (chronic)
+
+```{r}
+#chronic_thermal_data$ref_day_number <- factor(chronic_thermal_data$ref_day_number, levels = c( pre, day3, day7, day14, day21, day28 ))
+mod12 <- lmer(ref_response ~  ref_hindpaw * ref_day_number + (1|ref_animal_ID),  data = chronic_thermal_data)
+plot(mod12)
+shapiro.test(resid(mod12))
+x<-resid(mod12) 
+hist(x)
+qqp(x) # requires the car package
+
+
+
+
+anova(mod12)
+#emmeans(mod12, pairwise ~ref_hindpaw)
+RG <- ref_grid(mod12)
+EMM.source <- emmeans(RG, "ref_hindpaw")
+PRS.source <- pairs(EMM.source)
+test(PRS.source, delta = 3, ajust = "none")
+```
