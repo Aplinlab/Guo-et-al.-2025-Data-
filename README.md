@@ -5,22 +5,29 @@ This dataset is freely and publicly available.
 Email: f.aplin@unsw.edu.au
 
 1. behaviour.csv
+   
 This excel document contains the full results for behavioural experiments, which were used for graph generation and statistical analysis. Descriptions of headings can be found in r scripts.
  
-2. behaviour_analysis
+3. behaviour_analysis
+   
 This .RMD file contains the r scripts used for statistical analysis of the main results for behaviours, primarily through the use of linear mixed-effects regression.
 
-3. MRI.csv
+5. MRI.csv
+   
 This excel document contains the full results for MRI experiments, which were used for graph generation and statistical analysis. Descriptions of headings can be found in r scripts.
 
-4. MRI_analysis
+7. MRI_analysis
+   
 This .RMD file contains the r scripts used for statistical analysis of the main results for MRI, primarily through the use of One-way ANOVA.
 
-5. immunohistochemistry.csv
+9. immunohistochemistry.csv
+    
 This excel document contains the full results for immunohistochemical data, which were used for graph generation and statistical analysis. Descriptions of headings can be found in r scripts.
 
 6.immunohistochemistry_analysis
+
 This .RMD file contains the r scripts used for statistical analysis of the main results for immunohistochemical data, primarily through the use of linear mixed-effects regression.
 
 7.immunohistochemistry_compound interaction effect_analysis
+
 This .RMD file contains the r scripts used for statistical analysis of the compound interaction effect for immunohistochemical data, primarily through the use of linear mixed-effects regression.
